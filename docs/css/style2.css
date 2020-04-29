@@ -1,0 +1,105 @@
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.post .entry {
+    padding-top: 25px;
+}
+
+menu a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+ul#quotes {
+    list-style-type: disc;   
+    font-style: italic;   
+}
+
+a.btn-buy {
+    
+    color: #fff;
+    background-color: #982828;
+    cursor: pointer;
+    
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem 1.4rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-bottom: 20px;    
+    min-width: 110px;
+}
+
+
+a img {
+    border: none;
+}
+
+.post .meta {
+	border-top: none;
+	border-bottom: 1px solid #3E5C0E;    
+}
+
+table.top td {
+	/* vertical-align: top; */
+	padding-bottom: 8px;
+}
+
+#logo h1 {
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 60px;
+}
+
+#logo h1 {
+	text-transform: none;
+        padding-right: 20px;
+}
+
+#logo h2 {
+	font-size: 18px;
+}
+
+#sidebar h2 {
+         background-color: #9bc3fa;
+}
+
+.post {
+       padding-bottom: 10px;
+}
+
+.post .title a {
+	text-decoration: none;
+	color: #2244a1;
+}
+
+body {
+   /*  background-color: #d8ecde; */
+       background-color: #e6ebfe;
+
+}
+
+/* ----- Tools -------- */
+
+.subTitle {
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    color: #2B4E15;
+}
