@@ -11,12 +11,13 @@
 <script type="text/javascript">
 <!-- /*[CDATA[*/
 var images = new Array
-("jbook-20.jpg"
-,"jbook-30.jpg"
-,"jbook-40.jpg"
-,"jbook-45.jpg"
-,"jbook-50.jpg"
-,"jbook-60.jpg"
+("j01.jpg"
+,"j02.jpg"
+,"j03.jpg"
+,"j04.jpg"
+,"j05.jpg"
+,"j06.jpg"
+,"j-toc.jpg"
 ,"../general/end.gif"
 );
 function init() {
@@ -28,12 +29,13 @@ function init() {
 function setImgAttrib(img) {
   var dn;
   switch (img) {
-  case "jbook-20.jpg": dn="1/6 "; break;
-  case "jbook-30.jpg": dn="2/6 "; break;
-  case "jbook-40.jpg": dn="3/6 "; break;
-  case "jbook-45.jpg": dn="4/6 "; break;
-  case "jbook-50.jpg": dn="5/6 "; break;
-  case "jbook-60.jpg": dn="6/6 "; break;
+  case "j01.jpg": dn="1/7 "; break;
+  case "j02.jpg": dn="2/7 "; break;
+  case "j03.jpg": dn="3/7 "; break;
+  case "j04.jpg": dn="4/7 "; break;
+  case "j05.jpg": dn="5/7 "; break;
+  case "j06.jpg": dn="6/7 "; break;
+  case "j-toc.jpg": dn="7/7 "; break;
   default: iw=-1; ih=-1; dn=""; break;
   }
   var des = document.getElementById("imgDes");
@@ -49,8 +51,8 @@ function setImgAttrib(img) {
 /><img onclick="go2next()" src="../general/bn.gif" alt="Další obrázek" title="Další obrázek  [Šipka doprava]" class="navigation"
 /><img onclick="go2show()" src="../general/bs0.gif" id="show" alt="Promítání" title="Promítání  [Mezerník]" class="navigation" />
  </div>
-  <table cellspacing="0" style="margin: auto; height: 790px; width: 992px; vertical-align: center;"><tr><td style="text-align: center;">
-    <img src="jbook-20.jpg" id="basicImage" alt="show" onclick="go2next()" class="showImg" />
+  <table cellspacing="0" style="margin: auto; height: 970px; width: 1502px; vertical-align: center;"><tr><td style="text-align: center;">
+    <img src="j01.jpg" id="basicImage" alt="show" onclick="go2next()" class="showImg" />
     <div class="coreDescr" id="imgDes"></div>
   </td></tr></table>
 <p>&nbsp;</p>
