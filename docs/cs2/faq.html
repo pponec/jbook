@@ -42,7 +42,17 @@ Released   : 20080129
                     <img src="../images/milky-44.png" width="48" height="48" alt="architecture" style="float:left; margin: 0 15px 0 0; vertical-align:text-top; border:0" />
                     <h2 class="title" id="download"><a href="#">Časté otázky</a></h2>
                     <div class="entry">
-                        <ul>                          
+                        <ul>
+                            <li id="tech"><strong>Čím se druhé vydání liší?</strong><br/>
+                                Druhé vydání obsahuje nové kapitoly o&nbsp;konceptu
+                                <a href="https://cs.wikipedia.org/wiki/AJAX">AJAX</a>
+                                a&nbsp;datovém formátu <a href="https://cs.wikipedia.org/wiki/JavaScript_Object_Notation">JSON</a>.
+                                Významně byla přepracována byla kapitola o&nbsp;<a href="https://en.wikipedia.org/wiki/Interface_(Java)">rozhraní</a> (interface),
+                                mnoho dalších kapitol jsem doplnil či přeskládal jejich pořadí pro&nbsp;lepší návaznost výkladu.
+                                Druhé vydání prošlo odbornou korekturou.
+                                Příklady vyžadují pro&nbsp;spuštění <strong>Java</strong> verze&nbsp;<strong>17 LTS</strong>, 
+                                což je nejnovější stabilní verze Javy s&nbsp;dlouhodobou podporou (v&nbsp;době vydání knihy).
+                            </li>
                             <li id="tech"><strong>Jaké technologie se v knize používají?</strong><br/>
                                 Všechny ukázkové stránky jsou servlety Maven projektu,
                                 které se pouští jako webová aplikace na kontejneru
@@ -63,16 +73,25 @@ Released   : 20080129
                                 Cílem knihy není učit šablonovací systém, ale práci s objekty.
                                 Kromě toho názory na přínos technologií JSP a jeho nástupce JSF bývají značně kontroverzní.
                             </li>
-                            <li id="tech"><strong>Jaké jsou změny proti předchozí verzi knihy?</strong><br/>
-                                Výklad knihy předokládá instalaci <strong>Java veze 17 LTS</strong>, 
-                                což je nejnovější stabilní verze Javy s&nbsp;dlouhodobou podporou (v&nbsp;době vydání knihy).
-                                Vznikla nová kapitola o&nbsp;technologii 
-                                <a href="https://cs.wikipedia.org/wiki/AJAX">AJAX</a> a stávající kapitola o kaskádových stylech  
-                                <a href="https://cs.wikipedia.org/wiki/Kask%C3%A1dov%C3%A9_styly">CSS</a> byla rozšířena. 
-                                Další úpravy byly spíše drobnosti literárního charakteru.
-                            </li>                               
+                            <li id="tech"><strong>Nemůže pojetí knihy vést 
+                                    ke <a href="https://cs.wikipedia.org/wiki/Kargokultick%C3%A9_programov%C3%A1n%C3%AD">kargoklutickému
+                                    programování</a> (kódování bez porozumění)?</strong><br/>
+                                Cílem výkladu je demonstrovat význam, principy a souvislosti všech použitých programových konstrukcí.
+                                Domnívám se však, že&nbsp;začátečník nemusí znát všechny detaily hned.
+                                Extrémní důraz na&nbsp;detail některé začátečníky zbytečně odradí, a&nbsp;neplatí to jen o&nbsp;programování.
+                                Vybraná témata obsahují odkazy na&nbsp;internetový zdroj pro&nbsp;další studium.
+                            </li>
+                            <li id="tech"><strong>Není zvýšený počet použitých technologií nad&nbsp;síly začátečníka?</strong><br/>
+                                Je pravda, že webové stránky jsou popsány jazykem <i>HTML</i> s <i>CSS</i> 
+                                a&nbsp;ke&nbsp;spuštění aplikace (ve webovém kontejneru) je třeba použít <i>Maven</i>.
+                                Nástroje projektu <i>Maven</i> zde však slouží především jako <strong>prostředek</strong> 
+                                a&nbsp;to  samé platí také o&nbsp;webovém kontejneru.
+                                Výklad jazyka <i>HTML</i> s&nbsp;<i>CSS</i> (včetně použitých techologií) jsem se 
+                                pokusil omezit na&nbsp;nezbytné minimum.
+                                Stažený projekt obsahuje skript pro&nbsp;spuštění celého projektu a&nbsp;obsahuje i&nbsp;<i>Maven</i> samotný.
+                                Kromě <i>Java</i> prostředí není nutné nic dalšího instalovat. 
+                            </li>   
                         </ul>
-
                     </div>
                     <p class="meta">&nbsp;</p>
                 </div><!-- post -->
@@ -99,7 +118,7 @@ Released   : 20080129
             <div id="sidebar">
                 <ul>
                     <li>
-                        <a href="screens/html-cs/index.html?go"><img src="../images/Cover-3d.png" alt="Cover-3d.png" /></a>
+                        <a href="jbook-sub.pdf"><img src="images/Cover-3d.png" alt="Cover-3d.png" /></a>
                         <!--
                         <p><a class="btn-buy" href="#">Koupit</a></p>
                         -->
@@ -124,7 +143,7 @@ Released   : 20080129
         </div>
         <!-- end #page -->
         <div id="footer">
-            <p>(c) 2020-2020 <a href="http://jbook.ponec.net/">jBook</a> from Pavel Ponec. Designed by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>. Icons by <a href="http://min.frexy.com">Min Tran</a></p>
+            <p>(c) 2020-2022 <a href="http://jbook.ponec.net/">jBook</a> from Pavel Ponec. Designed by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>. Icons by <a href="http://min.frexy.com">Min Tran</a></p>
         </div>
     </div>
 

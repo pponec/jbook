@@ -103,3 +103,8 @@ body {
     display: block;
     color: #2B4E15;
 }
+
+video {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
