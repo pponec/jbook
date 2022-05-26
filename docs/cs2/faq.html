@@ -17,6 +17,9 @@ Released   : 20080129
     <meta name="keywords" content="Java, XML, učebnice, kniha, průvodce, příklady, web" />
     <meta name="description" content="Učebnice jazyka Java" />
     <link href="../css/main.css" rel="stylesheet" type="text/css" media="screen" />
+    <style>
+i.method {color: Navy;}
+    </style>
 </head>
 <body>
     <div id="wrapper">
@@ -40,7 +43,7 @@ Released   : 20080129
 
                 <div class="post">
                     <img src="../images/milky-44.png" width="48" height="48" alt="architecture" style="float:left; margin: 0 15px 0 0; vertical-align:text-top; border:0" />
-                    <h2 class="title" id="download"><a href="#">Časté otázky</a></h2>
+                    <h2 class="title" id="download"><a href="#">Časté dotazy</a></h2>
                     <div class="entry">
                         <ul>
                             <li id="tech"><strong>Čím se druhé vydání liší?</strong><br/>
@@ -54,8 +57,8 @@ Released   : 20080129
                                 což je nejnovější stabilní verze Javy s&nbsp;dlouhodobou podporou (v&nbsp;době vydání knihy).
                             </li>
                             <li id="tech"><strong>Jaké technologie se v knize používají?</strong><br/>
-                                Všechny ukázkové stránky jsou servlety Maven projektu,
-                                které se pouští jako webová aplikace na kontejneru
+                                Všechny ukázkové stránky jsou Java servlety Maven projektu,
+                                který se pouští jako webová aplikace na kontejneru
                                 <a href="https://en.wikipedia.org/wiki/Jetty_(web_server)">Jetty</a>,
                                 webový archiv <a href="https://en.wikipedia.org/wiki/WAR_(file_format)">WAR</a>
                                 však lze spustit i na konteneru
@@ -65,10 +68,24 @@ Released   : 20080129
                                 Zdrojový kód příkladů je k nahlédnutí 
                                 <a href="https://jbook2-samples-free.ponec.net/sample?src=net.ponec.jbook.s01_hello.HelloWorldElement">tady</a>.
                             </li>
-                            <li id="element"><strong>Není použití objektového modelu HTML stránky pro mladší studenty komplikované? </strong><br/>
+                            <li id="element"><strong>Není použití objektového modelu webové stránky komplikované? </strong><br/>
                                 Domnívám se, že kdo se chce naučit objektový jazyk, měl by zažít i&nbsp;práci s objektovým modelem
                                 a sestavování HTML modelu se mi zdá být k tomu dobrá příležitost.
                             </li>
+                            <li id="element"><strong>Není použití třídy <i>Element</i> složité?</strong><br/>
+                                
+Jakmile získáme <i>kořenový element</i>, pro sestavení libovolné webové stránky stačí znát (v principu) pouze <strong>tři</strong> metody z té třídy:
+
+<br/>1) <i class="method">setAttribute()</i> –&nbsp;metoda přiřadí aktuálnímu elementu atribut s&nbsp;hodnotou,
+<br/>2) <i class="method">addElement()</i> –&nbsp;metoda přidá do&nbsp;objektu nový element s&nbsp;názvem prvního argumentu a&nbsp;jeho instanci vrátí zpět,
+<br/>3) <i class="method">addText()</i> –&nbsp;metoda přidá do&nbsp;těla elementu text a&nbsp;ošetří zápis speciálních znaků; k&nbsp;dispozici je ještě metoda&nbsp;<i class="method">addRawText()</i>.
+                            </li>                            
+                            <li id="memory"><strong>Není datový model webové stránky náročný na&nbsp;paměť?</strong><br/>
+                                Třída <i>Element</i> je ve skutečnosti jen obálka nad objektem typu <i>PrintWriter</i>, 
+                                a&nbsp;tak všechny texty zapsané do&nbsp;elementu se posílají rovnou do&nbsp;toho <i>writeru</i>.
+                                S tímto přístupem lze sestavit efektivně i&nbsp;stránky značného rozsahu.
+                                V&nbsp;případě potřeby však lze plnohodnotný paměťový model aktivovat v&nbsp;konfiguraci.
+                            </li>                                                            
                             <li id="jsf"><strong>Proč nejsou příklady postaveny na JSP nebo JSF?</strong><br/>
                                 Cílem knihy není učit šablonovací systém, ale práci s objekty.
                                 Kromě toho názory na přínos technologií JSP a jeho nástupce JSF bývají značně kontroverzní.
@@ -76,12 +93,12 @@ Released   : 20080129
                             <li id="tech"><strong>Nemůže pojetí knihy vést 
                                     ke <a href="https://cs.wikipedia.org/wiki/Kargokultick%C3%A9_programov%C3%A1n%C3%AD">kargoklutickému
                                     programování</a> (kódování bez porozumění)?</strong><br/>
-                                Cílem výkladu je demonstrovat význam, principy a souvislosti všech použitých programových konstrukcí.
+                                Cílem výkladu je demonstrovat význam, principy a souvislosti použitých programových konstrukcí.
                                 Domnívám se však, že&nbsp;začátečník nemusí znát všechny detaily hned.
                                 Extrémní důraz na&nbsp;detail některé začátečníky zbytečně odradí, a&nbsp;neplatí to jen o&nbsp;programování.
                                 Vybraná témata obsahují odkazy na&nbsp;internetový zdroj pro&nbsp;další studium.
                             </li>
-                            <li id="tech"><strong>Není zvýšený počet použitých technologií nad&nbsp;síly začátečníka?</strong><br/>
+                            <li id="tech"><strong>Není zvládnutí všech použitých technologií nad&nbsp;síly začátečníka?</strong><br/>
                                 Je pravda, že webové stránky jsou popsány jazykem <i>HTML</i> s <i>CSS</i> 
                                 a&nbsp;ke&nbsp;spuštění aplikace (ve webovém kontejneru) je třeba použít <i>Maven</i>.
                                 Nástroje projektu <i>Maven</i> zde však slouží především jako <strong>prostředek</strong> 
