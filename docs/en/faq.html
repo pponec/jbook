@@ -42,67 +42,30 @@ Released   : 20080129
                     <h2 class="title" id="download"><a href="#">Časté dotazy</a></h2>
                     <div class="entry">
                         <ul>
-                            <li id="tech"><strong>Čím se druhé vydání liší?</strong><br/>
-                                Druhé vydání obsahuje nové kapitoly o&nbsp;konceptu
-                                <a href="https://cs.wikipedia.org/wiki/AJAX">AJAX</a>
-                                a&nbsp;datovém formátu <a href="https://cs.wikipedia.org/wiki/JavaScript_Object_Notation">JSON</a>.
-                                Významně byla přepracována byla kapitola o&nbsp;<a href="https://en.wikipedia.org/wiki/Interface_(Java)">rozhraní</a> (interface),
-                                mnoho dalších kapitol jsem doplnil či přeskládal jejich pořadí pro&nbsp;lepší návaznost výkladu.
-                                Druhé vydání prošlo odbornou korekturou.
-                                Příklady vyžadují pro&nbsp;spuštění <strong>Java</strong> verze&nbsp;<strong>17 LTS</strong>, 
-                                což je nejnovější stabilní verze Javy s&nbsp;dlouhodobou podporou (v&nbsp;době vydání knihy).
+                            <li id="tech"><strong>What technologies are used in the book?</strong><br/>
+                                All the sample pages are Java servlets of a Maven project that runs as a web application on a Jetty container, but the WAR web archive can also run on Tomcat and other containers. The Element class from the free library is used to eliminate text strings with HTML code. The source code for the examples can be viewed here.
+Examples require Java version 17 LTS to run, which is the latest stable version of Java with long-term support (at the time the book was published).
                             </li>
-                            <li id="tech"><strong>Jaké technologie se v knize používají?</strong><br/>
-                                Všechny ukázkové stránky jsou Java servlety Maven projektu,
-                                který se pouští jako webová aplikace na kontejneru
-                                <a href="https://en.wikipedia.org/wiki/Jetty_(web_server)">Jetty</a>,
-                                webový archiv <a href="https://en.wikipedia.org/wiki/WAR_(file_format)">WAR</a>
-                                však lze spustit i na konteneru
-                                <a href="https://cs.wikipedia.org/wiki/Apache_Tomcat">Tomcat</a> a dalších.
-                                Pro eliminaci textových řetězců s HTML kódem se využívá třída
-                                Element z volně šiřitelné knihovny.
-                                Zdrojový kód příkladů je k nahlédnutí 
-                                <a href="https://jbook2-samples-free.ponec.net/sample?src=net.ponec.jbook.s01_hello.HelloWorldElement">tady</a>.
+                            <li id="element"><strong>Isn't using the object model of a web page complicated?</strong><br/>
+                                I believe that anyone who wants to learn an object language should also experience working with an object model, and building an HTML model seems like a good opportunity to do so.
                             </li>
-                            <li id="element"><strong>Není použití objektového modelu webové stránky komplikované? </strong><br/>
-                                Domnívám se, že kdo se chce naučit objektový jazyk, měl by zažít i&nbsp;práci s objektovým modelem
-                                a sestavování HTML modelu se mi zdá být k tomu dobrá příležitost.
+                            <li id="element"><strong>Isn't using the Element class complicated?</strong><br/>                              
+Once you get the root element, you only need to know (in principle) three methods from that class to build any web page:
+<br/>1) <i>setAttribute()</i> - this method assigns an attribute with a value to the current element,
+<br/>2) <i>addElement()</i> - the method adds a new element to the object with the name of the first argument and returns its instance,
+<br/>3) <i>addText()</i> - the method adds text to the element body and handles the writing of special characters; there is an alternative method <i>addRawText()</i>.                                                  
                             </li>
-                            <li id="element"><strong>Není použití třídy <i>Element</i> složité?</strong><br/>
-                                
-Jakmile získáme <i>kořenový element</i>, pro sestavení libovolné webové stránky stačí znát (v principu) pouze <strong>tři</strong> metody z té třídy:
-
-<br/>1) <i class="method">setAttribute()</i> –&nbsp;metoda přiřadí aktuálnímu elementu atribut s&nbsp;hodnotou,
-<br/>2) <i class="method">addElement()</i> –&nbsp;metoda přidá do&nbsp;objektu nový element s&nbsp;názvem prvního argumentu a&nbsp;jeho instanci vrátí zpět,
-<br/>3) <i class="method">addText()</i> –&nbsp;metoda přidá do&nbsp;těla elementu text a&nbsp;ošetří zápis speciálních znaků; k&nbsp;dispozici je ještě alternativní metoda <i class="method">addRawText()</i>.
-                            </li>                            
-                            <li id="memory"><strong>Není datový model webové stránky náročný na&nbsp;paměť?</strong><br/>
-                                Třída <i>Element</i> je ve skutečnosti jen obálka nad objektem typu <i>PrintWriter</i>, 
-                                a&nbsp;tak všechny texty zapsané do&nbsp;elementu se posílají rovnou do&nbsp;toho <i>writeru</i>.
-                                S tímto přístupem lze sestavit efektivně i&nbsp;stránky značného rozsahu.
-                                V&nbsp;případě potřeby však lze plnohodnotný paměťový model aktivovat v&nbsp;konfiguraci.
+                            <li id="memory"><strong>Isn't the web page data model memory intensive?</strong><br/>
+The Element class is really just an envelope over an object of type PrintWriter, so any text written to the element is sent directly to the writer. With this approach, even pages of significant size can be built efficiently. However, the full memory model can be activated in the configuration if needed.
                             </li>                                                            
-                            <li id="jsf"><strong>Proč nejsou příklady postaveny na JSP nebo JSF?</strong><br/>
-                                Cílem knihy není učit šablonovací systém, ale práci s objekty.
-                                Kromě toho názory na přínos technologií JSP a jeho nástupce JSF bývají značně kontroverzní.
+                            <li id="jsf"><strong>Why aren't the examples built on JSP or JSF?</strong><br/>
+                                The goal of the book is not to teach the templating system, but to work with objects. In addition, opinions on the merits of JSP technology and its successor JSF tend to be highly controversial.
                             </li>
-                            <li id="tech"><strong>Nemůže pojetí knihy vést 
-                                    ke <a href="https://cs.wikipedia.org/wiki/Kargokultick%C3%A9_programov%C3%A1n%C3%AD">kargoklutickému
-                                    programování</a> (kódování bez porozumění)?</strong><br/>
-                                Cílem výkladu je demonstrovat význam, principy a souvislosti použitých programových konstrukcí.
-                                Domnívám se však, že&nbsp;začátečník nemusí znát všechny detaily hned.
-                                Extrémní důraz na&nbsp;detail některé začátečníky zbytečně odradí, a&nbsp;neplatí to jen o&nbsp;programování.
-                                Vybraná témata obsahují odkazy na&nbsp;internetový zdroj pro&nbsp;další studium.
+                            <li id="tech"><strong>Could the book's concept lead to cargoclutic programming (coding without understanding)?</strong><br/>
+                                The aim of the book is to demonstrate the meaning, principles and context of the programming constructs used. However, I believe that a beginner does not need to know all the details right away. Extreme attention to detail will unnecessarily discourage some beginners, and this is not just true of programming. Selected topics include links to Internet resources for further study.
                             </li>
-                            <li id="tech"><strong>Není zvládnutí všech použitých technologií nad&nbsp;síly začátečníka?</strong><br/>
-                                Je pravda, že webové stránky jsou popsány jazykem <i>HTML</i> s <i>CSS</i> 
-                                a&nbsp;ke&nbsp;spuštění aplikace (ve webovém kontejneru) je třeba použít <i>Maven</i>.
-                                Nástroje projektu <i>Maven</i> zde však slouží především jako <strong>prostředek</strong> 
-                                a&nbsp;to  samé platí také o&nbsp;webovém kontejneru.
-                                Výklad jazyka <i>HTML</i> s&nbsp;<i>CSS</i> (včetně použitých techologií) jsem se 
-                                pokusil omezit na&nbsp;nezbytné minimum.
-                                Stažený projekt obsahuje skript pro&nbsp;spuštění celého projektu a&nbsp;obsahuje i&nbsp;<i>Maven</i> samotný.
-                                Kromě <i>Java</i> prostředí není nutné nic dalšího instalovat. 
+                            <li id="tech"><strong>Isn't mastering all of the technologies used beyond the capabilities of a beginner?</strong><br/>
+                                It's true that web pages are described in HTML with CSS, and you need to use Maven to run the application (in a web container). However, the tools of the Maven project are primarily used as a resource here, and the same is true of the web container. I have tried to keep the explanation of HTML with CSS (including the techniques used) to the minimum necessary. The downloaded project contains a script to run the entire project and includes Maven itself. Apart from the Java environment, nothing else needs to be installed.
                             </li>   
                         </ul>
                     </div>
