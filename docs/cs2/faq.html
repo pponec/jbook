@@ -46,14 +46,14 @@ i.method {color: Navy;}
                     <h2 class="title" id="download"><a href="#">Časté dotazy</a></h2>
                     <div class="entry">
                         <ul>
-                            <li id="tech"><strong>Čím se druhé vydání liší?</strong><br/>
+                            <li id="book"><strong>Čím se druhé vydání liší?</strong><br/>
                                 Druhé vydání obsahuje nové kapitoly o&nbsp;konceptu
                                 <a href="https://cs.wikipedia.org/wiki/AJAX">AJAX</a>
                                 a&nbsp;datovém formátu <a href="https://cs.wikipedia.org/wiki/JavaScript_Object_Notation">JSON</a>.
                                 Významně byla přepracována byla kapitola o&nbsp;<a href="https://en.wikipedia.org/wiki/Interface_(Java)">rozhraní</a> (interface),
                                 mnoho dalších kapitol jsem doplnil či přeskládal jejich pořadí pro&nbsp;lepší návaznost výkladu.
                                 Druhé vydání prošlo odbornou korekturou.
-                                Příklady vyžadují pro&nbsp;spuštění <strong>Java</strong> verze&nbsp;<strong>17 LTS</strong>, 
+                                Příklady vyžadují pro&nbsp;spuštění <strong>Java</strong> verze&nbsp;<strong>17 LTS</strong>,
                                 což je nejnovější stabilní verze Javy s&nbsp;dlouhodobou podporou (v&nbsp;době vydání knihy).
                             </li>
                             <li id="tech"><strong>Jaké technologie se v knize používají?</strong><br/>
@@ -65,38 +65,38 @@ i.method {color: Navy;}
                                 <a href="https://cs.wikipedia.org/wiki/Apache_Tomcat">Tomcat</a> a dalších.
                                 Pro eliminaci textových řetězců s HTML kódem se využívá třída
                                 Element z volně šiřitelné knihovny.
-                                Zdrojový kód příkladů je k nahlédnutí 
+                                Zdrojový kód příkladů je k nahlédnutí
                                 <a href="https://jbook2-samples-free.ponec.net/sample?src=net.ponec.jbook.s01_hello.HelloWorldElement">tady</a>.
                             </li>
                             <li id="element"><strong>Není použití objektového modelu webové stránky komplikované? </strong><br/>
                                 Domnívám se, že kdo se chce naučit objektový jazyk, měl by zažít i&nbsp;práci s objektovým modelem
                                 a sestavování HTML modelu se mi zdá být k tomu dobrá příležitost.
                             </li>
-                            <li id="element"><strong>Není použití třídy <i>Element</i> složité?</strong><br/>
-                                
+                            <li id="element2"><strong>Není použití třídy <i>Element</i> složité?</strong><br/>
+
 Jakmile získáme <i>kořenový element</i>, pro sestavení libovolné webové stránky stačí znát (v principu) pouze <strong>tři</strong> metody z té třídy:
 
 <br/>1) <i class="method">setAttribute()</i> –&nbsp;metoda přiřadí aktuálnímu elementu atribut s&nbsp;hodnotou,
 <br/>2) <i class="method">addElement()</i> –&nbsp;metoda přidá do&nbsp;objektu nový element s&nbsp;názvem prvního argumentu a&nbsp;jeho instanci vrátí zpět,
 <br/>3) <i class="method">addText()</i> –&nbsp;metoda přidá do&nbsp;těla elementu text a&nbsp;ošetří zápis speciálních znaků; k&nbsp;dispozici je ještě alternativní metoda <i class="method">addRawText()</i>.
-                            </li>                            
+                            </li>
                             <li id="memory"><strong>Není datový model webové stránky náročný na&nbsp;paměť?</strong><br/>
-                                Třída <i>Element</i> je ve skutečnosti jen obálka nad objektem typu <i>PrintWriter</i>, 
+                                Třída <i>Element</i> je ve skutečnosti jen obálka nad objektem typu <i>PrintWriter</i>,
                                 a&nbsp;tak všechny texty zapsané do&nbsp;elementu se posílají rovnou do&nbsp;toho <i>writeru</i>.
                                 S tímto přístupem lze sestavit efektivně i&nbsp;stránky značného rozsahu.
                                 V&nbsp;případě potřeby však lze plnohodnotný paměťový model aktivovat v&nbsp;konfiguraci.
-                            </li>                                                            
-                            <li id="jsf"><strong>Nejsou servlety přežité?</strong><br/>
+                            </li>
+                            <li id="servlet"><strong>Nejsou servlety už přežité?</strong><br/>
                                 Servlety se stále používají, pouze jejich API bývá zabalené do&nbsp;nějakých více sofistikovaných knihoven.
                                 Servlety jsem zvolil pro&nbsp;jejich jednoduchost.
-                                Pro&nbsp;pochopení internetové komunikace není až tak podstatné, který objekt zrovna zachytává HTTP požadavky, 
+                                Pro&nbsp;pochopení internetové komunikace není až tak podstatné, který objekt zrovna zachytává HTTP požadavky,
                                 za&nbsp;důležitější považuji pricipy.
-                            </li>                            
+                            </li>
                             <li id="jsf"><strong>Proč nejsou příklady postaveny na JSP nebo JSF?</strong><br/>
                                 Cílem knihy není učit šablonovací systém, ale práci s objekty.
                                 Kromě toho názory na přínos technologií JSP a jeho nástupce JSF bývají značně kontroverzní.
                             </li>
-                            <li id="tech"><strong>Nemůže pojetí knihy vést 
+                            <li id="kargoklutic"><strong>Nemůže pojetí knihy vést
                                     ke <a href="https://cs.wikipedia.org/wiki/Kargokultick%C3%A9_programov%C3%A1n%C3%AD">kargoklutickému
                                     programování</a> (kódování bez porozumění)?</strong><br/>
                                 Cílem výkladu je demonstrovat význam, principy a souvislosti použitých programových konstrukcí.
@@ -104,16 +104,16 @@ Jakmile získáme <i>kořenový element</i>, pro sestavení libovolné webové s
                                 Extrémní důraz na&nbsp;detail některé začátečníky zbytečně odradí, a&nbsp;neplatí to jen o&nbsp;programování.
                                 Vybraná témata obsahují odkazy na&nbsp;internetový zdroj pro&nbsp;další studium.
                             </li>
-                            <li id="tech"><strong>Není zvládnutí všech použitých technologií nad&nbsp;síly začátečníka?</strong><br/>
-                                Je pravda, že webové stránky jsou popsány jazykem <i>HTML</i> s <i>CSS</i> 
+                            <li id="tech2"><strong>Není zvládnutí všech použitých technologií nad&nbsp;síly začátečníka?</strong><br/>
+                                Je pravda, že webové stránky jsou popsány jazykem <i>HTML</i> s <i>CSS</i>
                                 a&nbsp;ke&nbsp;spuštění aplikace (ve webovém kontejneru) je třeba použít <i>Maven</i>.
-                                Nástroje projektu <i>Maven</i> zde však slouží především jako <strong>prostředek</strong> 
+                                Nástroje projektu <i>Maven</i> zde však slouží především jako <strong>prostředek</strong>
                                 a&nbsp;to  samé platí také o&nbsp;webovém kontejneru.
-                                Výklad jazyka <i>HTML</i> s&nbsp;<i>CSS</i> (včetně použitých techologií) jsem se 
+                                Výklad jazyka <i>HTML</i> s&nbsp;<i>CSS</i> (včetně použitých techologií) jsem se
                                 pokusil omezit na&nbsp;nezbytné minimum.
                                 Stažený projekt obsahuje skript pro&nbsp;spuštění celého projektu a&nbsp;obsahuje i&nbsp;<i>Maven</i> samotný.
-                                Kromě <i>Java</i> prostředí není nutné nic dalšího instalovat. 
-                            </li>   
+                                Kromě <i>Java</i> prostředí není nutné nic dalšího instalovat.
+                            </li>
                         </ul>
                     </div>
                     <p class="meta">&nbsp;</p>
