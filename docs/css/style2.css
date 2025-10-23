@@ -16,16 +16,16 @@ menu a {
 }
 
 ul#quotes {
-    list-style-type: disc;   
-    font-style: italic;   
+    list-style-type: disc;
+    font-style: italic;
 }
 
 a.btn-buy {
-    
+
     color: #fff;
     background-color: #982828;
     cursor: pointer;
-    
+
     display: inline-block;
     font-weight: 400;
     text-align: center;
@@ -43,7 +43,7 @@ a.btn-buy {
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     text-decoration: none;
     margin-top: 15px;
-    margin-bottom: 20px;    
+    margin-bottom: 20px;
     min-width: 110px;
 }
 
@@ -54,7 +54,7 @@ a img {
 
 .post .meta {
 	border-top: none;
-	border-bottom: 1px solid #3E5C0E;    
+	border-bottom: 1px solid #3E5C0E;
 }
 
 table.top td {
@@ -105,6 +105,11 @@ body {
 }
 
 video {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+iframe {
     margin-top: 10px;
     margin-bottom: 10px;
 }
