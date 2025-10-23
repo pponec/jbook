@@ -1,3 +1,3 @@
 # jbook
 
-Jak nahrát stránky na WEB?
+For deployment information see: https://github.com/pponec/jbook
