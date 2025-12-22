@@ -49,15 +49,15 @@ Examples require Java version 17 LTS to run, which is the latest stable version 
                             <li id="element"><strong>Isn't using the object model of a web page complicated?</strong><br/>
                                 I believe that anyone who wants to learn an object language should also experience working with an object model, and building an HTML model seems like a good opportunity to do so.
                             </li>
-                            <li id="element"><strong>Isn't using the Element class complicated?</strong><br/>                              
+                            <li id="element"><strong>Isn't using the Element class complicated?</strong><br/>
 Once you get the root element, you only need to know (in principle) three methods from that class to build any web page:
 <br/>1) <i>setAttribute()</i> - this method assigns an attribute with a value to the current element,
 <br/>2) <i>addElement()</i> - the method adds a new element to the object with the name of the first argument and returns its instance,
-<br/>3) <i>addText()</i> - the method adds text to the element body and handles the writing of special characters; there is an alternative method <i>addRawText()</i>.                                                  
+<br/>3) <i>addText()</i> - the method adds text to the element body and handles the writing of special characters; there is an alternative method <i>addRawText()</i>.
                             </li>
                             <li id="memory"><strong>Isn't the web page data model memory intensive?</strong><br/>
 The Element class is really just an envelope over an object of type PrintWriter, so any text written to the element is sent directly to the writer. With this approach, even pages of significant size can be built efficiently. However, the full memory model can be activated in the configuration if needed.
-                            </li>                                                            
+                            </li>
                             <li id="jsf"><strong>Why aren't the examples built on JSP or JSF?</strong><br/>
                                 The goal of the book is not to teach the templating system, but to work with objects. In addition, opinions on the merits of JSP technology and its successor JSF tend to be highly controversial.
                             </li>
@@ -66,7 +66,7 @@ The Element class is really just an envelope over an object of type PrintWriter,
                             </li>
                             <li id="tech"><strong>Isn't mastering all of the technologies used beyond the capabilities of a beginner?</strong><br/>
                                 It's true that web pages are described in HTML with CSS, and you need to use Maven to run the application (in a web container). However, the tools of the Maven project are primarily used as a resource here, and the same is true of the web container. I have tried to keep the explanation of HTML with CSS (including the techniques used) to the minimum necessary. The downloaded project contains a script to run the entire project and includes Maven itself. Apart from the Java environment, nothing else needs to be installed.
-                            </li>   
+                            </li>
                         </ul>
                     </div>
                     <p class="meta">&nbsp;</p>
@@ -124,14 +124,6 @@ The Element class is really just an envelope over an object of type PrintWriter,
     </div>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167592134-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-167592134-1');
-    </script>
     <!-- google analytics end -->
 
 </body>
