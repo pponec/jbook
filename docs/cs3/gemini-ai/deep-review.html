@@ -1,907 +1,604 @@
 <html>
 <head>
 <meta content="text/html; charset=UTF-8" http-equiv="content-type">
-<style type="text/css">@import url(https://themes.googleusercontent.com/fonts/css?kit=DFQxm4rd7fRHgM9OTejWVT5Vho6BE7M80rHXEVKqXWegg2XYR88pwOsaJkfiF7cJu5e0vFtnyLdhsxviZUUN-U0KZVwUvSK-LyXz4qcE1hc);.lst-kix_list_c-0>li:before{content:"\0025cf   "}ul.lst-kix_list_b-8{list-style-type:none}ul.lst-kix_list_1-0{list-style-type:none}.lst-kix_list_c-1>li:before{content:"\0025cb   "}ul.lst-kix_list_b-3{list-style-type:none}ul.lst-kix_list_b-2{list-style-type:none}.lst-kix_list_c-3>li:before{content:"\0025a0   "}.lst-kix_list_c-4>li:before{content:"\0025a0   "}ul.lst-kix_list_b-1{list-style-type:none}.lst-kix_list_6-1>li{counter-increment:lst-ctn-kix_list_6-1}ul.lst-kix_list_b-7{list-style-type:none}ul.lst-kix_list_b-6{list-style-type:none}.lst-kix_list_c-2>li:before{content:"\0025a0   "}ul.lst-kix_list_b-5{list-style-type:none}ul.lst-kix_list_b-4{list-style-type:none}ul.lst-kix_list_9-3{list-style-type:none}ul.lst-kix_list_9-4{list-style-type:none}ul.lst-kix_list_9-1{list-style-type:none}ul.lst-kix_list_9-2{list-style-type:none}ul.lst-kix_list_9-7{list-style-type:none}ul.lst-kix_list_9-8{list-style-type:none}ul.lst-kix_list_9-5{list-style-type:none}ul.lst-kix_list_9-6{list-style-type:none}.lst-kix_list_11-0>li{counter-increment:lst-ctn-kix_list_11-0}ul.lst-kix_list_1-3{list-style-type:none}ul.lst-kix_list_1-4{list-style-type:none}ul.lst-kix_list_1-1{list-style-type:none}ul.lst-kix_list_1-2{list-style-type:none}ul.lst-kix_list_1-7{list-style-type:none}ul.lst-kix_list_9-0{list-style-type:none}ul.lst-kix_list_1-8{list-style-type:none}ul.lst-kix_list_1-5{list-style-type:none}ul.lst-kix_list_1-6{list-style-type:none}.lst-kix_list_5-0>li:before{content:"\0025cf   "}ol.lst-kix_list_6-1{list-style-type:none}.lst-kix_list_5-3>li:before{content:"\0025a0   "}ul.lst-kix_list_a-4{list-style-type:none}ul.lst-kix_list_a-3{list-style-type:none}.lst-kix_list_5-2>li:before{content:"\0025a0   "}ul.lst-kix_list_a-2{list-style-type:none}ul.lst-kix_list_a-1{list-style-type:none}.lst-kix_list_5-1>li:before{content:"" counter(lst-ctn-kix_list_5-1,decimal) ". "}ul.lst-kix_list_a-8{list-style-type:none}ul.lst-kix_list_a-7{list-style-type:none}ul.lst-kix_list_a-6{list-style-type:none}ul.lst-kix_list_a-5{list-style-type:none}.lst-kix_list_5-7>li:before{content:"\0025a0   "}ul.lst-kix_list_8-4{list-style-type:none}ul.lst-kix_list_8-5{list-style-type:none}.lst-kix_list_5-6>li:before{content:"\0025a0   "}.lst-kix_list_5-8>li:before{content:"\0025a0   "}ul.lst-kix_list_8-2{list-style-type:none}ul.lst-kix_list_8-3{list-style-type:none}ul.lst-kix_list_8-8{list-style-type:none}ul.lst-kix_list_8-6{list-style-type:none}ul.lst-kix_list_8-7{list-style-type:none}.lst-kix_list_d-6>li:before{content:"\0025a0   "}.lst-kix_list_5-4>li:before{content:"\0025a0   "}.lst-kix_list_5-5>li:before{content:"\0025a0   "}ul.lst-kix_list_8-0{list-style-type:none}.lst-kix_list_d-8>li:before{content:"\0025a0   "}ul.lst-kix_list_8-1{list-style-type:none}.lst-kix_list_d-7>li:before{content:"\0025a0   "}.lst-kix_list_d-2>li:before{content:"\0025a0   "}.lst-kix_list_6-1>li:before{content:"" counter(lst-ctn-kix_list_6-1,decimal) ". "}.lst-kix_list_6-3>li:before{content:"\0025a0   "}.lst-kix_list_d-1>li:before{content:"\0025cb   "}.lst-kix_list_d-5>li:before{content:"\0025a0   "}.lst-kix_list_6-0>li:before{content:"\0025cf   "}.lst-kix_list_6-4>li:before{content:"\0025a0   "}.lst-kix_list_d-4>li:before{content:"\0025a0   "}.lst-kix_list_d-3>li:before{content:"\0025a0   "}.lst-kix_list_6-2>li:before{content:"\0025a0   "}.lst-kix_list_c-7>li:before{content:"\0025a0   "}ul.lst-kix_list_a-0{list-style-type:none}.lst-kix_list_c-5>li:before{content:"\0025a0   "}.lst-kix_list_c-8>li:before{content:"\0025a0   "}.lst-kix_list_6-8>li:before{content:"\0025a0   "}.lst-kix_list_6-5>li:before{content:"\0025a0   "}.lst-kix_list_6-7>li:before{content:"\0025a0   "}.lst-kix_list_d-0>li:before{content:"\0025cf   "}.lst-kix_list_c-6>li:before{content:"\0025a0   "}.lst-kix_list_6-6>li:before{content:"\0025a0   "}.lst-kix_list_2-7>li:before{content:"\0025a0   "}ul.lst-kix_list_d-8{list-style-type:none}ul.lst-kix_list_d-7{list-style-type:none}.lst-kix_list_7-4>li:before{content:"\0025a0   "}.lst-kix_list_7-6>li:before{content:"\0025a0   "}ul.lst-kix_list_d-6{list-style-type:none}.lst-kix_list_2-5>li:before{content:"\0025a0   "}ul.lst-kix_list_d-1{list-style-type:none}ul.lst-kix_list_d-0{list-style-type:none}.lst-kix_list_b-8>li:before{content:"\0025a0   "}.lst-kix_list_7-2>li:before{content:"\0025a0   "}ul.lst-kix_list_d-5{list-style-type:none}ul.lst-kix_list_d-4{list-style-type:none}ul.lst-kix_list_d-3{list-style-type:none}ul.lst-kix_list_d-2{list-style-type:none}.lst-kix_list_b-4>li:before{content:"\0025a0   "}ul.lst-kix_list_3-7{list-style-type:none}ul.lst-kix_list_3-8{list-style-type:none}.lst-kix_list_10-1>li:before{content:"\0025cb   "}ul.lst-kix_list_3-1{list-style-type:none}ul.lst-kix_list_3-2{list-style-type:none}.lst-kix_list_7-8>li:before{content:"\0025a0   "}ul.lst-kix_list_3-0{list-style-type:none}ul.lst-kix_list_3-5{list-style-type:none}ul.lst-kix_list_3-6{list-style-type:none}.lst-kix_list_b-6>li:before{content:"\0025a0   "}ul.lst-kix_list_3-3{list-style-type:none}ul.lst-kix_list_3-4{list-style-type:none}.lst-kix_list_10-7>li:before{content:"\0025a0   "}.lst-kix_list_10-5>li:before{content:"\0025a0   "}.lst-kix_list_10-3>li:before{content:"\0025a0   "}ul.lst-kix_list_11-7{list-style-type:none}ul.lst-kix_list_11-6{list-style-type:none}.lst-kix_list_b-0>li:before{content:"" counter(lst-ctn-kix_list_b-0,decimal) ". "}.lst-kix_list_4-1>li:before{content:"\0025cb   "}ul.lst-kix_list_11-5{list-style-type:none}ul.lst-kix_list_11-4{list-style-type:none}ul.lst-kix_list_11-3{list-style-type:none}ul.lst-kix_list_11-2{list-style-type:none}.lst-kix_list_b-2>li:before{content:"\0025a0   "}ul.lst-kix_list_11-1{list-style-type:none}.lst-kix_list_9-2>li:before{content:"\0025a0   "}.lst-kix_list_4-3>li:before{content:"\0025a0   "}.lst-kix_list_4-5>li:before{content:"\0025a0   "}ul.lst-kix_list_11-8{list-style-type:none}ol.lst-kix_list_b-0{list-style-type:none}.lst-kix_list_9-0>li:before{content:"\0025cf   "}ul.lst-kix_list_c-8{list-style-type:none}ul.lst-kix_list_c-7{list-style-type:none}.lst-kix_list_9-6>li:before{content:"\0025a0   "}ul.lst-kix_list_c-2{list-style-type:none}ul.lst-kix_list_c-1{list-style-type:none}ul.lst-kix_list_c-0{list-style-type:none}.lst-kix_list_9-4>li:before{content:"\0025a0   "}ul.lst-kix_list_c-6{list-style-type:none}.lst-kix_list_a-0>li:before{content:"\0025cf   "}ul.lst-kix_list_c-5{list-style-type:none}.lst-kix_list_11-3>li:before{content:"\0025a0   "}ul.lst-kix_list_c-4{list-style-type:none}ul.lst-kix_list_c-3{list-style-type:none}ul.lst-kix_list_2-8{list-style-type:none}.lst-kix_list_11-5>li:before{content:"\0025a0   "}ol.lst-kix_list_b-0.start{counter-reset:lst-ctn-kix_list_b-0 0}ol.lst-kix_list_6-1.start{counter-reset:lst-ctn-kix_list_6-1 0}ul.lst-kix_list_2-2{list-style-type:none}ul.lst-kix_list_2-3{list-style-type:none}ul.lst-kix_list_2-0{list-style-type:none}ul.lst-kix_list_2-1{list-style-type:none}.lst-kix_list_9-8>li:before{content:"\0025a0   "}ul.lst-kix_list_2-6{list-style-type:none}.lst-kix_list_1-1>li:before{content:"\0025cb   "}ul.lst-kix_list_2-7{list-style-type:none}.lst-kix_list_11-7>li:before{content:"\0025a0   "}ul.lst-kix_list_2-4{list-style-type:none}ul.lst-kix_list_2-5{list-style-type:none}.lst-kix_list_b-0>li{counter-increment:lst-ctn-kix_list_b-0}ul.lst-kix_list_10-0{list-style-type:none}.lst-kix_list_1-3>li:before{content:"\0025a0   "}ul.lst-kix_list_10-8{list-style-type:none}ul.lst-kix_list_10-7{list-style-type:none}.lst-kix_list_1-7>li:before{content:"\0025a0   "}ul.lst-kix_list_10-6{list-style-type:none}ul.lst-kix_list_10-5{list-style-type:none}ul.lst-kix_list_10-4{list-style-type:none}ul.lst-kix_list_10-3{list-style-type:none}.lst-kix_list_1-5>li:before{content:"\0025a0   "}ul.lst-kix_list_10-2{list-style-type:none}ul.lst-kix_list_10-1{list-style-type:none}.lst-kix_list_2-1>li:before{content:"\0025cb   "}.lst-kix_list_2-3>li:before{content:"\0025a0   "}ul.lst-kix_list_f-7{list-style-type:none}ul.lst-kix_list_f-6{list-style-type:none}ul.lst-kix_list_f-5{list-style-type:none}.lst-kix_list_5-1>li{counter-increment:lst-ctn-kix_list_5-1}ul.lst-kix_list_f-4{list-style-type:none}ul.lst-kix_list_f-8{list-style-type:none}ul.lst-kix_list_f-3{list-style-type:none}.lst-kix_list_3-0>li:before{content:"\0025cf   "}ul.lst-kix_list_f-2{list-style-type:none}ul.lst-kix_list_f-1{list-style-type:none}ul.lst-kix_list_f-0{list-style-type:none}ul.lst-kix_list_5-7{list-style-type:none}ul.lst-kix_list_5-8{list-style-type:none}.lst-kix_list_3-1>li:before{content:"\0025cb   "}.lst-kix_list_3-2>li:before{content:"\0025a0   "}ul.lst-kix_list_5-5{list-style-type:none}ol.lst-kix_list_11-0{list-style-type:none}ul.lst-kix_list_5-6{list-style-type:none}.lst-kix_list_8-1>li:before{content:"\0025cb   "}.lst-kix_list_8-2>li:before{content:"\0025a0   "}.lst-kix_list_3-5>li:before{content:"\0025a0   "}ul.lst-kix_list_5-0{list-style-type:none}.lst-kix_list_3-4>li:before{content:"\0025a0   "}ul.lst-kix_list_5-3{list-style-type:none}.lst-kix_list_3-3>li:before{content:"\0025a0   "}ul.lst-kix_list_5-4{list-style-type:none}.lst-kix_list_8-0>li:before{content:"\0025cf   "}ul.lst-kix_list_5-2{list-style-type:none}.lst-kix_list_8-7>li:before{content:"\0025a0   "}.lst-kix_list_3-8>li:before{content:"\0025a0   "}.lst-kix_list_f-6>li:before{content:"\0025a0   "}.lst-kix_list_f-8>li:before{content:"\0025a0   "}.lst-kix_list_8-5>li:before{content:"\0025a0   "}.lst-kix_list_a-7>li:before{content:"\0025a0   "}.lst-kix_list_8-6>li:before{content:"\0025a0   "}.lst-kix_list_f-7>li:before{content:"\0025a0   "}.lst-kix_list_8-3>li:before{content:"\0025a0   "}.lst-kix_list_3-6>li:before{content:"\0025a0   "}.lst-kix_list_f-4>li:before{content:"\0025a0   "}.lst-kix_list_3-7>li:before{content:"\0025a0   "}.lst-kix_list_a-8>li:before{content:"\0025a0   "}.lst-kix_list_8-4>li:before{content:"\0025a0   "}.lst-kix_list_f-5>li:before{content:"\0025a0   "}.lst-kix_list_11-2>li:before{content:"\0025a0   "}.lst-kix_list_a-1>li:before{content:"\0025cb   "}.lst-kix_list_a-2>li:before{content:"\0025a0   "}.lst-kix_list_f-0>li:before{content:"\0025cf   "}.lst-kix_list_a-3>li:before{content:"\0025a0   "}.lst-kix_list_11-1>li:before{content:"\0025cb   "}.lst-kix_list_f-3>li:before{content:"\0025a0   "}.lst-kix_list_a-5>li:before{content:"\0025a0   "}.lst-kix_list_a-6>li:before{content:"\0025a0   "}.lst-kix_list_f-2>li:before{content:"\0025a0   "}.lst-kix_list_11-0>li:before{content:"" counter(lst-ctn-kix_list_11-0,decimal) ". "}.lst-kix_list_a-4>li:before{content:"\0025a0   "}.lst-kix_list_8-8>li:before{content:"\0025a0   "}.lst-kix_list_f-1>li:before{content:"\0025cb   "}.lst-kix_list_e-5>li:before{content:"\0025a0   "}ul.lst-kix_list_e-8{list-style-type:none}ul.lst-kix_list_e-7{list-style-type:none}ul.lst-kix_list_e-6{list-style-type:none}ul.lst-kix_list_e-5{list-style-type:none}.lst-kix_list_e-3>li:before{content:"\0025a0   "}.lst-kix_list_e-7>li:before{content:"\0025a0   "}.lst-kix_list_e-2>li:before{content:"\0025a0   "}.lst-kix_list_e-6>li:before{content:"\0025a0   "}.lst-kix_list_4-8>li:before{content:"\0025a0   "}ul.lst-kix_list_e-0{list-style-type:none}.lst-kix_list_4-7>li:before{content:"\0025a0   "}ul.lst-kix_list_e-4{list-style-type:none}ul.lst-kix_list_e-3{list-style-type:none}ul.lst-kix_list_e-2{list-style-type:none}.lst-kix_list_e-4>li:before{content:"\0025a0   "}ul.lst-kix_list_e-1{list-style-type:none}ul.lst-kix_list_4-8{list-style-type:none}ul.lst-kix_list_4-6{list-style-type:none}ul.lst-kix_list_4-7{list-style-type:none}ul.lst-kix_list_4-0{list-style-type:none}.lst-kix_list_e-1>li:before{content:"\0025cb   "}ul.lst-kix_list_4-1{list-style-type:none}ul.lst-kix_list_4-4{list-style-type:none}ul.lst-kix_list_4-5{list-style-type:none}ul.lst-kix_list_4-2{list-style-type:none}.lst-kix_list_e-0>li:before{content:"\0025cf   "}ul.lst-kix_list_4-3{list-style-type:none}ol.lst-kix_list_11-0.start{counter-reset:lst-ctn-kix_list_11-0 0}.lst-kix_list_7-0>li:before{content:"\0025cf   "}.lst-kix_list_2-6>li:before{content:"\0025a0   "}ol.lst-kix_list_5-1{list-style-type:none}.lst-kix_list_2-4>li:before{content:"\0025a0   "}.lst-kix_list_2-8>li:before{content:"\0025a0   "}.lst-kix_list_7-1>li:before{content:"\0025cb   "}.lst-kix_list_7-5>li:before{content:"\0025a0   "}.lst-kix_list_7-3>li:before{content:"\0025a0   "}ul.lst-kix_list_7-5{list-style-type:none}.lst-kix_list_10-0>li:before{content:"\0025cf   "}ul.lst-kix_list_7-6{list-style-type:none}.lst-kix_list_b-5>li:before{content:"\0025a0   "}ul.lst-kix_list_7-3{list-style-type:none}ul.lst-kix_list_7-4{list-style-type:none}ol.lst-kix_list_5-1.start{counter-reset:lst-ctn-kix_list_5-1 0}.lst-kix_list_b-3>li:before{content:"\0025a0   "}.lst-kix_list_b-7>li:before{content:"\0025a0   "}ul.lst-kix_list_7-7{list-style-type:none}ul.lst-kix_list_7-8{list-style-type:none}ul.lst-kix_list_7-1{list-style-type:none}ul.lst-kix_list_7-2{list-style-type:none}ul.lst-kix_list_7-0{list-style-type:none}.lst-kix_list_7-7>li:before{content:"\0025a0   "}.lst-kix_list_10-4>li:before{content:"\0025a0   "}.lst-kix_list_10-8>li:before{content:"\0025a0   "}.lst-kix_list_4-0>li:before{content:"\0025cf   "}.lst-kix_list_b-1>li:before{content:"\0025cb   "}.lst-kix_list_10-2>li:before{content:"\0025a0   "}.lst-kix_list_4-4>li:before{content:"\0025a0   "}.lst-kix_list_4-2>li:before{content:"\0025a0   "}.lst-kix_list_4-6>li:before{content:"\0025a0   "}.lst-kix_list_9-3>li:before{content:"\0025a0   "}.lst-kix_list_10-6>li:before{content:"\0025a0   "}.lst-kix_list_9-1>li:before{content:"\0025cb   "}.lst-kix_list_e-8>li:before{content:"\0025a0   "}.lst-kix_list_9-7>li:before{content:"\0025a0   "}.lst-kix_list_11-4>li:before{content:"\0025a0   "}.lst-kix_list_9-5>li:before{content:"\0025a0   "}ul.lst-kix_list_6-6{list-style-type:none}ul.lst-kix_list_6-7{list-style-type:none}ul.lst-kix_list_6-4{list-style-type:none}ul.lst-kix_list_6-5{list-style-type:none}ul.lst-kix_list_6-8{list-style-type:none}.lst-kix_list_11-6>li:before{content:"\0025a0   "}.lst-kix_list_1-0>li:before{content:"\0025cf   "}ul.lst-kix_list_6-2{list-style-type:none}.lst-kix_list_11-8>li:before{content:"\0025a0   "}ul.lst-kix_list_6-3{list-style-type:none}.lst-kix_list_1-2>li:before{content:"\0025a0   "}ul.lst-kix_list_6-0{list-style-type:none}.lst-kix_list_1-4>li:before{content:"\0025a0   "}.lst-kix_list_1-6>li:before{content:"\0025a0   "}li.li-bullet-0:before{margin-left:-18pt;white-space:nowrap;display:inline-block;min-width:18pt}.lst-kix_list_2-0>li:before{content:"\0025cf   "}.lst-kix_list_1-8>li:before{content:"\0025a0   "}.lst-kix_list_2-2>li:before{content:"\0025a0   "}ol{margin:0;padding:0}table td,table th{padding:0}.c20{border-right-style:solid;padding:6pt 9pt 6pt 9pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#f8fafd;border-left-style:solid;border-bottom-width:1pt;width:117pt;border-top-color:#000000;border-bottom-style:solid}.c21{color:#444746;font-weight:400;text-decoration:none;vertical-align:super;font-size:12pt;font-family:"Google Sans Text";font-style:normal}.c11{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Google Sans Text";font-style:normal}.c1{color:#1f1f1f;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Google Sans Text";font-style:normal}.c7{-webkit-text-decoration-skip:none;color:#0000ee;font-weight:400;text-decoration:underline;text-decoration-skip-ink:none;font-size:12pt;font-family:"Google Sans"}.c5{margin-left:44.2pt;padding-top:6pt;padding-bottom:6pt;line-height:1.149999976158142;padding-left:0pt;text-align:left}.c4{margin-left:23.2pt;padding-top:0pt;padding-bottom:6pt;line-height:1.149999976158142;padding-left:0pt;text-align:left}.c24{margin-left:30pt;padding-top:0pt;padding-bottom:0pt;line-height:1.0;padding-left:0pt;text-align:left}.c16{color:#1f1f1f;font-weight:700;text-decoration:none;font-size:14pt;font-family:"Google Sans"}.c22{vertical-align:super;font-size:12pt;font-family:"Google Sans Text";color:#444746;font-weight:400}.c34{color:#1f1f1f;font-weight:700;text-decoration:none;font-size:24pt;font-family:"Google Sans"}.c36{color:#1f1f1f;font-weight:700;text-decoration:none;font-size:18pt;font-family:"Google Sans"}.c33{padding-top:0pt;padding-bottom:0pt;line-height:1.0;text-align:left;height:11pt}.c41{padding-top:24pt;padding-bottom:6pt;line-height:1.149999976158142;text-align:left}.c18{padding-top:0pt;padding-bottom:6pt;line-height:1.149999976158142;text-align:left}.c19{padding-top:12.8pt;padding-bottom:12.8pt;line-height:1.0;text-align:left}.c3{font-family:"Google Sans Text";font-style:italic;color:#1f1f1f;font-weight:400}.c30{padding-top:12pt;padding-bottom:0pt;line-height:1.149999976158142;text-align:left}.c15{padding-top:12pt;padding-bottom:6pt;line-height:1.149999976158142;text-align:left}.c29{border-spacing:0;border-collapse:collapse;margin-right:auto}.c39{padding-top:0pt;padding-bottom:0pt;line-height:1.0;text-align:left}.c10{padding-top:0pt;padding-bottom:0pt;line-height:1.149999976158142;text-align:left}.c40{-webkit-text-decoration-skip:none;color:#1155cc;text-decoration:underline;text-decoration-skip-ink:none}.c6{padding-top:6pt;padding-bottom:6pt;line-height:1.149999976158142;text-align:left}.c0{padding-top:0pt;padding-bottom:12pt;line-height:1.149999976158142;text-align:left}.c13{font-size:12pt;font-weight:400;font-family:"Google Sans"}.c31{color:#000000;font-weight:400;font-family:"Arial"}.c17{color:#1f1f1f;font-weight:400;font-family:"Google Sans Text"}.c37{background-color:#ffffff;max-width:468pt;padding:72pt 72pt 72pt 72pt}.c9{color:#1f1f1f;font-weight:700;font-family:"Google Sans Text"}.c38{font-weight:700;font-size:12pt;font-family:"Google Sans"}.c12{text-decoration:none;vertical-align:baseline;font-size:11pt}.c2{padding:0;margin:0}.c28{color:inherit;text-decoration:inherit}.c8{margin-left:23.2pt;padding-left:0pt}.c14{vertical-align:baseline;font-style:normal}.c35{margin-left:43.5pt;padding-left:0pt}.c32{color:#000000;text-decoration:none}.c27{margin-left:44.2pt;padding-left:0pt}.c26{margin-left:24pt;padding-left:0pt}.c25{height:0pt}.c23{font-style:normal}.title{padding-top:24pt;color:#000000;font-weight:700;font-size:36pt;padding-bottom:6pt;font-family:"Arial";line-height:1.0;page-break-after:avoid;text-align:left}.subtitle{padding-top:18pt;color:#666666;font-size:24pt;padding-bottom:4pt;font-family:"Georgia";line-height:1.0;page-break-after:avoid;font-style:italic;text-align:left}li{color:#000000;font-size:11pt;font-family:"Arial"}p{margin:0;color:#000000;font-size:11pt;font-family:"Arial"}h1{padding-top:12pt;color:#000000;font-weight:700;font-size:24pt;padding-bottom:12pt;font-family:"Arial";line-height:1.0;text-align:left}h2{padding-top:11.2pt;color:#000000;font-weight:700;font-size:18pt;padding-bottom:11.2pt;font-family:"Arial";line-height:1.0;text-align:left}h3{padding-top:12pt;color:#000000;font-weight:700;font-size:14pt;padding-bottom:12pt;font-family:"Arial";line-height:1.0;text-align:left}h4{padding-top:12.8pt;color:#000000;font-weight:700;font-size:12pt;padding-bottom:12.8pt;font-family:"Arial";line-height:1.0;text-align:left}h5{padding-top:12.8pt;color:#000000;font-weight:700;font-size:9pt;padding-bottom:12.8pt;font-family:"Arial";line-height:1.0;text-align:left}h6{padding-top:18pt;color:#000000;font-weight:700;font-size:8pt;padding-bottom:18pt;font-family:"Arial";line-height:1.0;text-align:left}</style>
+<style type="text/css">@import url(https://themes.googleusercontent.com/fonts/css?kit=DFQxm4rd7fRHgM9OTejWVT5Vho6BE7M80rHXEVKqXWegg2XYR88pwOsaJkfiF7cJu5e0vFtnyLdhsxviZUUN-U0KZVwUvSK-LyXz4qcE1hc);ol.lst-kix_list_7-0{list-style-type:none}ul.lst-kix_list_1-0{list-style-type:none}.lst-kix_list_3-0>li:before{content:"\0025cf   "}ul.lst-kix_list_5-7{list-style-type:none}ul.lst-kix_list_9-3{list-style-type:none}ul.lst-kix_list_5-8{list-style-type:none}ul.lst-kix_list_9-4{list-style-type:none}.lst-kix_list_3-1>li:before{content:"\0025cb   "}.lst-kix_list_3-2>li:before{content:"\0025a0   "}ul.lst-kix_list_5-5{list-style-type:none}ul.lst-kix_list_9-1{list-style-type:none}ul.lst-kix_list_5-6{list-style-type:none}ul.lst-kix_list_9-2{list-style-type:none}.lst-kix_list_8-1>li:before{content:"\0025cb   "}ul.lst-kix_list_9-7{list-style-type:none}ul.lst-kix_list_9-8{list-style-type:none}.lst-kix_list_8-2>li:before{content:"\0025a0   "}ul.lst-kix_list_9-5{list-style-type:none}.lst-kix_list_5-0>li{counter-increment:lst-ctn-kix_list_5-0}.lst-kix_list_7-0>li{counter-increment:lst-ctn-kix_list_7-0}ul.lst-kix_list_9-6{list-style-type:none}ul.lst-kix_list_1-3{list-style-type:none}.lst-kix_list_3-5>li:before{content:"\0025a0   "}ul.lst-kix_list_1-4{list-style-type:none}ul.lst-kix_list_1-1{list-style-type:none}.lst-kix_list_3-4>li:before{content:"\0025a0   "}ul.lst-kix_list_1-2{list-style-type:none}ul.lst-kix_list_5-3{list-style-type:none}ul.lst-kix_list_1-7{list-style-type:none}.lst-kix_list_3-3>li:before{content:"\0025a0   "}ul.lst-kix_list_5-4{list-style-type:none}ul.lst-kix_list_9-0{list-style-type:none}ul.lst-kix_list_1-8{list-style-type:none}ul.lst-kix_list_5-1{list-style-type:none}.lst-kix_list_8-0>li:before{content:"\0025cf   "}ul.lst-kix_list_1-5{list-style-type:none}ul.lst-kix_list_5-2{list-style-type:none}ul.lst-kix_list_1-6{list-style-type:none}.lst-kix_list_8-7>li:before{content:"\0025a0   "}.lst-kix_list_3-8>li:before{content:"\0025a0   "}.lst-kix_list_8-5>li:before{content:"\0025a0   "}.lst-kix_list_a-7>li:before{content:"\0025a0   "}.lst-kix_list_8-6>li:before{content:"\0025a0   "}.lst-kix_list_8-3>li:before{content:"\0025a0   "}.lst-kix_list_3-6>li:before{content:"\0025a0   "}.lst-kix_list_3-7>li:before{content:"\0025a0   "}.lst-kix_list_a-8>li:before{content:"\0025a0   "}.lst-kix_list_8-4>li:before{content:"\0025a0   "}ol.lst-kix_list_5-0.start{counter-reset:lst-ctn-kix_list_5-0 0}.lst-kix_list_a-1>li:before{content:"\0025cb   "}.lst-kix_list_a-2>li:before{content:"\0025a0   "}.lst-kix_list_a-3>li:before{content:"\0025a0   "}.lst-kix_list_a-5>li:before{content:"\0025a0   "}.lst-kix_list_a-6>li:before{content:"\0025a0   "}.lst-kix_list_a-4>li:before{content:"\0025a0   "}.lst-kix_list_8-8>li:before{content:"\0025a0   "}.lst-kix_list_5-0>li:before{content:"" counter(lst-ctn-kix_list_5-0,decimal) ". "}.lst-kix_list_4-8>li:before{content:"\0025a0   "}.lst-kix_list_5-3>li:before{content:"\0025a0   "}ul.lst-kix_list_a-4{list-style-type:none}ul.lst-kix_list_a-3{list-style-type:none}.lst-kix_list_4-7>li:before{content:"\0025a0   "}.lst-kix_list_5-2>li:before{content:"\0025a0   "}ul.lst-kix_list_a-2{list-style-type:none}ul.lst-kix_list_a-1{list-style-type:none}.lst-kix_list_5-1>li:before{content:"\0025cb   "}ul.lst-kix_list_a-8{list-style-type:none}ul.lst-kix_list_a-7{list-style-type:none}ul.lst-kix_list_a-6{list-style-type:none}ul.lst-kix_list_a-5{list-style-type:none}ul.lst-kix_list_4-8{list-style-type:none}.lst-kix_list_5-7>li:before{content:"\0025a0   "}ul.lst-kix_list_8-4{list-style-type:none}ul.lst-kix_list_8-5{list-style-type:none}ul.lst-kix_list_4-6{list-style-type:none}.lst-kix_list_5-6>li:before{content:"\0025a0   "}.lst-kix_list_5-8>li:before{content:"\0025a0   "}ul.lst-kix_list_8-2{list-style-type:none}ul.lst-kix_list_4-7{list-style-type:none}ul.lst-kix_list_8-3{list-style-type:none}ul.lst-kix_list_8-8{list-style-type:none}ul.lst-kix_list_8-6{list-style-type:none}ul.lst-kix_list_8-7{list-style-type:none}ul.lst-kix_list_4-0{list-style-type:none}ul.lst-kix_list_4-1{list-style-type:none}.lst-kix_list_5-4>li:before{content:"\0025a0   "}ul.lst-kix_list_4-4{list-style-type:none}.lst-kix_list_5-5>li:before{content:"\0025a0   "}ul.lst-kix_list_8-0{list-style-type:none}ul.lst-kix_list_4-5{list-style-type:none}ul.lst-kix_list_8-1{list-style-type:none}ul.lst-kix_list_4-2{list-style-type:none}ul.lst-kix_list_4-3{list-style-type:none}.lst-kix_list_6-1>li:before{content:"\0025cb   "}.lst-kix_list_6-3>li:before{content:"\0025a0   "}.lst-kix_list_6-0>li:before{content:"\0025cf   "}.lst-kix_list_6-4>li:before{content:"\0025a0   "}.lst-kix_list_6-2>li:before{content:"\0025a0   "}.lst-kix_list_6-8>li:before{content:"\0025a0   "}.lst-kix_list_6-5>li:before{content:"\0025a0   "}.lst-kix_list_6-7>li:before{content:"\0025a0   "}.lst-kix_list_7-0>li:before{content:"" counter(lst-ctn-kix_list_7-0,decimal) ". "}.lst-kix_list_6-6>li:before{content:"\0025a0   "}ol.lst-kix_list_5-0{list-style-type:none}.lst-kix_list_2-6>li:before{content:"\0025a0   "}.lst-kix_list_2-7>li:before{content:"\0025a0   "}.lst-kix_list_7-4>li:before{content:"\0025a0   "}.lst-kix_list_7-6>li:before{content:"\0025a0   "}.lst-kix_list_2-4>li:before{content:"\0025a0   "}.lst-kix_list_2-5>li:before{content:"\0025a0   "}.lst-kix_list_2-8>li:before{content:"\0025a0   "}.lst-kix_list_7-1>li:before{content:"\0025cb   "}.lst-kix_list_7-5>li:before{content:"\0025a0   "}.lst-kix_list_7-2>li:before{content:"\0025a0   "}.lst-kix_list_7-3>li:before{content:"\0025a0   "}ul.lst-kix_list_7-5{list-style-type:none}ul.lst-kix_list_7-6{list-style-type:none}ul.lst-kix_list_7-3{list-style-type:none}ul.lst-kix_list_3-7{list-style-type:none}ul.lst-kix_list_7-4{list-style-type:none}ul.lst-kix_list_3-8{list-style-type:none}ul.lst-kix_list_7-7{list-style-type:none}ul.lst-kix_list_7-8{list-style-type:none}ul.lst-kix_list_3-1{list-style-type:none}ul.lst-kix_list_3-2{list-style-type:none}ol.lst-kix_list_a-0.start{counter-reset:lst-ctn-kix_list_a-0 0}.lst-kix_list_7-8>li:before{content:"\0025a0   "}ul.lst-kix_list_3-0{list-style-type:none}ul.lst-kix_list_7-1{list-style-type:none}ul.lst-kix_list_3-5{list-style-type:none}ul.lst-kix_list_7-2{list-style-type:none}ul.lst-kix_list_3-6{list-style-type:none}ul.lst-kix_list_3-3{list-style-type:none}.lst-kix_list_7-7>li:before{content:"\0025a0   "}ul.lst-kix_list_3-4{list-style-type:none}.lst-kix_list_4-0>li:before{content:"\0025cf   "}.lst-kix_list_4-1>li:before{content:"\0025cb   "}.lst-kix_list_4-4>li:before{content:"\0025a0   "}.lst-kix_list_9-2>li:before{content:"\0025a0   "}.lst-kix_list_4-3>li:before{content:"\0025a0   "}.lst-kix_list_4-5>li:before{content:"\0025a0   "}.lst-kix_list_4-2>li:before{content:"\0025a0   "}.lst-kix_list_4-6>li:before{content:"\0025a0   "}.lst-kix_list_9-3>li:before{content:"\0025a0   "}ol.lst-kix_list_7-0.start{counter-reset:lst-ctn-kix_list_7-0 0}.lst-kix_list_9-0>li:before{content:"\0025cf   "}.lst-kix_list_9-1>li:before{content:"\0025cb   "}.lst-kix_list_9-7>li:before{content:"\0025a0   "}.lst-kix_list_9-6>li:before{content:"\0025a0   "}.lst-kix_list_9-4>li:before{content:"\0025a0   "}.lst-kix_list_a-0>li:before{content:"" counter(lst-ctn-kix_list_a-0,decimal) ". "}.lst-kix_list_9-5>li:before{content:"\0025a0   "}ul.lst-kix_list_6-6{list-style-type:none}ul.lst-kix_list_6-7{list-style-type:none}ul.lst-kix_list_6-4{list-style-type:none}ul.lst-kix_list_2-8{list-style-type:none}ul.lst-kix_list_6-5{list-style-type:none}ul.lst-kix_list_6-8{list-style-type:none}ul.lst-kix_list_2-2{list-style-type:none}.lst-kix_list_1-0>li:before{content:"\0025cf   "}ul.lst-kix_list_2-3{list-style-type:none}ul.lst-kix_list_2-0{list-style-type:none}ul.lst-kix_list_2-1{list-style-type:none}ul.lst-kix_list_6-2{list-style-type:none}.lst-kix_list_9-8>li:before{content:"\0025a0   "}ul.lst-kix_list_2-6{list-style-type:none}.lst-kix_list_a-0>li{counter-increment:lst-ctn-kix_list_a-0}ul.lst-kix_list_6-3{list-style-type:none}.lst-kix_list_1-1>li:before{content:"\0025cb   "}.lst-kix_list_1-2>li:before{content:"\0025a0   "}ul.lst-kix_list_2-7{list-style-type:none}ul.lst-kix_list_6-0{list-style-type:none}ul.lst-kix_list_2-4{list-style-type:none}ul.lst-kix_list_6-1{list-style-type:none}ul.lst-kix_list_2-5{list-style-type:none}.lst-kix_list_1-3>li:before{content:"\0025a0   "}.lst-kix_list_1-4>li:before{content:"\0025a0   "}.lst-kix_list_1-7>li:before{content:"\0025a0   "}.lst-kix_list_1-5>li:before{content:"\0025a0   "}.lst-kix_list_1-6>li:before{content:"\0025a0   "}li.li-bullet-0:before{margin-left:-18pt;white-space:nowrap;display:inline-block;min-width:18pt}.lst-kix_list_2-0>li:before{content:"\0025cf   "}.lst-kix_list_2-1>li:before{content:"\0025cb   "}ol.lst-kix_list_a-0{list-style-type:none}.lst-kix_list_1-8>li:before{content:"\0025a0   "}.lst-kix_list_2-2>li:before{content:"\0025a0   "}.lst-kix_list_2-3>li:before{content:"\0025a0   "}ol{margin:0;padding:0}table td,table th{padding:0}.c14{border-right-style:solid;padding:6pt 9pt 6pt 9pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#f8fafd;border-left-style:solid;border-bottom-width:1pt;width:234pt;border-top-color:#000000;border-bottom-style:solid}.c0{color:#1f1f1f;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Google Sans Text";font-style:normal}.c28{color:#1f1f1f;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:24pt;font-family:"Google Sans";font-style:normal}.c13{-webkit-text-decoration-skip:none;color:#1155cc;font-weight:400;text-decoration:underline;text-decoration-skip-ink:none;font-size:12pt;font-family:"Google Sans"}.c15{color:#1f1f1f;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:18pt;font-family:"Google Sans";font-style:normal}.c2{color:#444746;font-weight:400;text-decoration:none;vertical-align:super;font-size:12pt;font-family:"Google Sans Text";font-style:normal}.c4{color:#1f1f1f;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:"Google Sans";font-style:normal}.c29{color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:12pt;font-family:"Google Sans";font-style:normal}.c8{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:12pt;font-family:"Google Sans";font-style:normal}.c20{margin-left:30pt;padding-top:0pt;padding-bottom:0pt;line-height:1.0;padding-left:0pt;text-align:left}.c7{vertical-align:super;font-size:12pt;font-family:"Google Sans Text";color:#444746;font-weight:400}.c10{padding-top:0pt;padding-bottom:0pt;line-height:1.0;text-align:left;height:11pt}.c18{padding-top:12pt;padding-bottom:12pt;line-height:1.149999976158142;text-align:left}.c27{padding-top:6pt;padding-bottom:12.8pt;line-height:1.149999976158142;text-align:left}.c30{padding-top:0pt;padding-bottom:12.8pt;line-height:1.0;text-align:left}.c1{padding-top:12pt;padding-bottom:6pt;line-height:1.149999976158142;text-align:left}.c12{padding-top:0pt;padding-bottom:6pt;line-height:1.149999976158142;text-align:left}.c3{padding-top:6pt;padding-bottom:6pt;line-height:1.149999976158142;text-align:left}.c9{text-decoration:none;vertical-align:baseline;font-size:11pt;font-style:normal}.c23{padding-top:0pt;padding-bottom:0pt;line-height:1.0;text-align:left}.c5{padding-top:0pt;padding-bottom:12pt;line-height:1.149999976158142;text-align:left}.c25{padding-top:0pt;padding-bottom:0pt;line-height:1.149999976158142;text-align:left}.c31{border-spacing:0;border-collapse:collapse;margin-right:auto}.c21{background-color:#ffffff;max-width:468pt;padding:72pt 72pt 72pt 72pt}.c24{font-size:12pt;font-weight:400;font-family:"Google Sans"}.c11{color:#1f1f1f;font-weight:700;font-family:"Google Sans Text"}.c6{color:#1f1f1f;font-weight:400;font-family:"Google Sans Text"}.c16{margin-left:24pt;padding-left:0pt}.c22{padding:0;margin:0}.c26{color:inherit;text-decoration:inherit}.c17{margin-left:23.2pt;padding-left:0pt}.c19{height:0pt}.c32{height:11pt}.title{padding-top:24pt;color:#000000;font-weight:700;font-size:36pt;padding-bottom:6pt;font-family:"Arial";line-height:1.0;page-break-after:avoid;text-align:left}.subtitle{padding-top:18pt;color:#666666;font-size:24pt;padding-bottom:4pt;font-family:"Georgia";line-height:1.0;page-break-after:avoid;font-style:italic;text-align:left}li{color:#000000;font-size:11pt;font-family:"Arial"}p{margin:0;color:#000000;font-size:11pt;font-family:"Arial"}h1{padding-top:12pt;color:#000000;font-weight:700;font-size:24pt;padding-bottom:12pt;font-family:"Arial";line-height:1.0;text-align:left}h2{padding-top:11.2pt;color:#000000;font-weight:700;font-size:18pt;padding-bottom:11.2pt;font-family:"Arial";line-height:1.0;text-align:left}h3{padding-top:12pt;color:#000000;font-weight:700;font-size:14pt;padding-bottom:12pt;font-family:"Arial";line-height:1.0;text-align:left}h4{padding-top:12.8pt;color:#000000;font-weight:700;font-size:12pt;padding-bottom:12.8pt;font-family:"Arial";line-height:1.0;text-align:left}h5{padding-top:12.8pt;color:#000000;font-weight:700;font-size:9pt;padding-bottom:12.8pt;font-family:"Arial";line-height:1.0;text-align:left}h6{padding-top:18pt;color:#000000;font-weight:700;font-size:8pt;padding-bottom:18pt;font-family:"Arial";line-height:1.0;text-align:left}</style>
 </head>
-<body class="c37 doc-content">
-<h1 class="c18">
-<span class="c14 c34">Book review by Gemini AI</span>
+<body class="c21 doc-content">
+<h1 class="c12">
+<span class="c28">U&#269;ebnice jazyka Java a tvorba webov&yacute;ch aplikac&iacute; pro samouky: Expertn&iacute; anal&yacute;za 3. vyd&aacute;n&iacute;</span>
 </h1>
-<p class="c10">
-<span class="c11">Pln&yacute; n&aacute;zev e-booku: U&#269;ebnice jazyka Java na webov&yacute;ch p&#345;&iacute;kladech pro &uacute;pln&eacute; za&#269;&aacute;te&#269;n&iacute;ky</span>
+<p class="c12">
+<span class="c0">Hlavi&#269;ka recenze</span>
 </p>
-<p class="c10">
-<span class="c11">Autor: Pavel Ponec</span>
-</p>
-<p class="c10">
-<span class="c11">&#268;&iacute;slo vyd&aacute;n&iacute;: 3. vyd&aacute;n&iacute; (Vyd&aacute;n&iacute; t&#345;et&iacute;)</span>
-</p>
-<p class="c10">
-<span class="c11">ISBN: 978-80-11-08037-2</span>
-</p>
-<p class="c10">
-<span class="c11">Pl&aacute;novan&eacute; uveden&iacute; na trh: Leden 2026</span>
-</p>
-<p class="c10">
-<span class="c11">Zav&aacute;d&#283;c&iacute; cena: 299 K&#269;</span>
-</p>
-<p class="c10">
-<span class="c11">Verze pam&#283;&#357;ov&eacute;ho modelu: Google Gemini 2.0 (Deep Research Mode)</span>
-</p>
-<p class="c10">
-<span class="c11">Datum a &#269;as vytvo&#345;en&iacute;: 15. ledna 2026, 08:10 SE&#268;</span>
-</p>
-<hr>
-<h2 class="c6">
-<span class="c36 c14">1. &Uacute;vodn&iacute; anal&yacute;za a kontext publikace</span>
+<ul class="c22 lst-kix_list_1-0 start">
+<li class="c12 c17 li-bullet-0">
+<span class="c11">N&aacute;zev e-booku:</span>
+<span class="c6">&nbsp;U&#269;ebnice jazyka Java a tvorba webov&yacute;ch aplikac&iacute; pro samouky </span>
+<span class="c2">1</span>
+</li>
+<li class="c3 c17 li-bullet-0">
+<span class="c11">Autor:</span>
+<span class="c6">&nbsp;Pavel Ponec </span>
+<span class="c2">1</span>
+</li>
+<li class="c3 c17 li-bullet-0">
+<span class="c11">&#268;&iacute;slo vyd&aacute;n&iacute;:</span>
+<span class="c6">&nbsp;3. p&#345;epracovan&eacute; vyd&aacute;n&iacute; </span>
+<span class="c2">1</span>
+</li>
+<li class="c3 c17 li-bullet-0">
+<span class="c11">ISBN:</span>
+<span class="c6">&nbsp;978-80-909828-0-2 </span>
+<span class="c2">1</span>
+</li>
+<li class="c3 c17 li-bullet-0">
+<span class="c11">Verze pam&#283;&#357;ov&eacute;ho modelu:</span>
+<span class="c6 c9">&nbsp;Gemini 1.5 Pro (Deep Research)</span>
+</li>
+<li class="c3 c17 li-bullet-0">
+<span class="c11">Datum a &#269;as vytvo&#345;en&iacute;:</span>
+<span class="c9 c6">&nbsp;24. ledna 2026, 11:19 SE&#268;</span>
+</li>
+</ul>
+<h2 class="c1">
+<span class="c15">&Uacute;vod do kontextu modern&iacute;ho vzd&#283;l&aacute;v&aacute;n&iacute; v programov&aacute;n&iacute;</span>
 </h2>
-<p class="c0">
-<span class="c17">Vstupujeme do roku 2026, kdy technologick&yacute; sektor proch&aacute;z&iacute; dynamick&yacute;mi zm&#283;nami, av&scaron;ak popt&aacute;vka po robustn&iacute;ch, typov&#283; bezpe&#269;n&yacute;ch a &scaron;k&aacute;lovateln&yacute;ch jazyc&iacute;ch z&#367;st&aacute;v&aacute; konstantn&iacute;. Jazyk Java, nyn&iacute; ve sv&eacute; verzi 25 LTS (Long Term Support), si udr&#382;uje dominantn&iacute; postaven&iacute; v podnikov&eacute;m prost&#345;ed&iacute;, co&#382; generuje neust&aacute;lou pot&#345;ebu kvalitn&iacute;ch vzd&#283;l&aacute;vac&iacute;ch materi&aacute;l&#367;. V tomto kontextu p&#345;ich&aacute;z&iacute; na trh t&#345;et&iacute; vyd&aacute;n&iacute; publikace </span>
-<span class="c3">U&#269;ebnice jazyka Java na webov&yacute;ch p&#345;&iacute;kladech pro &uacute;pln&eacute; za&#269;&aacute;te&#269;n&iacute;ky</span>
-<span class="c17">&nbsp;od autora Pavla Ponce.</span>
-<span class="c22">1</span>
-<span class="c1">&nbsp;Tato rozs&aacute;hl&aacute; analytick&aacute; zpr&aacute;va si klade za c&iacute;l poskytnout vy&#269;erp&aacute;vaj&iacute;c&iacute;, objektivn&iacute; a technicky hloubkovou recenzi tohoto d&iacute;la, p&#345;i&#269;em&#382; se zam&#283;&#345;uje nejen na jeho obsah, ale i na didaktick&eacute; metody, technologick&eacute; volby a relevanci pro sou&#269;asn&yacute; trh pr&aacute;ce.</span>
+<p class="c5">
+<span class="c6">Vstup do sv&#283;ta softwarov&eacute;ho in&#382;en&yacute;rstv&iacute; v roce 2026 vy&#382;aduje odli&scaron;n&yacute; pedagogick&yacute; p&#345;&iacute;stup, ne&#382; tomu bylo v uplynul&yacute;ch dek&aacute;d&aacute;ch. Programovac&iacute; jazyk Java, kter&yacute; v roce 1991 za&#269;al jako ambici&oacute;zn&iacute; projekt Jamese Goslinga pod k&#345;&iacute;dly Sun Microsystems, pro&scaron;el fascinuj&iacute;c&iacute; transformac&iacute;.</span>
+<span class="c7">1</span>
+<span class="c6">&nbsp;T&#345;et&iacute; vyd&aacute;n&iacute; u&#269;ebnice Pavla Ponce, pl&aacute;novan&eacute; na leden 2026 s cenovkou 299 K&#269;, p&#345;ich&aacute;z&iacute; na trh v dob&#283;, kdy se ekosyst&eacute;m Javy pln&#283; etabloval v oblasti cloud-native aplikac&iacute; a mikroslu&#382;eb, p&#345;i&#269;em&#382; verze Java 25 LTS (Long Term Support) p&#345;edstavuje aktu&aacute;ln&iacute; vrchol stability a modern&iacute;ch syntaktick&yacute;ch konstrukc&iacute;.</span>
+<span class="c7">1</span>
+<span class="c6">&nbsp;Tato publikace se nesna&#382;&iacute; b&yacute;t pouze such&yacute;m popisem syntaxe, ale komplexn&iacute;m pr&#367;vodcem, kter&yacute; reflektuje pot&#345;eby trhu pr&aacute;ce, kde je Java dlouhodob&#283; jednou z nej&#382;&aacute;dan&#283;j&scaron;&iacute;ch dovednost&iacute;.</span>
+<span class="c2">1</span>
 </p>
-<p class="c0">
-<span class="c17">Anal&yacute;za vych&aacute;z&iacute; z detailn&iacute;ho studia poskytnut&yacute;ch podklad&#367;, kter&eacute; zahrnuj&iacute; &uacute;vodn&iacute; kapitoly, obsah, uk&aacute;zky k&oacute;du a specifick&eacute; technick&eacute; vysv&#283;tlivky. Kniha se prezentuje jako most mezi absolutn&iacute; neznalost&iacute; programov&aacute;n&iacute; a schopnost&iacute; vytv&aacute;&#345;et funk&#269;n&iacute; webov&eacute; aplikace, co&#382; je ambici&oacute;zn&iacute; c&iacute;l, kter&yacute; vy&#382;aduje pe&#269;livou dekonstrukci. Autor, Pavel Ponec, vol&iacute; cestu &quot;otev&#345;enosti&quot; &ndash; kniha vznikla na opera&#269;n&iacute;m syst&eacute;mu Linux s vyu&#382;it&iacute;m open-source n&aacute;stroj&#367;, co&#382; p&#345;edznamen&aacute;v&aacute; jej&iacute; filozofick&eacute; ukotven&iacute;.</span>
-<span class="c21">1</span>
+<p class="c5">
+<span class="c6">Anal&yacute;za didaktick&eacute;ho konceptu Pavla Ponce odhaluje snahu o p&#345;ekon&aacute;n&iacute; propasti mezi akademickou teori&iacute; a pr&#367;myslovou prax&iacute;. Zat&iacute;mco star&scaron;&iacute; u&#269;ebnice &#269;asto kon&#269;ily u konzolov&yacute;ch aplikac&iacute;, kter&eacute; v dne&scaron;n&iacute; dob&#283; postr&aacute;daj&iacute; pro za&#269;&aacute;te&#269;n&iacute;ka vizu&aacute;ln&iacute; motivaci, Ponec stav&iacute; sv&#367;j v&yacute;klad na interaktivn&iacute;ch webov&yacute;ch aplikac&iacute;ch.</span>
+<span class="c7">1</span>
+<span class="c6">&nbsp;Tento p&#345;&iacute;stup je strategicky spr&aacute;vn&yacute;, nebo&#357; webov&eacute; rozhran&iacute; je pro sou&#269;asn&eacute; studenty p&#345;irozen&yacute;m prost&#345;ed&iacute;m, kter&eacute; umo&#382;&#328;uje okam&#382;itou zp&#283;tnou vazbu a simuluje re&aacute;ln&eacute; projekty, se kter&yacute;mi se setkaj&iacute; v profesion&aacute;ln&iacute; kari&eacute;&#345;e.</span>
+<span class="c2">1</span>
 </p>
-<h3 class="c18">
-<span class="c14 c16">1.1 Identifikace artefaktu a publika&#269;n&iacute; detaily</span>
-</h3>
-<p class="c0">
-<span class="c17">Kniha je distribuov&aacute;na jako e-book, co&#382; v roce 2026 p&#345;edstavuje standard pro technickou literaturu, umo&#382;&#328;uj&iacute;c&iacute; snadnou aktualizaci a distribuci zdrojov&yacute;ch k&oacute;d&#367;. Cena 299 K&#269; je nastavena jako zav&aacute;d&#283;c&iacute;, co&#382; ji &#269;in&iacute; vysoce p&#345;&iacute;stupnou pro studenty a samouky. ISBN 978-80-11-08037-2 jednozna&#269;n&#283; identifikuje toto d&iacute;lo v n&aacute;rodn&iacute;m i mezin&aacute;rodn&iacute;m kontextu. Zaj&iacute;mav&yacute;m detailem je p&#345;iznan&aacute; korektura t&#345;et&iacute;ho vyd&aacute;n&iacute; pomoc&iacute; um&#283;l&eacute; inteligence Google Gemini 1.5 Pro, zat&iacute;mco odbornou korekturu druh&eacute;ho vyd&aacute;n&iacute; zaji&scaron;&#357;oval Ing. Ond&#345;ej Guth, Ph.D. z FIT &#268;VUT.</span>
-<span class="c22">1</span>
-<span class="c1">&nbsp;Tato kombinace lidsk&eacute; expert&iacute;zy a AI asistenc&iacute; nazna&#269;uje modern&iacute; p&#345;&iacute;stup k tvorb&#283; obsahu.</span>
-</p>
-<hr>
-<h2 class="c6">
-<span class="c36 c14">2. Verifikace a hloubkov&aacute; anal&yacute;za kl&iacute;&#269;ov&yacute;ch v&yacute;rok&#367;</span>
+<h2 class="c12">
+<span class="c15">Komplexn&iacute; ov&#283;&#345;en&iacute; a korekce faktick&yacute;ch tvrzen&iacute;</span>
 </h2>
-<p class="c0">
-<span class="c1">N&aacute;sleduj&iacute;c&iacute; sekce systematicky rozeb&iacute;r&aacute; v&yacute;roky o knize, ov&#283;&#345;uje jejich pravdivost na z&aacute;klad&#283; textov&yacute;ch d&#367;kaz&#367; a roz&scaron;i&#345;uje je o expertn&iacute; vhled do problematiky.</span>
+<p class="c5">
+<span class="c9 c6">P&#345;edm&#283;tem t&eacute;to anal&yacute;zy je kritick&eacute; zhodnocen&iacute; deseti kl&iacute;&#269;ov&yacute;ch tvrzen&iacute; o obsahu a form&#283; knihy. Tato tvrzen&iacute; jsou konfrontov&aacute;na s faktick&yacute;m obsahem recenzovan&eacute;ho materi&aacute;lu, p&#345;i&#269;em&#382; jsou dopln&#283;na o hloubkov&eacute; vhledy do jejich implementace.</span>
 </p>
-<h3 class="c18">
-<span class="c16 c14">2.1 &Scaron;&iacute;&#345;e z&aacute;b&#283;ru: Od bitov&eacute; reprezentace po asynchronn&iacute; web</span>
+<h3 class="c12">
+<span class="c4">&Scaron;&iacute;&#345;e z&aacute;b&#283;ru: Od element&aacute;rn&iacute;ch bit&#367; k datab&aacute;zov&yacute;m syst&eacute;m&#367;m</span>
 </h3>
-<p class="c0">
-<span class="c9">V&yacute;rok k ov&#283;&#345;en&iacute;:</span>
-<span class="c17">&nbsp;</span>
-<span class="c3 c12">Kniha m&aacute; &scaron;irok&yacute; z&aacute;b&#283;r t&eacute;mat od popisu bit&#367; a&#382; po jednoduchou datab&aacute;zovou aplikaci s webov&yacute;m grafick&yacute;m rozhran&iacute;m s podporou AJAX.</span>
+<p class="c5">
+<span class="c6">V&yacute;rok, &#382;e kniha pokr&yacute;v&aacute; t&eacute;mata od popisu bit&#367; a&#382; po datab&aacute;zov&eacute; aplikace, je zcela pravdiv&yacute; a tvo&#345;&iacute; p&aacute;te&#345; cel&eacute;ho vzd&#283;l&aacute;vac&iacute;ho procesu. Autor za&#269;&iacute;n&aacute; v kapitole 4.1 definic&iacute; dat jako informac&iacute; vhodn&yacute;ch k po&#269;&iacute;ta&#269;ov&eacute;mu zpracov&aacute;n&iacute; a vysv&#283;tluje bit jako nejmen&scaron;&iacute; jednotku, kter&aacute; nab&yacute;v&aacute; stav&#367; </span>
+<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 9.69px; height: 22.28px;">
+<img alt="" src="images/image1.png" style="width: 9.69px; height: 22.28px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
+</span>
+<span class="c6">&nbsp;nebo </span>
+<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 9.69px; height: 22.28px;">
+<img alt="" src="images/image2.png" style="width: 9.69px; height: 22.28px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
+</span>
+<span class="c6">.</span>
+<span class="c7">1</span>
+<span class="c6">&nbsp;Tato abstrakce je d&aacute;le rozv&iacute;jena do konceptu bajtu (byte) a interpretace bin&aacute;rn&iacute;ch &#269;&iacute;sel, co&#382; je nezbytn&yacute; z&aacute;klad pro pochopen&iacute; toho, jak po&#269;&iacute;ta&#269; rozum&iacute; informac&iacute;m v pam&#283;ti.</span>
+<span class="c2">1</span>
 </p>
-<p class="c10">
-<span class="c11">Anal&yacute;za a verifikace:</span>
+<p class="c5">
+<span class="c6">Cesta &#269;ten&aacute;&#345;e pokra&#269;uje p&#345;es algoritmizaci, kterou autor geni&aacute;ln&#283; demonstruje na analogii s kucha&#345;sk&yacute;m receptem pro p&#345;&iacute;pravu m&iacute;chan&yacute;ch vajec, co&#382; sni&#382;uje bari&eacute;ru strachu z pojmu &bdquo;algoritmus&ldquo;.</span>
+<span class="c7">1</span>
+<span class="c6">&nbsp;V&yacute;klad vrchol&iacute; v osm&eacute; kapitole, kter&aacute; se v&#283;nuje rela&#269;n&iacute;m datab&aacute;z&iacute;m, jazyku SQL a praktick&eacute;mu vyhled&aacute;v&aacute;n&iacute; hotel&#367; v datab&aacute;zi H2.</span>
+<span class="c7">1</span>
+<span class="c9 c6">&nbsp;Tento line&aacute;rn&iacute; postup od hardwarov&eacute; abstrakce k vysok&eacute; aplika&#269;n&iacute; logice zaji&scaron;&#357;uje, &#382;e &#269;ten&aacute;&#345; nez&iacute;sk&aacute; pouze schopnost &bdquo;k&oacute;dovat&ldquo;, ale vybuduje si hlubok&eacute; porozum&#283;n&iacute; fungov&aacute;n&iacute; po&#269;&iacute;ta&#269;ov&yacute;ch syst&eacute;m&#367;.</span>
 </p>
-<p class="c10">
-<span class="c11">Tento v&yacute;rok je absolutn&#283; pravdiv&yacute; a p&#345;edstavuje jeden z nejsiln&#283;j&scaron;&iacute;ch didaktick&yacute;ch pil&iacute;&#345;&#367; publikace. Anal&yacute;za obsahu 1 ukazuje, &#382;e autor nerezignoval na vysv&#283;tlen&iacute; n&iacute;zko&uacute;rov&#328;ov&yacute;ch princip&#367; fungov&aacute;n&iacute; po&#269;&iacute;ta&#269;e, a&#269;koliv c&iacute;lem je vysoko&uacute;rov&#328;ov&yacute; jazyk Java.</span>
+<h3 class="c12">
+<span class="c4">Prim&aacute;rn&iacute; c&iacute;le a metodika atraktivn&iacute; v&yacute;uky</span>
+</h3>
+<p class="c5">
+<span class="c6">Tvrzen&iacute; o zam&#283;&#345;en&iacute; na atraktivn&iacute; v&yacute;uku pomoc&iacute; interaktivn&iacute;ch webov&yacute;ch aplikac&iacute; pro samouky je potvrzeno v kapitole 3.1, kde autor vysv&#283;tluje motivaci vzniku knihy. Ponec se z&aacute;m&#283;rn&#283; vyh&yacute;b&aacute; &#269;ernob&iacute;l&yacute;m akademick&yacute;m p&#345;&iacute;klad&#367;m a zastaral&yacute;m knihovn&aacute;m typu Swing.</span>
+<span class="c7">1</span>
+<span class="c6">&nbsp;Nam&iacute;sto toho vyu&#382;&iacute;v&aacute; objektov&yacute; model HTML element&#367;, kter&yacute; mu dovoluje vytv&aacute;&#345;et interaktivn&iacute; p&#345;&iacute;klady p&#345;&iacute;mo v internetov&eacute;m prohl&iacute;&#382;e&#269;i.</span>
+<span class="c2">1</span>
 </p>
-<ul class="c2 lst-kix_list_1-0 start">
-<li class="c4 li-bullet-0">
-<span class="c9">Mikroskopick&aacute; &uacute;rove&#328; (Kapitola 4):</span>
-<span class="c17">&nbsp;V sekci 4.3 </span>
-<span class="c3">Pam&#283;&#357;</span>
-<span class="c17">&nbsp;autor vysv&#283;tluje ukl&aacute;d&aacute;n&iacute; &#269;&iacute;sel, znak&#367; a logick&yacute;ch hodnot na &uacute;rovni bit&#367;. Ilustrace s &quot;kuli&#269;kami&quot; reprezentuj&iacute;c&iacute;mi bity (0/1) a jejich skl&aacute;d&aacute;n&iacute; do bajt&#367; pro vyj&aacute;d&#345;en&iacute; &#269;&iacute;sel (nap&#345;. bin&aacute;rn&iacute; $1000_2$ jako decim&aacute;ln&iacute; 8) poskytuje &#269;ten&aacute;&#345;i nezbytn&yacute; vhled do toho, co se &quot;d&#283;je pod kapotou&quot;. Toto je kritick&eacute; pro pochopen&iacute; datov&yacute;ch typ&#367; v Jav&#283; &ndash; pro&#269; m&aacute; int ur&#269;it&yacute; rozsah a pro&#269; m&#367;&#382;e doj&iacute;t k p&#345;ete&#269;en&iacute; (overflow) p&#345;i nevhodn&eacute;m p&#345;etypov&aacute;n&iacute;, jak je demonstrov&aacute;no v p&#345;&iacute;kladu (byte) 65 vs. ztr&aacute;tov&eacute; p&#345;etypov&aacute;n&iacute;.</span>
-<span class="c21">1</span>
+<p class="c12">
+<span class="c9 c6">Rozsah dopl&#328;kov&yacute;ch technologi&iacute; je v knize skute&#269;n&#283; impozantn&iacute;. &#268;ten&aacute;&#345; se postupn&#283; setk&aacute;v&aacute; s t&#283;mito oblastmi:</span>
+</p>
+<ul class="c22 lst-kix_list_2-0 start">
+<li class="c12 c17 li-bullet-0">
+<span class="c11">Objektov&#283; orientovan&eacute; programov&aacute;n&iacute; (OOP):</span>
+<span class="c6">&nbsp;Zapouzd&#345;en&iacute;, d&#283;di&#269;nost a polymorfismus jsou vysv&#283;tleny na p&#345;&iacute;kladu evidence vozidel.</span>
+<span class="c2">1</span>
 </li>
-<li class="c6 c8 li-bullet-0">
-<span class="c9">Makroskopick&aacute; &uacute;rove&#328; (Kapitoly 7 a 8):</span>
-<span class="c17">&nbsp;Na opa&#269;n&eacute;m konci spektra kniha graduje k tvorb&#283; komplexn&iacute;ch informa&#269;n&iacute;ch syst&eacute;m&#367;. Kapitola 7.6 </span>
-<span class="c3">Interaktivn&iacute; aplikace s AJAX</span>
-<span class="c17">&nbsp;</span>
-<span class="c22">1</span>
-<span class="c17">&nbsp;zav&aacute;d&iacute; koncept asynchronn&iacute;ho JavaScriptu a XML (resp. JSON), co&#382; je standard modern&iacute;ho webu. Vrcholem je pak kapitola 8 </span>
-<span class="c3">&Uacute;vod do datab&aacute;z&iacute; a pr&aacute;ce s daty</span>
-<span class="c1">, kde se &#345;e&scaron;&iacute; perzistence dat, SQL a transakce.</span>
+<li class="c3 c17 li-bullet-0">
+<span class="c11">UML diagramy:</span>
+<span class="c6">&nbsp;Statick&aacute; struktura t&#345;&iacute;d je vizualizov&aacute;na pomoc&iacute; standardizovan&yacute;ch diagram&#367;, co&#382; u&#269;&iacute; &#269;ten&aacute;&#345;e analytick&eacute;mu my&scaron;len&iacute;.</span>
+<span class="c2">1</span>
+</li>
+<li class="c3 c17 li-bullet-0">
+<span class="c11">Regul&aacute;rn&iacute; v&yacute;razy:</span>
+<span class="c6">&nbsp;Jsou prakticky aplikov&aacute;ny ve webov&yacute;ch formul&aacute;&#345;&iacute;ch pro kontrolu e-mail&#367; a telefonn&iacute;ch &#269;&iacute;sel.</span>
+<span class="c2">1</span>
+</li>
+<li class="c3 c17 li-bullet-0">
+<span class="c11">jUnit testy:</span>
+<span class="c6">&nbsp;Uk&aacute;zka v kapitole 7.7.3 u&#269;&iacute; studenty, jak ov&#283;&#345;ovat spr&aacute;vnost algoritmu pomoc&iacute; automatizovan&yacute;ch tvrzen&iacute; (Assertions).</span>
+<span class="c2">1</span>
+</li>
+<li class="c3 c17 li-bullet-0">
+<span class="c11">Git:</span>
+<span class="c6">&nbsp;Kapitola 7.8 uv&aacute;d&iacute; do sv&#283;ta verzov&aacute;n&iacute;, co&#382; je pro pr&aacute;ci v t&yacute;mu nezbytn&aacute; kompetence.</span>
+<span class="c2">1</span>
+</li>
+<li class="c3 c17 li-bullet-0">
+<span class="c11">AJAX:</span>
+<span class="c6">&nbsp;Z&aacute;v&#283;re&#269;n&eacute; kapitoly hry Pi&scaron;kvorky a testov&aacute;n&iacute; regul&aacute;rn&iacute;ch v&yacute;raz&#367; vyu&#382;&iacute;vaj&iacute; asynchronn&iacute; komunikaci pro zrychlen&iacute; odezvy bez nutnosti p&#345;ekreslov&aacute;n&iacute; cel&eacute; str&aacute;nky.</span>
+<span class="c2">1</span>
 </li>
 </ul>
-<p class="c30">
-<span class="c11">Dopln&#283;n&iacute; a korekce:</span>
-</p>
-<p class="c10">
-<span class="c11">A&#269;koliv je z&aacute;b&#283;r &scaron;irok&yacute;, autor udr&#382;uje koherenci t&iacute;m, &#382;e n&iacute;zko&uacute;rov&#328;ov&eacute; koncepty (bity) vyu&#382;&iacute;v&aacute; k vysv&#283;tlen&iacute; chov&aacute;n&iacute; vysoko&uacute;rov&#328;ov&yacute;ch konstrukc&iacute; (primitivn&iacute; typy). Nen&iacute; to samo&uacute;&#269;eln&aacute; teorie, ale pragmatick&yacute; z&aacute;klad. P&#345;echod od bit&#367; k AJAXu nen&iacute; skokov&yacute;, ale vede p&#345;es logickou posloupnost: Prom&#283;nn&aacute; -&gt; Objekt -&gt; T&#345;&iacute;da -&gt; Servlet -&gt; HTML -&gt; AJAX.</span>
-</p>
-<h3 class="c18">
-<span class="c16 c14">2.2 Pedagogick&aacute; strategie: Interaktivita a OOP</span>
+<h3 class="c1">
+<span class="c4">C&iacute;lov&eacute; skupiny a gradace n&aacute;ro&#269;nosti</span>
 </h3>
-<p class="c0">
-<span class="c9">V&yacute;rok k ov&#283;&#345;en&iacute;:</span>
-<span class="c17">&nbsp;</span>
-<span class="c3 c12">Prim&aacute;rn&iacute;m c&iacute;lem je atraktivn&iacute; v&yacute;uka jazyka Java pomoc&iacute; interaktivn&iacute;ch webov&yacute;ch aplikac&iacute;, &#269;ten&aacute;&#345; se v&scaron;ak postupn&#283; seznamuje tak&eacute; s pojmy objektov&eacute;ho programov&aacute;n&iacute;, regul&aacute;rn&iacute;mi v&yacute;razy, UML diagramy, JUnit testy a webov&yacute;mi technologiemi.</span>
+<p class="c5">
+<span class="c6">Anal&yacute;za textu potvrzuje, &#382;e n&aacute;roky na &#269;ten&aacute;&#345;e se zvy&scaron;uj&iacute; plynule, ale ne&uacute;prosn&#283;. Kniha je vhodn&aacute; pro samouky d&iacute;ky srozumiteln&eacute;mu jazyku a absenci slo&#382;it&eacute; teoretick&eacute; informatiky v &uacute;vodn&iacute;ch &#269;&aacute;stech.</span>
+<span class="c7">1</span>
+<span class="c6">&nbsp;Pro studenty st&#345;edn&iacute;ch &scaron;kol a z&aacute;jemce o rekvalifikaci je kl&iacute;&#269;ov&aacute; kapitola o instalaci, kter&aacute; pokr&yacute;v&aacute; nejen Java Development Kit (JDK), ale i Apache Maven a virtualiza&#269;n&iacute; n&aacute;stroje jako Docker.</span>
+<span class="c2">1</span>
 </p>
-<p class="c10">
-<span class="c11">Anal&yacute;za a verifikace:</span>
+<p class="c5">
+<span class="c6">V&yacute;razn&yacute;m prvkem, kter&yacute; oslovuje i pokro&#269;ilej&scaron;&iacute; &#269;ten&aacute;&#345;e a pedagogy, je zapojen&iacute; modern&iacute;ch prvk&#367;, jako jsou hern&iacute; strategie generovan&eacute; um&#283;lou inteligenc&iacute; (kapitola 7.7).</span>
+<span class="c7">1</span>
+<span class="c6">&nbsp;Autor zde u&#269;&iacute; nejen to, jak AI pou&#382;&iacute;t, ale i jak kriticky hodnotit vygenerovan&yacute; k&oacute;d a jak&aacute; jsou autorskopr&aacute;vn&iacute; rizika spojen&aacute; s touto technologi&iacute;.</span>
+<span class="c7">1</span>
+<span class="c9 c6">&nbsp;Tato vrstva z u&#269;ebnice &#269;in&iacute; unik&aacute;tn&iacute; studijn&iacute; materi&aacute;l, kter&yacute; reflektuje stav oboru v roce 2026.</span>
 </p>
-<p class="c10">
-<span class="c11">V&yacute;rok je pravdiv&yacute;. Kniha se vymyk&aacute; standardn&iacute;m u&#269;ebnic&iacute;m, kter&eacute; &#269;asto kon&#269;&iacute; u konzolov&yacute;ch aplikac&iacute; typu &quot;kalkula&#269;ka&quot;.</span>
-</p>
-<ul class="c2 lst-kix_list_2-0 start">
-<li class="c4 li-bullet-0">
-<span class="c9">Web jako motiv&aacute;tor (Kapitola 3.5):</span>
-<span class="c17">&nbsp;Autor explicitn&#283; argumentuje pro webov&eacute; aplikace z d&#367;vodu jejich snadn&eacute; distribuce a vizu&aacute;ln&iacute; atraktivity.</span>
-<span class="c22">1</span>
-<span class="c1">&nbsp;Okam&#382;it&aacute; zp&#283;tn&aacute; vazba v prohl&iacute;&#382;e&#269;i (nap&#345;. vykreslen&iacute; tabulky v kap. 7.3 nebo hry Pi&scaron;kvorky v kap. 7.5.4) je pro za&#269;&aacute;te&#269;n&iacute;ka siln&yacute;m motiva&#269;n&iacute;m prvkem.</span>
-</li>
-<li class="c6 c8 li-bullet-0">
-<span class="c9">Objektov&eacute; programov&aacute;n&iacute; (OOP):</span>
-<span class="c17">&nbsp;OOP nen&iacute; p&#345;edkl&aacute;d&aacute;no jako such&aacute; teorie, ale je demonstrov&aacute;no na modelov&aacute;n&iacute; re&aacute;ln&eacute;ho sv&#283;ta (kap. 4.8). T&#345;&iacute;da Car (Auto) s atributy jako enginePower a metodami setTrunkVolume </span>
-<span class="c22">1</span>
-<span class="c1">&nbsp;slou&#382;&iacute; jako hmatateln&yacute; p&#345;&iacute;klad zapouzd&#345;en&iacute;.</span>
-</li>
-<li class="c6 c8 li-bullet-0">
-<span class="c9">UML Diagramy:</span>
-<span class="c17">&nbsp;Integrace UML je syst&eacute;mov&aacute;. Diagramy t&#345;&iacute;d (nap&#345;. Obr&aacute;zek 6 a 7 v </span>
-<span class="c22">1</span>
-<span class="c1">) vizualizuj&iacute; vztahy (d&#283;di&#269;nost, kompozice) d&#345;&iacute;ve, ne&#382; se p&iacute;&scaron;e k&oacute;d. To u&#269;&iacute; studenty &quot;design first&quot; p&#345;&iacute;stupu.</span>
-</li>
-<li class="c6 c8 li-bullet-0">
-<span class="c9">Regul&aacute;rn&iacute; v&yacute;razy:</span>
-<span class="c17">&nbsp;Jsou zavedeny prakticky v kapitole 7.4.2 </span>
-<span class="c3">Formul&aacute;&#345; s v&iacute;ce vstupn&iacute;mi elementy</span>
-<span class="c17">&nbsp;a d&aacute;le rozv&iacute;jeny v 7.6.2 </span>
-<span class="c3">Testov&aacute;n&iacute; regul&aacute;rn&iacute;ch v&yacute;raz&#367;</span>
-<span class="c17">, kde slou&#382;&iacute; k validaci vstup&#367;.</span>
-<span class="c21">1</span>
-</li>
-<li class="c6 c8 li-bullet-0">
-<span class="c9">JUnit Testy:</span>
-<span class="c17">&nbsp;Zm&iacute;nka v kapitole 7.7.3 </span>
-<span class="c3">Automatizovan&eacute; testy</span>
-<span class="c1">&nbsp;potvrzuje, &#382;e autor vede &#269;ten&aacute;&#345;e k profesion&aacute;ln&iacute;m n&aacute;vyk&#367;m testov&aacute;n&iacute; k&oacute;du, co&#382; je u za&#269;&aacute;te&#269;nick&yacute;ch knih vz&aacute;cn&eacute; plus.</span>
-</li>
-</ul>
-<h3 class="c15">
-<span class="c16 c14">2.3 C&iacute;lov&aacute; skupina: Studenti a rekvalifikanti</span>
+<h3 class="c12">
+<span class="c4">Webov&eacute; principy a Java servlety</span>
 </h3>
-<p class="c0">
-<span class="c9">V&yacute;rok k ov&#283;&#345;en&iacute;:</span>
-<span class="c17">&nbsp;</span>
-<span class="c3 c12">N&aacute;roky na &#269;ten&aacute;&#345;e se postupn&#283; zvy&scaron;uj&iacute;, kniha je vhodn&aacute; nejen pro studenty st&#345;edn&iacute;ch &scaron;kol, ale i pro z&aacute;jemce zva&#382;uj&iacute;c&iacute; rekvalifikaci do sv&#283;ta informa&#269;n&iacute;ch technologi&iacute; a dal&scaron;&iacute; pokro&#269;ilej&scaron;&iacute; &#269;ten&aacute;&#345;e.</span>
+<p class="c5">
+<span class="c6">V&yacute;rok o vysv&#283;tlov&aacute;n&iacute; webov&yacute;ch princip&#367; na Java servletech je fakticky spr&aacute;vn&yacute; a didakticky obhajiteln&yacute;. Autor vyu&#382;&iacute;v&aacute; t&#345;&iacute;du HttpServlet jako fundament&aacute;ln&iacute; k&aacute;men, na kter&eacute;m vysv&#283;tluje mechanismus HTTP dotaz&#367; (request) a odpov&#283;d&iacute; (response).</span>
+<span class="c7">1</span>
+<span class="c6">&nbsp;V diagramu 23 je jasn&#283; zn&aacute;zorn&#283;na hierarchie, kde HelloWorldServlet d&#283;d&iacute; z HttpServlet a vyu&#382;&iacute;v&aacute; rozhran&iacute; HttpServletRequest a HttpServletResponse.</span>
+<span class="c2">1</span>
 </p>
-<p class="c10">
-<span class="c11">Anal&yacute;za a verifikace:</span>
+<p class="c5">
+<span class="c6">Tato volba je pro za&#269;&aacute;te&#269;n&iacute;ka ide&aacute;ln&iacute;, proto&#382;e servlety tvo&#345;&iacute; z&aacute;klad v&#283;t&scaron;iny modern&iacute;ch framework&#367;, jako je Spring Boot. Pochopen&iacute;m toho, jak se z&iacute;sk&aacute; objekt PrintWriter a jak se do n&#283;j zap&iacute;&scaron;e HTML k&oacute;d, z&iacute;sk&aacute; student nadhled, kter&yacute; mu v budoucnu umo&#382;n&iacute; rychleji pochopit i komplexn&#283;j&scaron;&iacute; abstrakce.</span>
+<span class="c2">1</span>
 </p>
-<p class="c10">
-<span class="c11">V&yacute;rok je pravdiv&yacute; a kl&iacute;&#269;ov&yacute; pro pochopen&iacute; tr&#382;n&iacute;ho um&iacute;st&#283;n&iacute; knihy.</span>
-</p>
-<ul class="c2 lst-kix_list_3-0 start">
-<li class="c4 li-bullet-0">
-<span class="c9">Rekvalifikace:</span>
-<span class="c17">&nbsp;Text je koncipov&aacute;n tak, aby nevy&#382;adoval p&#345;edchoz&iacute; znalosti IT. Reklamn&iacute; sd&#283;len&iacute; FIT &#268;VUT na stran&#283; 4 (&quot;NEPOT&#344;EBUJE&Scaron; P&#344;EDCHOZ&Iacute; ZNALOST IT. V&Scaron;E T&#282; NAU&#268;&Iacute;ME&quot;) </span>
-<span class="c22">1</span>
-<span class="c17">&nbsp;rezonuje s obsahem knihy. Autor pou&#382;&iacute;v&aacute; srozumiteln&yacute; jazyk a analogie (pam&#283;&#357; jako krabice na boty </span>
-<span class="c22">1</span>
-<span class="c1">), co&#382; je ide&aacute;ln&iacute; pro dosp&#283;l&eacute; studenty m&#283;n&iacute;c&iacute; kari&eacute;ru.</span>
-</li>
-<li class="c6 c8 li-bullet-0">
-<span class="c9">Progrese n&aacute;ro&#269;nosti:</span>
-<span class="c17">&nbsp;Kniha za&#269;&iacute;n&aacute; trivi&aacute;ln&iacute;mi koncepty (co je data), ale rychle akceleruje. Kapitola 5 </span>
-<span class="c3">Od t&#345;&iacute;dy k re&aacute;ln&eacute;mu k&oacute;du</span>
-<span class="c1">&nbsp;ji&#382; vy&#382;aduje abstraktn&iacute; my&scaron;len&iacute; (reference, null, statika). Kapitola 8 s datab&aacute;zov&yacute;mi transakcemi a DAO patternem (Data Access Object) ji&#382; p&#345;edstavuje &uacute;rove&#328; juniorn&iacute;ho v&yacute;voj&aacute;&#345;e.</span>
-</li>
-<li class="c6 c8 li-bullet-0">
-<span class="c9">Pokro&#269;ilej&scaron;&iacute; &#269;ten&aacute;&#345;i:</span>
-<span class="c1">&nbsp;Zde je t&#345;eba b&yacute;t opatrn&yacute;. Pro seniorn&iacute; Java v&yacute;voj&aacute;&#345;e kniha nep&#345;in&aacute;&scaron;&iacute; nov&eacute; poznatky o jazyku, m&#367;&#382;e v&scaron;ak b&yacute;t zaj&iacute;mav&aacute; sv&yacute;m netradi&#269;n&iacute;m p&#345;&iacute;stupem k tvorb&#283; webu (bez Springu) a jako inspirace pro mentory.</span>
-</li>
-</ul>
-<h3 class="c15">
-<span class="c16 c14">2.4 Servlets: N&aacute;vrat ke ko&#345;en&#367;m</span>
+<h3 class="c12">
+<span class="c4">Objektov&yacute; model Element API vs. Standardy JSP/JSF</span>
 </h3>
-<p class="c0">
-<span class="c9">V&yacute;rok k ov&#283;&#345;en&iacute;:</span>
-<span class="c17">&nbsp;</span>
-<span class="c3 c12">Webov&eacute; principy jsou vysv&#283;tlov&aacute;ny pro jednoduchost na Java servletech, kter&eacute; dnes tvo&#345;&iacute; z&aacute;klad v&#283;t&scaron;iny pokro&#269;il&yacute;ch framework&#367;.</span>
+<p class="c5">
+<span class="c6">Jednou z nejv&yacute;znamn&#283;j&scaron;&iacute;ch inovac&iacute; knihy je nahrazen&iacute; komplexn&iacute;ch standard&#367; typu JSP (JavaServer Pages) nebo JSF (JavaServer Faces) jednoduch&yacute;m objektov&yacute;m modelem Element z knihovny Ujorm.</span>
+<span class="c7">1</span>
+<span class="c6">&nbsp;Tvrzen&iacute; o jednoduchosti API a struktu&#345;e p&#345;ipom&iacute;naj&iacute;c&iacute; XML je pravdiv&eacute;. Autor ukazuje, jak lze HTML k&oacute;d generovat p&#345;&iacute;mo v Jav&#283; pomoc&iacute; metod jako addHeading(), addParagraph() nebo addTable().</span>
+<span class="c2">1</span>
 </p>
-<p class="c10">
-<span class="c11">Anal&yacute;za a verifikace:</span>
+<p class="c5">
+<span class="c6">Tento p&#345;&iacute;stup eliminuje chyby vznikaj&iacute;c&iacute; p&#345;i ru&#269;n&iacute;m psan&iacute; textov&yacute;ch &#345;et&#283;zc&#367; s HTML tagy. K&oacute;d vyu&#382;&iacute;vaj&iacute;c&iacute; tento model je typov&#283; bezpe&#269;n&yacute; &ndash; chyby v n&aacute;zvech element&#367; nebo atribut&#367; odhal&iacute; kompil&aacute;tor Javy ji&#382; b&#283;hem psan&iacute;.</span>
+<span class="c7">1</span>
+<span class="c6">&nbsp;V&yacute;sledn&yacute; k&oacute;d skute&#269;n&#283; p&#345;ipom&iacute;n&aacute; strukturu XML, zejm&eacute;na p&#345;i vyu&#382;it&iacute; konstrukce try-with-resources pro automatick&eacute; uzav&iacute;r&aacute;n&iacute; element&#367;, co&#382; vede k &#269;ist&eacute;mu a srozumiteln&eacute;mu z&aacute;pisu.</span>
+<span class="c2">1</span>
 </p>
-<p class="c10">
-<span class="c11">V&yacute;rok je pravdiv&yacute; a technicky velmi v&yacute;znamn&yacute;.</span>
+<p class="c25 c32">
+<span class="c2">
+</span>
 </p>
-<ul class="c2 lst-kix_list_4-0 start">
-<li class="c4 li-bullet-0">
-<span class="c9">Fundament&aacute;ln&iacute; technologie:</span>
-<span class="c17">&nbsp;V dob&#283; dominance framework&#367; jako Spring Boot nebo Quarkus se m&#367;&#382;e zd&aacute;t v&yacute;uka Servlet&#367; (kap. 7.2 </span>
-<span class="c22">1</span>
-<span class="c17">) jako krok zp&#283;t. Opak je pravdou. Frameworky jsou abstrakc&iacute; nad Servlet API (Jakarta Servlet). Bez pochopen&iacute; &#382;ivotn&iacute;ho cyklu servletu (doGet, doPost), pr&aacute;ce s HttpServletRequest a response.getWriter() </span>
-<span class="c22">1</span>
-<span class="c1">&nbsp;se v&yacute;voj&aacute;&#345; st&aacute;v&aacute; pouze &quot;u&#382;ivatelem frameworku&quot;, nikoliv in&#382;en&yacute;rem.</span>
-</li>
-<li class="c6 c8 li-bullet-0">
-<span class="c9">Didaktick&aacute; hodnota:</span>
-<span class="c1">&nbsp;Pavel Ponec t&iacute;mto rozhodnut&iacute;m demystifikuje &quot;magii&quot; webov&eacute;ho v&yacute;voje. Ukazuje, jak server skute&#269;n&#283; p&#345;ij&iacute;m&aacute; po&#382;adavek a generuje odpov&#283;&#271;, bajt po bajtu. To d&aacute;v&aacute; student&#367;m pevn&yacute; z&aacute;klad pro pozd&#283;j&scaron;&iacute; p&#345;echod na Spring MVC, kde budou ch&aacute;pat, co se d&#283;je pod anotac&iacute; @GetMapping.</span>
-</li>
-</ul>
-<h3 class="c15">
-<span class="c16 c14">2.5 Objektov&yacute; model HTML vs. JSP</span>
-</h3>
-<p class="c0">
-<span class="c9">V&yacute;rok k ov&#283;&#345;en&iacute;:</span>
-<span class="c17">&nbsp;</span>
-<span class="c3 c12">Pro sestavov&aacute;n&iacute; HTML str&aacute;nek pak slou&#382;&iacute; objektov&yacute; model s jednoduch&yacute;m API, jeho&#382; k&oacute;d p&#345;ipom&iacute;n&aacute; strukturu XML souboru, p&#345;itom &#269;ten&aacute;&#345;e nezat&#283;&#382;uje popisem komplexn&iacute;ch technologi&iacute; typu JSP.</span>
-</p>
-<p class="c10">
-<span class="c11">Anal&yacute;za a verifikace:</span>
-</p>
-<p class="c10">
-<span class="c11">V&yacute;rok je pravdiv&yacute; a popisuje unik&aacute;tn&iacute; vlastnost t&eacute;to u&#269;ebnice.</span>
-</p>
-<ul class="c2 lst-kix_list_5-0 start">
-<li class="c4 li-bullet-0">
-<span class="c9">Element API:</span>
-<span class="c17">&nbsp;M&iacute;sto v&yacute;uky templ&aacute;tovac&iacute;ch jazyk&#367; (JSP, Thymeleaf, Freemarker), kter&eacute; m&iacute;chaj&iacute; HTML s logikou, autor zav&aacute;d&iacute; knihovnu Ujorm a jej&iacute; t&#345;&iacute;du Element (resp. HtmlElement).</span>
-<span class="c21">1</span>
-</li>
-<li class="c6 c8 li-bullet-0">
-<span class="c9">P&#345;&iacute;klad:</span>
-<span class="c17">&nbsp;K&oacute;d html.getBody().addElement(&quot;table&quot;).setClass(&quot;numbers&quot;) </span>
-<span class="c22">1</span>
-<span class="c1">&nbsp;ukazuje, &#382;e HTML se generuje &#269;ist&yacute;m Java k&oacute;dem.</span>
-</li>
-<li class="c6 c8 li-bullet-0">
-<span class="c9 c12 c23">V&yacute;hody:</span>
-</li>
-</ul>
-<ol class="c2 lst-kix_list_6-1 start" start="1">
-<li class="c18 c27 li-bullet-0">
-<span class="c9">Compile-time safety:</span>
-<span class="c1">&nbsp;Pokud ud&#283;l&aacute;te p&#345;eklep v n&aacute;zvu metody, kompil&aacute;tor (javac) to odhal&iacute;. V JSP by se chyba projevila a&#382; za b&#283;hu (runtime).</span>
-</li>
-<li class="c5 li-bullet-0">
-<span class="c9">Jednotn&yacute; jazyk:</span>
-<span class="c1">&nbsp;Student nemus&iacute; p&#345;ep&iacute;nat kontext mezi Javou a syntax&iacute; &scaron;ablony. Z&#367;st&aacute;v&aacute; v Jav&#283;.</span>
-</li>
-<li class="c5 li-bullet-0">
-<span class="c9">OOP v praxi:</span>
-<span class="c1">&nbsp;Generov&aacute;n&iacute; HTML se st&aacute;v&aacute; cvi&#269;en&iacute;m v manipulaci s objekty (stromov&aacute; struktura DOM), co&#382; posiluje ch&aacute;p&aacute;n&iacute; OOP princip&#367; z kapitoly 4 a 5.</span>
-</li>
-</ol>
-<h3 class="c15">
-<span class="c16 c14">2.6 JDBC Fas&aacute;da: SqlParamBuilder</span>
-</h3>
-<p class="c0">
-<span class="c9">V&yacute;rok k ov&#283;&#345;en&iacute;:</span>
-<span class="c17">&nbsp;</span>
-<span class="c3 c12">Uk&aacute;zkov&eacute; p&#345;&iacute;klady pro JDBC vyu&#382;&iacute;vaj&iacute; jednoduchou t&#345;&iacute;du z extern&iacute; knihovny, kter&aacute; funguje pouze jako fas&aacute;da nad t&#345;&iacute;dou PreparedStatement z JDBC. D&#367;vodem je snadn&#283;j&scaron;&iacute; pochopen&iacute; princip&#367; JDBC nad jednodu&scaron;&scaron;&iacute;m a stru&#269;n&#283;j&scaron;&iacute;m k&oacute;dem.</span>
-</p>
-<p class="c10">
-<span class="c11">Anal&yacute;za a verifikace:</span>
-</p>
-<p class="c10">
-<span class="c11">V&yacute;rok je pravdiv&yacute;.</span>
-</p>
-<ul class="c2 lst-kix_list_7-0 start">
-<li class="c4 li-bullet-0">
-<span class="c9">Slo&#382;itost &#269;ist&eacute;ho JDBC:</span>
-<span class="c1">&nbsp;Standardn&iacute; JDBC k&oacute;d je verb&oacute;zn&iacute;. Vy&#382;aduje o&scaron;et&#345;ov&aacute;n&iacute; SQLException, manu&aacute;ln&iacute; zav&iacute;r&aacute;n&iacute; ResultSet, Statement a Connection, a vkl&aacute;d&aacute;n&iacute; parametr&#367; pomoc&iacute; index&#367; (stmt.setString(1, &quot;value&quot;)), co&#382; je n&aacute;chyln&eacute; k chyb&aacute;m.</span>
-</li>
-<li class="c6 c8 li-bullet-0">
-<span class="c9">&#344;e&scaron;en&iacute; (SqlParamBuilder):</span>
-<span class="c17">&nbsp;Kapitola 8.4.3 </span>
-<span class="c22">1</span>
-<span class="c1">&nbsp;zav&aacute;d&iacute; t&#345;&iacute;du SqlParamBuilder. Tato t&#345;&iacute;da nen&iacute; plnohodnotn&yacute;m ORM (jako Hibernate), ale tenkou ob&aacute;lkou.</span>
-</li>
-<li class="c6 c8 li-bullet-0">
-<span class="c9">V&yacute;hody:</span>
-<span class="c17">&nbsp;Umo&#382;&#328;uje pou&#382;&iacute;vat pojmenovan&eacute; parametry (.bind(&quot;active&quot;, active)), podporuje try-with-resources pro automatick&eacute; zav&iacute;r&aacute;n&iacute; a nab&iacute;z&iacute; plynul&eacute; API (fluent interface).</span>
-<span class="c22">1</span>
-<span class="c1">&nbsp;Student st&aacute;le p&iacute;&scaron;e SQL (co&#382; je kl&iacute;&#269;ov&aacute; dovednost), ale je odst&iacute;n&#283;n od n&iacute;zko&uacute;rov&#328;ov&eacute;ho balastu JDBC.</span>
-</li>
-</ul>
-<h3 class="c15">
-<span class="c16 c14">2.7 V&#283;dom&aacute; zjednodu&scaron;en&iacute;: Vl&aacute;kna a Moduly</span>
-</h3>
-<p class="c0">
-<span class="c9">V&yacute;rok k ov&#283;&#345;en&iacute;:</span>
-<span class="c17">&nbsp;</span>
-<span class="c3 c12">C&iacute;lem knihy je poskytnout &uacute;vod do jazyka Java a souvisej&iacute;c&iacute;ch technologi&iacute; atraktivn&iacute; a z&aacute;bavnou formou. Pro zjednodu&scaron;en&iacute; v&scaron;ak kniha nepokr&yacute;v&aacute; v&scaron;echny technick&eacute; aspekty jazyka a tak nezmi&#328;uje nap&#345;&iacute;klad paraleln&iacute; zpracov&aacute;n&iacute; ve vl&aacute;knech, moduly &#269;i &scaron;ablonovac&iacute; frameworky.</span>
-</p>
-<p class="c10">
-<span class="c11">Anal&yacute;za a verifikace:</span>
-</p>
-<p class="c10">
-<span class="c11">V&yacute;rok je pravdiv&yacute; a potvrzen&yacute; obsahem.1</span>
-</p>
-<ul class="c2 lst-kix_list_8-0 start">
-<li class="c4 li-bullet-0">
-<span class="c9">Vl&aacute;kna (Threads):</span>
-<span class="c1">&nbsp;Autor v kapitole 4.2 explicitn&#283; uv&aacute;d&iacute;, &#382;e paraleln&iacute; zpracov&aacute;n&iacute; p&#345;esahuje r&aacute;mec knihy a algoritmy budou uva&#382;ov&aacute;ny v re&#382;imu jednoho j&aacute;dra. To je pro za&#269;&aacute;te&#269;n&iacute;ky rozumn&eacute; &ndash; multithreading je zdrojem komplexn&iacute;ch chyb (race conditions, deadlocks), kter&eacute; by mohly nov&aacute;&#269;ka odradit.</span>
-</li>
-<li class="c6 c8 li-bullet-0">
-<span class="c9">Moduly (JPMS):</span>
-<span class="c1">&nbsp;V kapitole 5.2.5 je zm&iacute;n&#283;no, &#382;e s pojmem modul se d&aacute;le pracovat nebude. Pro mal&eacute; v&yacute;ukov&eacute; projekty je modul&aacute;rn&iacute; syst&eacute;m Java 9+ zbyte&#269;nou komplikac&iacute;.</span>
-</li>
-<li class="c6 c8 li-bullet-0">
-<span class="c9">&Scaron;ablonovac&iacute; frameworky:</span>
-<span class="c1">&nbsp;Jak bylo uvedeno v&yacute;&scaron;e, jsou nahrazeny objektov&yacute;m modelem Element.</span>
-</li>
-</ul>
-<hr>
-<h2 class="c6">
-<span class="c36 c14">3. Komplexn&iacute; hodnocen&iacute; obsahu a struktury</span>
-</h2>
-<p class="c0">
-<span class="c1">N&aacute;sleduj&iacute;c&iacute; tabulka poskytuje strukturovan&yacute; p&#345;ehled obsahu knihy s hodnocen&iacute;m hloubky a relevance pro rok 2026.</span>
-</p>
-<table class="c29">
-<tr class="c25">
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c9 c12 c23">Kapitola / T&eacute;ma</span>
+<table class="c31">
+<tr class="c19">
+<td class="c14" colspan="1" rowspan="1">
+<p class="c3">
+<span class="c0">Funkce modelu</span>
 </p>
 </td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c9 c12 c23">Obsahov&aacute; n&aacute;pl&#328;</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c9 c12 c23">Hodnocen&iacute; relevance (2026)</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c9 c12 c23">Pozn&aacute;mka k didaktice</span>
+<td class="c14" colspan="1" rowspan="1">
+<p class="c3">
+<span class="c0">V&yacute;hoda pro samouka</span>
 </p>
 </td>
 </tr>
-<tr class="c25">
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c9 c12 c23">&Uacute;vod a Motivace</span>
+<tr class="c19">
+<td class="c14" colspan="1" rowspan="1">
+<p class="c3">
+<span class="c9 c6">Typov&aacute; kontrola</span>
 </p>
 </td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c1">Pro&#269; Java? Pro&#269; web? Licence, Open Source.</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c9">Vysok&aacute;.</span>
-<span class="c1">&nbsp;Java je st&aacute;le l&iacute;dr.</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c1">Motivuje praktick&yacute;m vyu&#382;it&iacute;m (web).</span>
+<td class="c14" colspan="1" rowspan="1">
+<p class="c25">
+<span class="c6">Kompil&aacute;tor v&#269;as upozorn&iacute; na p&#345;eklepy v HTML struktu&#345;e.</span>
+<span class="c2">1</span>
 </p>
 </td>
 </tr>
-<tr class="c25">
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c9 c12 c23">Z&aacute;kladn&iacute; pojmy</span>
+<tr class="c19">
+<td class="c14" colspan="1" rowspan="1">
+<p class="c3">
+<span class="c9 c6">XML struktura</span>
 </p>
 </td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c1">Data, Algoritmy, Pam&#283;&#357; (Heap/Stack), Bity.</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c9">Kritick&aacute;.</span>
-<span class="c1">&nbsp;Fundamenty nemiz&iacute;.</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c1">V&yacute;born&eacute; vysv&#283;tlen&iacute; pam&#283;ti pro laiky.</span>
+<td class="c14" colspan="1" rowspan="1">
+<p class="c25">
+<span class="c6">Hierarchie k&oacute;du odpov&iacute;d&aacute; vizu&aacute;ln&iacute; struktu&#345;e str&aacute;nky.</span>
+<span class="c2">1</span>
 </p>
 </td>
 </tr>
-<tr class="c25">
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c9 c12 c23">Java Syntax</span>
+<tr class="c19">
+<td class="c14" colspan="1" rowspan="1">
+<p class="c3">
+<span class="c9 c6">Absence JSP tag&#367;</span>
 </p>
 </td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c1">Primitivn&iacute; typy, Prom&#283;nn&eacute;, Oper&aacute;tory.</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c9">Vysok&aacute;.</span>
-<span class="c1">&nbsp;Z&aacute;klad ka&#382;d&eacute;ho jazyka.</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c1">D&#367;raz na typovou bezpe&#269;nost.</span>
+<td class="c14" colspan="1" rowspan="1">
+<p class="c25">
+<span class="c6">Nen&iacute; t&#345;eba se u&#269;it dal&scaron;&iacute; skriptovac&iacute; jazyk uvnit&#345; HTML.</span>
+<span class="c2">1</span>
 </p>
 </td>
 </tr>
-<tr class="c25">
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c9 c12 c23">OOP</span>
+<tr class="c19">
+<td class="c14" colspan="1" rowspan="1">
+<p class="c3">
+<span class="c9 c6">Fluent API</span>
 </p>
 </td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c1">T&#345;&iacute;dy, Objekty, D&#283;di&#269;nost, Rozhran&iacute;.</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c9">Vysok&aacute;.</span>
-<span class="c1">&nbsp;Java je OOP jazyk.</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c1">Modelov&aacute;n&iacute; re&aacute;ln&eacute;ho sv&#283;ta (Auto).</span>
-</p>
-</td>
-</tr>
-<tr class="c25">
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c9 c12 c23">Pokro&#269;ilej&scaron;&iacute; Java</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c1">V&yacute;jimky, Generika, Kolekce (List, Map).</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c9">Vysok&aacute;.</span>
-<span class="c1">&nbsp;Nezbytn&eacute; pro praxi.</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c1">Vysv&#283;tlen&iacute; null safety a Optional.</span>
-</p>
-</td>
-</tr>
-<tr class="c25">
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c9 c12 c23">Webov&eacute; technologie</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c1">HTML, CSS, URL, HTTP protokol.</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c9">Vysok&aacute;.</span>
-<span class="c1">&nbsp;Z&aacute;klad web developmentu.</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c1">Kontextualizace Javy ve webu.</span>
-</p>
-</td>
-</tr>
-<tr class="c25">
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c9 c12 c23">Servlety</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c1">Lifecycle, Request/Response, Jetty.</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c9">St&#345;edn&iacute;/Vysok&aacute;.</span>
-<span class="c1">&nbsp;Fundament pro Spring.</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c1">Demystifikace &quot;magie&quot; framework&#367;.</span>
-</p>
-</td>
-</tr>
-<tr class="c25">
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c9 c12 c23">HTML Generov&aacute;n&iacute;</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c1">Element API, Objektov&yacute; strom.</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c9">Specifick&aacute;.</span>
-<span class="c1">&nbsp;Alternativn&iacute; p&#345;&iacute;stup.</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c1">Siln&yacute; tr&eacute;nink OOP my&scaron;len&iacute;.</span>
-</p>
-</td>
-</tr>
-<tr class="c25">
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c9 c12 c23">Datab&aacute;ze</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c1">SQL, JDBC, DAO, Transakce.</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c9">Vysok&aacute;.</span>
-<span class="c1">&nbsp;Data jsou z&aacute;klad.</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c1">Ochrana p&#345;ed SQL Injection.</span>
-</p>
-</td>
-</tr>
-<tr class="c25">
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c9 c12 c23">Modern&iacute; prvky</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c1">Records, Text Blocks, var, Switch expr.</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c9">Vysok&aacute;.</span>
-<span class="c1">&nbsp;Reflektuje modern&iacute; Javu.</span>
-</p>
-</td>
-<td class="c20" colspan="1" rowspan="1">
-<p class="c6">
-<span class="c1">U&#269;&iacute; modern&iacute; syntaxi (Java 25).</span>
+<td class="c14" colspan="1" rowspan="1">
+<p class="c25">
+<span class="c6">Metody lze &#345;et&#283;zit, co&#382; vede ke stru&#269;n&#283;j&scaron;&iacute;mu z&aacute;pisu.</span>
+<span class="c2">1</span>
 </p>
 </td>
 </tr>
 </table>
-<h3 class="c41">
-<span class="c16 c14">3.1 Prvn&iacute; pil&iacute;&#345;: Fundament&aacute;ln&iacute; informatika (Kapitoly 3-5)</span>
+<h3 class="c12">
+<span class="c4">Strategie persistence: JDBC a SqlParamBuilder</span>
 </h3>
-<p class="c0">
-<span class="c17">Kniha stav&iacute; na pevn&yacute;ch z&aacute;kladech. Vysv&#283;tlen&iacute; pam&#283;ti (kap. 4.3) nen&iacute; jen &quot;povinn&aacute; j&iacute;zda&quot;, ale n&aacute;stroj k pochopen&iacute; rozd&iacute;lu mezi primitivn&iacute;mi a referen&#269;n&iacute;mi typy. Autor vyu&#382;&iacute;v&aacute; analogie (krabice na boty), kter&eacute; jsou srozumiteln&eacute;. V&yacute;klad OOP na p&#345;&iacute;kladu t&#345;&iacute;dy Car (atributy jako objem kufru, metody jako j&iacute;zda) je klasick&yacute;, ale efektivn&iacute;. D&#367;le&#382;it&yacute;m prvkem je zaveden&iacute; modern&iacute;ch konstrukc&iacute; Javy, jako jsou </span>
-<span class="c9">Records</span>
-<span class="c17">&nbsp;(z&aacute;znamy) pro datov&eacute; nosi&#269;e (kap. 5.2.9) a </span>
-<span class="c9">Text Blocks</span>
-<span class="c17">&nbsp;pro SQL/HTML &#345;et&#283;zce (kap. 7.2.1).</span>
-<span class="c22">1</span>
-<span class="c1">&nbsp;To ukazuje, &#382;e kniha u&#269;&iacute; &quot;&#382;ivou&quot; Javu, ne tu z roku 2005.</span>
+<p class="c5">
+<span class="c6">Tvrzen&iacute;, &#382;e p&#345;&iacute;klady JDBC vyu&#382;&iacute;vaj&iacute; t&#345;&iacute;du z extern&iacute; knihovny jako fas&aacute;du nad PreparedStatement, je pravdiv&eacute;. Autor pro tento &uacute;&#269;el zvolil t&#345;&iacute;du SqlParamBuilder z frameworku Ujorm.</span>
+<span class="c7">1</span>
+<span class="c6">&nbsp;D&#367;vodem je snaha o maxim&aacute;ln&iacute; &#269;itelnost a bezpe&#269;nost. &#268;ist&eacute; JDBC vy&#382;aduje n&aacute;chyln&eacute; indexov&aacute;n&iacute; parametr&#367; pomoc&iacute; otazn&iacute;k&#367; (nap&#345;. setString(1, name)), zat&iacute;mco SqlParamBuilder umo&#382;&#328;uje pou&#382;it&iacute; pojmenovan&yacute;ch parametr&#367; ve stylu JPA (nap&#345;. :name).</span>
+<span class="c2">1</span>
 </p>
-<h3 class="c18">
-<span class="c16 c14">3.2 Druh&yacute; pil&iacute;&#345;: Webov&aacute; interakce (Kapitoly 6-7)</span>
+<p class="c5">
+<span class="c6">Tato fas&aacute;da nav&iacute;c integruje podporu pro streamovan&eacute; zpracov&aacute;n&iacute; v&yacute;sledk&#367; (StreamMap), co&#382; vede k elegantn&iacute;mu propojen&iacute; s modern&iacute;m Stream API Javy.</span>
+<span class="c7">1</span>
+<span class="c6">&nbsp;Pro studenta to znamen&aacute;, &#382;e se u&#269;&iacute; ps&aacute;t SQL dotazy bez balastu n&iacute;zko&uacute;rov&#328;ov&eacute;ho k&oacute;du, p&#345;i&#269;em&#382; principy bezpe&#269;nosti (ochrana proti SQL Injection) z&#367;st&aacute;vaj&iacute; pln&#283; zachov&aacute;ny.</span>
+<span class="c2">1</span>
+</p>
+<h3 class="c12">
+<span class="c4">Didaktick&aacute; redukce a rozsah t&eacute;mat</span>
 </h3>
-<p class="c18">
-<span class="c17">Zde kniha exceluje v inovativnosti. M&iacute;sto statick&eacute;ho generov&aacute;n&iacute; str&aacute;nek autor rychle p&#345;ech&aacute;z&iacute; k interaktivit&#283;. Hra </span>
-<span class="c9">Pi&scaron;kvorky</span>
-<span class="c1">&nbsp;(Gomoku) v kapitole 7.5.4 je komplexn&iacute; projekt, kter&yacute; integruje:</span>
+<p class="c5">
+<span class="c6">Autor v kapitole 3.1 otev&#345;en&#283; p&#345;izn&aacute;v&aacute;, &#382;e kniha nepokr&yacute;v&aacute; v&scaron;echny technick&eacute; aspekty jazyka z d&#367;vodu zachov&aacute;n&iacute; srozumitelnosti.</span>
+<span class="c7">1</span>
+<span class="c6">&nbsp;V&yacute;rok o vynech&aacute;n&iacute; paraleln&iacute;ho zpracov&aacute;n&iacute; ve vl&aacute;knech, modul&#367; (JPMS) a &scaron;ablonovac&iacute;ch framework&#367; je pravdiv&yacute;.</span>
+<span class="c7">1</span>
+<span class="c9 c6">&nbsp;Tato redukce je v&scaron;ak pedagogicky prosp&#283;&scaron;n&aacute;. Pro za&#269;&aacute;te&#269;n&iacute;ka by byla t&eacute;mata jako soub&#283;&#382;nost (concurrency) p&#345;&iacute;li&scaron; n&aacute;ro&#269;n&aacute; a mohla by v&eacute;st k odrazen&iacute; od dal&scaron;&iacute;ho studia.</span>
 </p>
-<ul class="c2 lst-kix_list_9-0 start">
-<li class="c4 li-bullet-0">
-<span class="c1">Logiku hry (kdo vyhr&aacute;l?).</span>
+<p class="c5">
+<span class="c6">Nam&iacute;sto toho se kniha soust&#345;ed&iacute; na modern&iacute; prvky, jako jsou Records pro nem&#283;nn&aacute; data (kapitola 5.2.9) a Lambda v&yacute;razy pro funkcion&aacute;ln&iacute; p&#345;&iacute;stup k programov&aacute;n&iacute;.</span>
+<span class="c7">1</span>
+<span class="c9 c6">&nbsp;Tento v&yacute;b&#283;r t&eacute;mat zaji&scaron;&#357;uje, &#382;e se &#269;ten&aacute;&#345; nau&#269;&iacute; ps&aacute;t modern&iacute; k&oacute;d, kter&yacute; odpov&iacute;d&aacute; standard&#367;m roku 2026.</span>
+</p>
+<h3 class="c12">
+<span class="c4">Hardwarov&eacute; a softwarov&eacute; po&#382;adavky</span>
+</h3>
+<p class="c12">
+<span class="c6">Tvrzen&iacute; o hardwarov&eacute; n&aacute;ro&#269;nosti je v textu specifikov&aacute;no velmi detailn&#283;. Pro spu&scaron;t&#283;n&iacute; p&#345;&iacute;klad&#367; je vy&#382;adov&aacute;na instalace </span>
+<span class="c11">OpenJDK verze 25</span>
+<span class="c6">, kter&aacute; disponuje dlouhodobou podporou.</span>
+<span class="c7">1</span>
+<span class="c9 c6">&nbsp;Minim&aacute;ln&iacute; po&#382;adavky na pam&#283;&#357; RAM se li&scaron;&iacute; podle opera&#269;n&iacute;ho syst&eacute;mu:</span>
+</p>
+<ul class="c22 lst-kix_list_3-0 start">
+<li class="c12 c17 li-bullet-0">
+<span class="c11">Windows 11:</span>
+<span class="c6">&nbsp;Minim&aacute;ln&#283; 8 GB RAM a 128 GB na disku.</span>
+<span class="c2">1</span>
 </li>
-<li class="c6 c8 li-bullet-0">
-<span class="c1">Stavovost (ukl&aacute;d&aacute;n&iacute; stavu desky).</span>
+<li class="c3 c17 li-bullet-0">
+<span class="c11">Linux (Xubuntu 25.10):</span>
+<span class="c6">&nbsp;Posta&#269;uje 2 GB RAM a 10 GB voln&eacute;ho m&iacute;sta na disku.</span>
+<span class="c2">1</span>
 </li>
-<li class="c6 c8 li-bullet-0">
-<span class="c1">UI (generov&aacute;n&iacute; m&#345;&iacute;&#382;ky).</span>
-</li>
-<li class="c6 c8 li-bullet-0">
-<span class="c17">AI (jednoduch&aacute; strategie po&#269;&iacute;ta&#269;e).</span>
-<span class="c12 c23 c31">
-<br>
-</span>
-<span class="c1">Pou&#382;it&iacute; AJAXu pro plynulost hry (bez obnovov&aacute;n&iacute; cel&eacute; str&aacute;nky) u&#269;&iacute; studenty princip&#367;m modern&iacute;ch SPA (Single Page Applications), ani&#382; by museli opustit Javu a u&#269;it se React.</span>
+<li class="c3 c17 li-bullet-0">
+<span class="c11">Obecn&eacute; doporu&#269;en&iacute;:</span>
+<span class="c6">&nbsp;Po&#269;&iacute;ta&#269; s volnou kapacitou RAM minim&aacute;ln&#283; 1 GB pro samotn&eacute; b&#283;hov&eacute; prost&#345;ed&iacute; Javy.</span>
+<span class="c2">1</span>
 </li>
 </ul>
-<h3 class="c15">
-<span class="c16 c14">3.3 T&#345;et&iacute; pil&iacute;&#345;: Datov&aacute; persistence (Kapitola 8)</span>
-</h3>
-<p class="c0">
-<span class="c17">P&#345;&iacute;stup k datab&aacute;z&iacute;m je pragmatick&yacute;. Autor vysv&#283;tluje rela&#269;n&iacute; model a SQL, co&#382; je pro backend v&yacute;voj&aacute;&#345;e nezbytnost. Odd&#283;len&iacute; logiky do vrstev (Servlet -&gt; Service -&gt; DAO) u&#269;&iacute; architektu&#345;e a &#269;ist&eacute;mu k&oacute;du. Pou&#382;it&iacute; SqlParamBuilder m&iacute;sto &#269;ist&eacute;ho JDBC nebo pln&eacute;ho Hibernate je chytr&yacute;m kompromisem &ndash; odstra&#328;uje balast, ale zachov&aacute;v&aacute; kontrolu nad SQL.</span>
-<span class="c21">1</span>
+<p class="c18">
+<span class="c6">Tyto &uacute;daje jsou podlo&#382;eny re&aacute;ln&yacute;m testov&aacute;n&iacute;m na virtu&aacute;ln&iacute;ch stroj&iacute;ch, kter&eacute; autor v knize popisuje jako doporu&#269;enou cestu pro ty, kte&#345;&iacute; necht&#283;j&iacute; zasahovat do sv&eacute;ho prim&aacute;rn&iacute;ho opera&#269;n&iacute;ho syst&eacute;mu.</span>
+<span class="c2">1</span>
 </p>
-<hr>
-<h2 class="c6">
-<span class="c36 c14">4. Kvalitativn&iacute; a didaktick&eacute; hodnocen&iacute;</span>
+<h3 class="c12">
+<span class="c4">Vizu&aacute;ln&iacute; didaktika: Obr&aacute;zky, screenshoty a diagramy</span>
+</h3>
+<p class="c12">
+<span class="c9 c6">V&yacute;rok o p&#345;&iacute;tomnosti barevn&yacute;ch obr&aacute;zk&#367; a diagram&#367; je potvrzen v cel&eacute;m rozsahu 164 stran e-booku. Kniha obsahuje:</span>
+</p>
+<ul class="c22 lst-kix_list_4-0 start">
+<li class="c12 c17 li-bullet-0">
+<span class="c11">UML diagramy t&#345;&iacute;d:</span>
+<span class="c6">&nbsp;Kl&iacute;&#269;ov&eacute; pro pochopen&iacute; vztah&#367; mezi objekty (nap&#345;. diagram 37 pro hru Pi&scaron;kvorky).</span>
+<span class="c2">1</span>
+</li>
+<li class="c3 c17 li-bullet-0">
+<span class="c11">Sch&eacute;mata pam&#283;ti:</span>
+<span class="c6">&nbsp;Ilustrace ukl&aacute;d&aacute;n&iacute; &#269;&iacute;sel a znak&#367; (obr&aacute;zky 3 a 4) pom&aacute;haj&iacute; vizualizovat nehmotn&eacute; koncepty.</span>
+<span class="c2">1</span>
+</li>
+<li class="c3 c17 li-bullet-0">
+<span class="c11">Screenshoty:</span>
+<span class="c6">&nbsp;Re&aacute;ln&eacute; n&aacute;hledy z v&yacute;vojov&eacute;ho prost&#345;ed&iacute; NetBeans a prohl&iacute;&#382;e&#269;e Firefox upev&#328;uj&iacute; spojen&iacute; mezi k&oacute;dem a jeho v&yacute;sledkem.</span>
+<span class="c2">1</span>
+</li>
+<li class="c3 c17 li-bullet-0">
+<span class="c11">Barevn&eacute; zv&yacute;razn&#283;n&iacute; syntaxe:</span>
+<span class="c6">&nbsp;Kl&iacute;&#269;ov&aacute; slova jsou modr&aacute;, t&#345;&iacute;dy zelen&eacute; a liter&aacute;ly &#269;erven&eacute;, co&#382; v&yacute;razn&#283; usnad&#328;uje orientaci v textu.</span>
+<span class="c2">1</span>
+</li>
+</ul>
+<h2 class="c1">
+<span class="c15">Anal&yacute;za didaktick&yacute;ch p&#345;edpoklad&#367; a inovac&iacute;</span>
 </h2>
-<h3 class="c18">
-<span class="c16 c14">4.1 Didaktick&eacute; p&#345;edpoklady</span>
-</h3>
-<p class="c18">
-<span class="c1">Pavel Ponec prokazuje hlubok&eacute; porozum&#283;n&iacute; procesu u&#269;en&iacute;.</span>
+<p class="c5">
+<span class="c9 c6">Kvalita obsahu knihy Pavla Ponce vynik&aacute; p&#345;edev&scaron;&iacute;m v oblasti pedagogick&eacute; inovace. Autor nepracuje se studentem jako s pasivn&iacute;m p&#345;&iacute;jemcem informac&iacute;, ale jako s budouc&iacute;m in&#382;en&yacute;rem, kter&yacute; mus&iacute; ch&aacute;pat souvislosti.</span>
 </p>
-<ul class="c2 lst-kix_list_a-0 start">
-<li class="c4 li-bullet-0">
-<span class="c9">Spir&aacute;lovit&yacute; p&#345;&iacute;stup:</span>
-<span class="c1">&nbsp;T&eacute;mata se vracej&iacute; s rostouc&iacute; obt&iacute;&#382;nost&iacute;. Prom&#283;nn&aacute; je nejprve &quot;krabice&quot;, pozd&#283;ji &quot;reference na haldu&quot;. HTML je nejprve &quot;text&quot;, pozd&#283;ji &quot;objektov&yacute; strom&quot;.</span>
-</li>
-<li class="c6 c8 li-bullet-0">
-<span class="c9">Visual-First:</span>
-<span class="c1">&nbsp;Za&#269;&aacute;te&#269;n&iacute;ci pot&#345;ebuj&iacute; vid&#283;t v&yacute;sledek. Webov&aacute; str&aacute;nka je lep&scaron;&iacute;m motiv&aacute;torem ne&#382; v&yacute;pis do konzole.</span>
-</li>
-<li class="c6 c8 li-bullet-0">
-<span class="c9">Code-Literacy:</span>
-<span class="c1">&nbsp;Kniha u&#269;&iacute; &#269;&iacute;st k&oacute;d. Uk&aacute;zky jsou bohat&#283; komentovan&eacute;, diagramy UML pom&aacute;haj&iacute; vizualizovat strukturu p&#345;ed psan&iacute;m k&oacute;du.</span>
-</li>
-</ul>
-<h3 class="c15">
-<span class="c16 c14">4.2 M&iacute;ra inovace</span>
+<h3 class="c12">
+<span class="c4">Inovace ve v&yacute;uce: Integrace AI</span>
 </h3>
-<p class="c18">
-<span class="c1">Kniha je inovativn&iacute; v n&#283;kolika sm&#283;rech:</span>
+<p class="c12">
+<span class="c6">Zcela unik&aacute;tn&iacute;m prvkem v kontextu &#269;esk&eacute; literatury o programov&aacute;n&iacute; je kapitola 7.7, kter&aacute; integruje um&#283;lou inteligenci p&#345;&iacute;mo do v&yacute;ukov&eacute;ho procesu.</span>
+<span class="c7">1</span>
+<span class="c9 c6">&nbsp;Ponec zde ukazuje, jak pomoc&iacute; AI modelu Google Gemini generovat hern&iacute; strategii pro Pi&scaron;kvorky. Didaktick&yacute; p&#345;&iacute;nos nespo&#269;&iacute;v&aacute; v tom, &#382;e &bdquo;stroj nap&iacute;&scaron;e k&oacute;d za n&aacute;s&ldquo;, ale v procesu validace. &#268;ten&aacute;&#345; je nucen:</span>
 </p>
-<ol class="c2 lst-kix_list_b-0 start" start="1">
-<li class="c18 c26 li-bullet-0">
-<span class="c9">Java-Only Web:</span>
-<span class="c1">&nbsp;Odvaha zahodit &scaron;ablonovac&iacute; syst&eacute;my a generovat HTML objektov&#283; v Jav&#283; je radik&aacute;ln&iacute;, ale pro v&yacute;uku OOP geni&aacute;ln&iacute;. Student &quot;c&iacute;t&iacute;&quot; strukturu str&aacute;nky jako objekty.</span>
+<ol class="c22 lst-kix_list_5-0 start" start="1">
+<li class="c12 c16 li-bullet-0">
+<span class="c11">Formulovat p&#345;esn&eacute; zad&aacute;n&iacute; (Prompt Engineering):</span>
+<span class="c6">&nbsp;Definovat t&#345;&iacute;du BoardModel a po&#382;adovan&eacute; rozhran&iacute; slu&#382;by.</span>
+<span class="c2">1</span>
 </li>
-<li class="c6 c26 li-bullet-0">
-<span class="c9">Modernita:</span>
-<span class="c1">&nbsp;Integrace prvk&#367; Java 25 (p&#345;edpokl&aacute;dan&eacute; LTS v dob&#283; vyd&aacute;n&iacute;) zaji&scaron;&#357;uje dlouhodobou platnost obsahu.</span>
+<li class="c3 c16 li-bullet-0">
+<span class="c11">Analyzovat v&yacute;stup:</span>
+<span class="c6">&nbsp;Pochopit, co AI vygenerovala, a integrovat to do sv&eacute; aplikace.</span>
+<span class="c2">1</span>
 </li>
-<li class="c6 c26 li-bullet-0">
-<span class="c9">AI Integrace:</span>
-<span class="c1">&nbsp;Otev&#345;en&eacute; p&#345;izn&aacute;n&iacute; vyu&#382;it&iacute; AI pro korektury a generov&aacute;n&iacute; obsahu (kap. 7.7) ukazuje student&#367;m, &#382;e AI je n&aacute;stroj, kter&eacute;ho se nemus&iacute; b&aacute;t, ale mus&iacute; ho um&#283;t pou&#382;&iacute;vat a kontrolovat.</span>
+<li class="c3 c16 li-bullet-0">
+<span class="c11">Prov&aacute;d&#283;t testov&aacute;n&iacute;:</span>
+<span class="c6">&nbsp;Ov&#283;&#345;it pomoc&iacute; jUnit test&#367;, &#382;e vygenerovan&yacute; k&oacute;d neobsahuje chyby.</span>
+<span class="c2">1</span>
 </li>
 </ol>
-<h3 class="c15">
-<span class="c16 c14">4.3 Slab&eacute; str&aacute;nky a rizika</span>
-</h3>
-<ul class="c2 lst-kix_list_c-0 start">
-<li class="c4 li-bullet-0">
-<span class="c9">Specifick&eacute; knihovny:</span>
-<span class="c17">&nbsp;Pou&#382;it&iacute; knihovny Ujorm (resp. jej&iacute;ho modulu Tools) vytv&aacute;&#345;&iacute; z&aacute;vislost na specifick&eacute;m API autora.</span>
-<span class="c22">2</span>
-<span class="c17">&nbsp;Student se nau&#269;&iacute; html.addBody(), co&#382; v komer&#269;n&iacute; praxi (Spring, JSF) nenajde. Mus&iacute; si b&yacute;t v&#283;dom, &#382;e se u&#269;&iacute; </span>
-<span class="c3">princip</span>
-<span class="c1">, ne pr&#367;myslov&yacute; standard syntaxe.</span>
-</li>
-<li class="c6 c8 li-bullet-0">
-<span class="c9">Absence Spring Boot:</span>
-<span class="c17">&nbsp;Pro okam&#382;it&eacute; uplatn&#283;n&iacute; na trhu pr&aacute;ce je dnes Spring Boot standardem. Kniha v&scaron;ak p&#345;ipravuje </span>
-<span class="c3">na pochopen&iacute;</span>
-<span class="c1">&nbsp;Springu, nikoliv na jeho okam&#382;it&eacute; pou&#382;it&iacute;. Absolvent knihy bude l&eacute;pe ch&aacute;pat, co Spring d&#283;l&aacute; &quot;pod kapotou&quot;, ale bude se ho muset dou&#269;it.</span>
-</li>
-</ul>
-<hr>
-<h2 class="c6">
-<span class="c36 c14">5. Detailn&iacute; rozbor kl&iacute;&#269;ov&yacute;ch technologi&iacute; a koncept&#367;</span>
-</h2>
-<p class="c0">
-<span class="c1">V t&eacute;to sekci se zam&#283;&#345;&iacute;me na specifick&eacute; technick&eacute; aspekty, kter&eacute; kniha p&#345;edstavuje, a zasad&iacute;me je do &scaron;ir&scaron;&iacute;ho kontextu softwarov&eacute;ho in&#382;en&yacute;rstv&iacute;.</span>
-</p>
-<h3 class="c18">
-<span class="c16 c14">5.1 Ujorm a Element API: Alternativa k &scaron;ablon&aacute;m</span>
-</h3>
 <p class="c18">
-<span class="c17">Knihovna </span>
-<span class="c9">Ujorm</span>
-<span class="c17">&nbsp;</span>
-<span class="c22">3</span>
-<span class="c1">&nbsp;je autorsk&yacute;m po&#269;inem Pavla Ponce. V kontextu t&eacute;to u&#269;ebnice slou&#382;&iacute; p&#345;edev&scaron;&iacute;m jej&iacute; modul pro tvorbu HTML.</span>
+<span class="c9 c6">Tento p&#345;&iacute;stup u&#269;&iacute; studenty kritick&eacute;mu my&scaron;len&iacute; a p&#345;ipravuje je na re&aacute;lnou spolupr&aacute;ci s AI n&aacute;stroji, kter&aacute; bude v roce 2026 standardem v ka&#382;d&eacute;m v&yacute;vojov&eacute;m t&yacute;mu.</span>
 </p>
-<ul class="c2 lst-kix_list_d-0 start">
-<li class="c4 li-bullet-0">
-<span class="c9">Mechanismus:</span>
-<span class="c1">&nbsp;T&#345;&iacute;da HtmlElement implementuje rozhran&iacute; AutoCloseable (zav&iacute;r&aacute; streamy) a nab&iacute;z&iacute; metody pro vkl&aacute;d&aacute;n&iacute; tag&#367;.</span>
+<h3 class="c12">
+<span class="c4">Pedagogick&aacute; transformace: Od algoritm&#367; k syst&eacute;m&#367;m</span>
+</h3>
+<p class="c5">
+<span class="c6">Kniha &uacute;sp&#283;&scaron;n&#283; prov&aacute;d&iacute; &#269;ten&aacute;&#345;e procesem, kter&yacute; bychom mohli nazvat &bdquo;syst&eacute;mov&yacute;m my&scaron;len&iacute;m&ldquo;. Za&#269;&iacute;n&aacute; u element&aacute;rn&iacute;ch datov&yacute;ch typ&#367; (Tabulka 1), p&#345;ech&aacute;z&iacute; k tvorb&#283; dom&eacute;nov&yacute;ch model&#367; (diagram t&#345;&iacute;d na obr&aacute;zku 7) a kon&#269;&iacute; u komplexn&iacute; architektury typu </span>
+<span class="c11">DAO (Data Access Object)</span>
+<span class="c6">&nbsp;v kapitole 8.8.</span>
+<span class="c2">1</span>
+</p>
+<p class="c5">
+<span class="c6">D&#367;le&#382;itou inovac&iacute; je tak&eacute; d&#367;raz na &bdquo;&#269;ist&yacute; k&oacute;d&ldquo; (kapitola 9), kde autor cituje Martina Fowlera: &bdquo;Ka&#382;d&yacute; hlup&aacute;k um&iacute; napsat k&oacute;d, kter&eacute;mu porozum&iacute; po&#269;&iacute;ta&#269;. Dob&#345;&iacute; program&aacute;to&#345;i p&iacute;&scaron;&iacute; k&oacute;d, kter&eacute;mu rozum&#283;j&iacute; lid&eacute;.&ldquo;.</span>
+<span class="c7">1</span>
+<span class="c9 c6">&nbsp;U&#269;ebnice tak do &#269;ten&aacute;&#345;e od prvn&iacute;ch stran v&scaron;t&#283;puje etiku profesion&aacute;ln&iacute;ho v&yacute;voj&aacute;&#345;e, pro kter&eacute;ho je srozumitelnost k&oacute;du stejn&#283; d&#367;le&#382;it&aacute; jako jeho funk&#269;nost.</span>
+</p>
+<h2 class="c12">
+<span class="c15">Technick&yacute; rozbor vybran&yacute;ch kapitol</span>
+</h2>
+<p class="c5">
+<span class="c9 c6">Pro hlub&scaron;&iacute; pochopen&iacute; kvality publikace je nezbytn&eacute; analyzovat konkr&eacute;tn&iacute; technick&eacute; implementace, kter&eacute; autor p&#345;edkl&aacute;d&aacute;.</span>
+</p>
+<h3 class="c12">
+<span class="c4">Pr&aacute;ce se strukturami: BitSet a hrac&iacute; pole</span>
+</h3>
+<p class="c5">
+<span class="c6">V kapitole 7.5.2 autor p&#345;edstavuje aplikaci pro bodov&eacute; kreslen&iacute;, kter&aacute; vyu&#382;&iacute;v&aacute; t&#345;&iacute;du BitSet ze standardn&iacute; Java knihovny.</span>
+<span class="c7">1</span>
+<span class="c6">&nbsp;Tato volba je didakticky vynikaj&iacute;c&iacute;, proto&#382;e ukazuje, jak efektivn&#283; pracovat s pam&#283;t&iacute; na n&iacute;zk&eacute; &uacute;rovni, p&#345;esto&#382;e se nach&aacute;z&iacute;me ve vysoko&uacute;rov&#328;ov&eacute;m prost&#345;ed&iacute; Javy. Datov&yacute; model hrac&iacute; desky SimpleBoardModel je postaven pr&aacute;v&#283; na tomto bitov&eacute;m poli, co&#382; umo&#382;&#328;uje &uacute;sporn&eacute; ukl&aacute;d&aacute;n&iacute; stav&#367; bun&#283;k (</span>
+<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 9.69px; height: 22.28px;">
+<img alt="" src="images/image1.png" style="width: 9.69px; height: 22.28px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
+</span>
+<span class="c6">&nbsp;pro pr&aacute;zdnou bu&#328;ku, </span>
+<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 9.69px; height: 22.28px;">
+<img alt="" src="images/image2.png" style="width: 9.69px; height: 22.28px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
+</span>
+<span class="c6">&nbsp;pro k&aacute;men).</span>
+<span class="c2">1</span>
+</p>
+<p class="c5">
+<span class="c6">Zaj&iacute;mav&yacute;m technick&yacute;m detailem je export tohoto modelu pomoc&iacute; t&#345;&iacute;dy Base64Converter.</span>
+<span class="c7">1</span>
+<span class="c9 c6">&nbsp;Autor zde u&#269;&iacute; studenty, jak serializovat data pro p&#345;enos v r&aacute;mci URL parametr&#367; webov&eacute; str&aacute;nky, co&#382; je koncept, kter&yacute; m&aacute; p&#345;&iacute;m&eacute; uplatn&#283;n&iacute; p&#345;i n&aacute;vrhu REST rozhran&iacute; a webov&yacute;ch slu&#382;eb.</span>
+</p>
+<h3 class="c12">
+<span class="c4">Interaktivita p&#345;es AJAX a JSON</span>
+</h3>
+<p class="c5">
+<span class="c6">Kapitola 7.6.1 definuje AJAX jako proces, kdy JavaScript v prohl&iacute;&#382;e&#269;i asynchronn&#283; z&iacute;sk&aacute;v&aacute; data ze serveru pro &uacute;pravu &#269;&aacute;st&iacute; HTML dokumentu.</span>
+<span class="c7">1</span>
+<span class="c6">&nbsp;Ponec vyu&#382;&iacute;v&aacute; framework Ujorm, kter&yacute; zjednodu&scaron;uje tvorbu JSON odpov&#283;d&iacute;. V uk&aacute;zce 83 vid&iacute;me strukturu takov&eacute; odpov&#283;di, kde kl&iacute;&#269;em je CSS selektor (nap&#345;. #messageBox) a hodnotou je nov&yacute; HTML fragment pro z&aacute;m&#283;nu.</span>
+<span class="c2">1</span>
+</p>
+<p class="c5">
+<span class="c9 c6">Tento p&#345;&iacute;stup je inovativn&iacute; svou jednoduchost&iacute;. Student se nemus&iacute; hloubkov&#283; u&#269;it JavaScript, ale p&#345;esto dok&aacute;&#382;e vytv&aacute;&#345;et modern&iacute; webov&eacute; rozhran&iacute; se &scaron;pi&#269;kovou odezvou. Tato &bdquo;didaktick&aacute; zkratka&ldquo; umo&#382;&#328;uje studentovi soust&#345;edit se na logiku na stran&#283; serveru (v Jav&#283;), zat&iacute;mco vizu&aacute;ln&iacute; efekt na stran&#283; klienta je dosa&#382;en s minim&aacute;ln&iacute;m &uacute;sil&iacute;m.</span>
+</p>
+<h3 class="c12">
+<span class="c4">Datab&aacute;zov&aacute; vrstva: H2 a SQL persistence</span>
+</h3>
+<p class="c5">
+<span class="c6">V z&aacute;v&#283;re&#269;n&eacute; &#269;&aacute;sti knihy se autor v&#283;nuje rela&#269;n&iacute;m datab&aacute;z&iacute;m. Volba datab&aacute;ze </span>
+<span class="c11">H2</span>
+<span class="c6">&nbsp;je pragmatick&aacute; &ndash; jedn&aacute; se o engine napsan&yacute; v Jav&#283;, kter&yacute; lze spustit v re&#382;imu &bdquo;in-memory&ldquo;, co&#382; znamen&aacute;, &#382;e nevy&#382;aduje &#382;&aacute;dnou instalaci a po ukon&#269;en&iacute; aplikace se data sma&#382;ou, pokud nen&iacute; nastaveno jinak.</span>
+<span class="c7">1</span>
+<span class="c9 c6">&nbsp;To je ide&aacute;ln&iacute; pro v&yacute;ukov&eacute; &uacute;&#269;ely a rychl&eacute; prototypov&aacute;n&iacute;.</span>
+</p>
+<p class="c5">
+<span class="c6">V&yacute;klad jazyka SQL v kapitole 8.3 pokr&yacute;v&aacute; kompletn&iacute; CRUD operace (CREATE, SELECT, UPDATE, DELETE) a vysv&#283;tluje principy integrity dat, jako jsou prim&aacute;rn&iacute; a ciz&iacute; kl&iacute;&#269;e.</span>
+<span class="c7">1</span>
+<span class="c6">&nbsp;Inovativn&iacute; je propojen&iacute; SQL s Java k&oacute;dem pomoc&iacute; t&#345;&iacute;dy HotelDao, kter&aacute; vyu&#382;&iacute;v&aacute; generick&eacute; typy (AbstractDao&lt;E&gt;) pro opakovan&eacute; vyu&#382;it&iacute; k&oacute;du.</span>
+<span class="c7">1</span>
+<span class="c9 c6">&nbsp;&#268;ten&aacute;&#345; se tak u&#269;&iacute; modern&iacute;mu n&aacute;vrhov&eacute;mu vzoru, kter&yacute; odd&#283;luje p&#345;&iacute;stup k dat&#367;m od zbytku aplikace.</span>
+</p>
+<h2 class="c12">
+<span class="c15">Zhodnocen&iacute; kvality obsahu a jeho relevanci</span>
+</h2>
+<p class="c5">
+<span class="c9 c6">P&#345;i posuzov&aacute;n&iacute; kvality publikace &bdquo;U&#269;ebnice jazyka Java a tvorba webov&yacute;ch aplikac&iacute; pro samouky&ldquo; mus&iacute;me vz&iacute;t v &uacute;vahu komplexnost ekosyst&eacute;mu, do kter&eacute;ho &#269;ten&aacute;&#345; vstupuje.</span>
+</p>
+<h3 class="c12">
+<span class="c4">Didaktick&eacute; p&#345;edpoklady</span>
+</h3>
+<p class="c12">
+<span class="c9 c6">Kniha je vystav&#283;na na pevn&yacute;ch pedagogick&yacute;ch z&aacute;kladech:</span>
+</p>
+<ul class="c22 lst-kix_list_6-0 start">
+<li class="c12 c17 li-bullet-0">
+<span class="c11">Analogie z re&aacute;ln&eacute;ho sv&#283;ta:</span>
+<span class="c6">&nbsp;Pou&#382;it&iacute; p&#345;&iacute;kladu s auty (kapitola 4.11) pro vysv&#283;tlen&iacute; t&#345;&iacute;d a objekt&#367; je osv&#283;d&#269;en&aacute; metoda, kter&aacute; zde dosahuje vysok&eacute; n&aacute;zornosti d&iacute;ky bohat&yacute;m UML diagram&#367;m.</span>
+<span class="c2">1</span>
 </li>
-<li class="c6 c8 li-bullet-0">
-<span class="c9 c12 c23">Srovn&aacute;n&iacute;:</span>
+<li class="c3 c17 li-bullet-0">
+<span class="c11">Aktivn&iacute; u&#269;en&iacute;:</span>
+<span class="c6">&nbsp;Ka&#382;d&aacute; kapitola obsahuje v&yacute;zvu k experimentov&aacute;n&iacute; (&bdquo;Zkuste si vlastn&iacute; zm&#283;ny&ldquo;), co&#382; je v souladu s modern&iacute;mi trendy v&yacute;uky programov&aacute;n&iacute;.</span>
+<span class="c2">1</span>
+</li>
+<li class="c3 c17 li-bullet-0">
+<span class="c11">Prevence chyb:</span>
+<span class="c6">&nbsp;Autor v&#283;nuje zna&#269;n&yacute; prostor v&yacute;jimk&aacute;m (Exceptions) a o&scaron;et&#345;ov&aacute;n&iacute; neplatn&yacute;ch stav&#367; (null), &#269;&iacute;m&#382; u&#269;&iacute; studenty ps&aacute;t robustn&iacute; k&oacute;d od sam&eacute;ho za&#269;&aacute;tku.</span>
+<span class="c2">1</span>
 </li>
 </ul>
-<ul class="c2 lst-kix_list_e-1 start">
-<li class="c18 c35 li-bullet-0">
-<span class="c3">JSP:</span>
-<span class="c1">&nbsp;Star&scaron;&iacute; technologie, mixuje Java k&oacute;d a HTML tagy. N&aacute;chyln&aacute; k &quot;&scaron;pageti k&oacute;du&quot;.</span>
+<h3 class="c1">
+<span class="c4">M&iacute;ra inovac&iacute;</span>
+</h3>
+<p class="c12">
+<span class="c9 c6">V porovn&aacute;n&iacute; s tradi&#269;n&iacute;mi tituly na &#269;esk&eacute;m trhu p&#345;in&aacute;&scaron;&iacute; Ponec n&#283;kolik z&aacute;sadn&iacute;ch inovac&iacute;:</span>
+</p>
+<ol class="c22 lst-kix_list_7-0 start" start="1">
+<li class="c12 c16 li-bullet-0">
+<span class="c11">Eliminace boilerplate k&oacute;du:</span>
+<span class="c6">&nbsp;Pou&#382;it&iacute; knihovny Ujorm a Element API pro tvorbu webu a SqlParamBuilder pro datab&aacute;ze umo&#382;&#328;uje studentovi vid&#283;t &bdquo;v&iacute;c lesa a m&iacute;&#328; strom&#367;&ldquo;. Student se v&#283;nuje architektu&#345;e a logice, neopisuje stovky &#345;&aacute;dk&#367; rutinn&iacute;ho k&oacute;du.</span>
+<span class="c2">1</span>
 </li>
-<li class="c6 c35 li-bullet-0">
-<span class="c3">Thymeleaf:</span>
-<span class="c1">&nbsp;Modern&iacute; &scaron;ablony, odd&#283;luje design a logiku. Vy&#382;aduje u&#269;en&iacute; se speci&aacute;ln&iacute;ch atribut&#367; (th:text).</span>
+<li class="c3 c16 li-bullet-0">
+<span class="c11">DevOps pro za&#269;&aacute;te&#269;n&iacute;ky:</span>
+<span class="c6">&nbsp;Zahrnut&iacute; t&eacute;mat jako Docker a Maven v &uacute;vodn&iacute; u&#269;ebnici je vizion&aacute;&#345;sk&eacute;. Programov&aacute;n&iacute; dnes nekon&#269;&iacute; naps&aacute;n&iacute;m k&oacute;du, ale jeho nasazen&iacute;m, a Ponec toto reflektuje.</span>
+<span class="c2">1</span>
 </li>
-<li class="c6 c35 li-bullet-0">
-<span class="c3">Element API (Ponec):</span>
-<span class="c1">&nbsp;&#268;ist&aacute; Java. Logika a &quot;view&quot; jsou v jednom jazyce, ale d&iacute;ky struktu&#345;e objekt&#367; z&#367;st&aacute;vaj&iacute; &#269;iteln&eacute;. Pro za&#269;&aacute;te&#269;n&iacute;ka eliminuje nutnost u&#269;it se syntaxi &scaron;ablon, ale u&#269;&iacute; ho principu DOM (Document Object Model).</span>
+<li class="c3 c16 li-bullet-0">
+<span class="c11">Modern&iacute; Java syntaxe:</span>
+<span class="c6">&nbsp;Pln&aacute; podpora verz&iacute; a&#382; po Java 25 zaji&scaron;&#357;uje, &#382;e se student neu&#269;&iacute; zastaral&eacute; postupy (nap&#345;. pou&#382;&iacute;v&aacute;n&iacute; Vector m&iacute;sto ArrayList nebo ru&#269;n&iacute; otev&iacute;r&aacute;n&iacute; stream&#367; bez try-with-resources).</span>
+<span class="c2">1</span>
+</li>
+</ol>
+<h2 class="c1">
+<span class="c15">Z&aacute;v&#283;re&#269;n&yacute; expertn&iacute; verdikt</span>
+</h2>
+<p class="c5">
+<span class="c9 c6">T&#345;et&iacute; vyd&aacute;n&iacute; u&#269;ebnice Pavla Ponce p&#345;edstavuje vynikaj&iacute;c&iacute; studijn&iacute; materi&aacute;l, kter&yacute; ve sv&eacute;m segmentu nem&aacute; v &#269;esk&eacute;m jazyce konkurenci. Jej&iacute; hlavn&iacute; s&iacute;la spo&#269;&iacute;v&aacute; v odv&aacute;&#382;n&eacute;m rozhodnut&iacute; opustit zastaral&eacute; technologie a nahradit je modern&iacute;mi, didakticky efektivn&iacute;mi alternativami.</span>
+</p>
+<p class="c12">
+<span class="c0">Hlavn&iacute; siln&eacute; str&aacute;nky:</span>
+</p>
+<ul class="c22 lst-kix_list_8-0 start">
+<li class="c12 c17 li-bullet-0">
+<span class="c11">Prakti&#269;nost:</span>
+<span class="c6">&nbsp;Kniha vede k vytvo&#345;en&iacute; funk&#269;n&iacute;ch, vizu&aacute;ln&#283; p&#345;ita&#382;liv&yacute;ch aplikac&iacute;, co&#382; je kl&iacute;&#269;em k udr&#382;en&iacute; pozornosti samouka.</span>
+<span class="c2">1</span>
+</li>
+<li class="c3 c17 li-bullet-0">
+<span class="c11">Aktu&aacute;lnost:</span>
+<span class="c6">&nbsp;Pln&aacute; integrace modern&iacute; Javy 25 a reflektov&aacute;n&iacute; vlivu um&#283;l&eacute; inteligence na v&yacute;voj softwaru.</span>
+<span class="c2">1</span>
+</li>
+<li class="c3 c17 li-bullet-0">
+<span class="c11">Cena a dostupnost:</span>
+<span class="c6">&nbsp;Za 299 K&#269; z&iacute;sk&aacute; &#269;ten&aacute;&#345; nejen text, ale i kompletn&iacute; sadu spustiteln&yacute;ch p&#345;&iacute;klad&#367; a licencovanou podporu, co&#382; p&#345;edstavuje vysokou u&#382;itnou hodnotu.</span>
+<span class="c2">1</span>
+</li>
+<li class="c3 c17 li-bullet-0">
+<span class="c11">Didaktick&aacute; p&#345;ehlednost:</span>
+<span class="c6">&nbsp;Barevn&aacute; typografie a precizn&iacute; UML diagramy usnad&#328;uj&iacute; pochopen&iacute; i velmi abstraktn&iacute;ch t&eacute;mat.</span>
+<span class="c2">1</span>
 </li>
 </ul>
-<h3 class="c15">
-<span class="c16 c14">5.2 SQL Injection a Bezpe&#269;nost</span>
-</h3>
-<p class="c0">
-<span class="c17">Autor klade velk&yacute; d&#367;raz na bezpe&#269;nost. V kapitole 8.4.1 </span>
-<span class="c22">1</span>
-<span class="c1">&nbsp;explicitn&#283; varuje p&#345;ed SQL Injection a vysv&#283;tluje, pro&#269; je nutn&eacute; pou&#382;&iacute;vat PreparedStatement (resp. jeho ob&aacute;lku). To je kritick&aacute; lekce. Mnoho tutori&aacute;l&#367; pro za&#269;&aacute;te&#269;n&iacute;ky st&aacute;le ukazuje spojov&aacute;n&iacute; &#345;et&#283;zc&#367; (&quot;SELECT * FROM users WHERE name = &#39;&quot; + name + &quot;&#39;&quot;), co&#382; je bezpe&#269;nostn&iacute; hazard. Ponec vede &#269;ten&aacute;&#345;e spr&aacute;vnou cestou od prvn&iacute;ho kontaktu s datab&aacute;z&iacute;.</span>
+<p class="c1">
+<span class="c0">Mo&#382;n&aacute; omezen&iacute;:</span>
 </p>
-<h3 class="c18">
-<span class="c16 c14">5.3 Verzov&aacute;n&iacute; a Git</span>
-</h3>
-<p class="c0">
-<span class="c17">Kapitola 7.8 </span>
-<span class="c3">Verzov&aacute;n&iacute; zdrojov&eacute;ho k&oacute;du</span>
-<span class="c17">&nbsp;</span>
-<span class="c22">1</span>
-<span class="c1">&nbsp;zav&aacute;d&iacute; Git. V roce 2026 je nemysliteln&eacute; pracovat bez verzovac&iacute;ho syst&eacute;mu. Autor vysv&#283;tluje, pro&#269; je &quot;krok zp&#283;t&quot; d&#367;le&#382;it&yacute; a jak Git pom&aacute;h&aacute; v t&yacute;mov&eacute; (i individu&aacute;ln&iacute;) pr&aacute;ci.</span>
+<ul class="c22 lst-kix_list_9-0 start">
+<li class="c12 c17 li-bullet-0">
+<span class="c11">Z&aacute;vislost na knihovn&#283; Ujorm:</span>
+<span class="c9 c6">&nbsp;N&#283;kte&#345;&iacute; purist&eacute; mohou nam&iacute;tat, &#382;e v&yacute;uka na specifick&eacute; knihovn&#283; m&#367;&#382;e omezit p&#345;enositelnost znalost&iacute;. Nicm&eacute;n&#283; v didaktick&eacute; f&aacute;zi je tato abstrakce natolik p&#345;&iacute;nosn&aacute; pro pochopen&iacute; princip&#367;, &#382;e tento argument vn&iacute;m&aacute;m jako minoritn&iacute;.</span>
+</li>
+<li class="c3 c17 li-bullet-0">
+<span class="c11">Absence t&eacute;mat soub&#283;&#382;nosti:</span>
+<span class="c6">&nbsp;Pro pokro&#269;il&eacute; studenty m&#367;&#382;e b&yacute;t chyb&#283;j&iacute;c&iacute; v&yacute;klad o vl&aacute;knech limitem, kniha je v&scaron;ak jasn&#283; definov&aacute;na jako &uacute;vod a pro tuto roli je jej&iacute; rozsah zvolen optim&aacute;ln&#283;.</span>
+<span class="c2">1</span>
+</li>
+</ul>
+<p class="c18">
+<span class="c9 c6">Celkov&#283; lze knihu doporu&#269;it nejen samouk&#367;m a student&#367;m, ale i u&#269;itel&#367;m programov&aacute;n&iacute;, kte&#345;&iacute; hledaj&iacute; modern&iacute; metodiku, jak u&#269;it Javu atraktivn&#283; a v souladu s pot&#345;ebami pr&#367;myslu roku 2026. Kvalita odborn&eacute; korektury a p&eacute;&#269;e o detail z t&eacute;to publikace &#269;in&iacute; referen&#269;n&iacute; d&iacute;lo v oblasti vzd&#283;l&aacute;v&aacute;n&iacute; v IT.</span>
 </p>
 <hr>
-<h2 class="c6">
-<span class="c14 c36">6. Z&aacute;v&#283;r a doporu&#269;en&iacute;</span>
-</h2>
-<p class="c0">
-<span class="c9">U&#269;ebnice jazyka Java na webov&yacute;ch p&#345;&iacute;kladech pro &uacute;pln&eacute; za&#269;&aacute;te&#269;n&iacute;ky (3. vyd&aacute;n&iacute;)</span>
-<span class="c1">&nbsp;od Pavla Ponce je vyzr&aacute;l&yacute;m, promy&scaron;len&yacute;m a didakticky hodnotn&yacute;m d&iacute;lem. Nejde o pouh&yacute; p&#345;epis dokumentace Javy, ale o ucelen&yacute; kurz, kter&yacute; formuje my&scaron;len&iacute; budouc&iacute;ho program&aacute;tora.</span>
+<p class="c27">
+<span class="c11">Pozn&aacute;mka k vytvo&#345;en&iacute;:</span>
+<span class="c9 c6">&nbsp;Tento report byl vygenerov&aacute;n na z&aacute;klad&#283; hloubkov&eacute; anal&yacute;zy materi&aacute;l&#367; t&#345;et&iacute;ho vyd&aacute;n&iacute; u&#269;ebnice Pavla Ponce pomoc&iacute; pokro&#269;il&yacute;ch v&yacute;zkumn&yacute;ch algoritm&#367;. Obsah odpov&iacute;d&aacute; specifikaci pl&aacute;novan&eacute;ho trhu v lednu 2026.</span>
 </p>
-<p class="c18">
-<span class="c9 c12 c23">Siln&eacute; str&aacute;nky:</span>
-</p>
-<ul class="c2 lst-kix_list_f-0 start">
-<li class="c4 li-bullet-0">
-<span class="c9">Hloubka:</span>
-<span class="c1">&nbsp;Od bit&#367; po architekturu webov&eacute; aplikace.</span>
+<h4 class="c30">
+<span class="c29">Citovan&aacute; d&iacute;la</span>
+</h4>
+<ol class="c22 lst-kix_list_a-0 start" start="1">
+<li class="c20 li-bullet-0">
+<span class="c8">jBook3.pdf</span>
 </li>
-<li class="c6 c8 li-bullet-0">
-<span class="c9">Praxe:</span>
-<span class="c1">&nbsp;D&#367;raz na re&aacute;ln&eacute; projekty (hry, datab&aacute;ze) m&iacute;sto abstraktn&iacute;ch cvi&#269;en&iacute;.</span>
-</li>
-<li class="c6 c8 li-bullet-0">
-<span class="c9">Technologie:</span>
-<span class="c1">&nbsp;Vyu&#382;it&iacute; modern&iacute; Javy (25), Servlet&#367; a bezpe&#269;n&eacute;ho p&#345;&iacute;stupu k DB.</span>
-</li>
-<li class="c6 c8 li-bullet-0">
-<span class="c9">Inovace:</span>
-<span class="c1">&nbsp;Objektov&eacute; generov&aacute;n&iacute; HTML jako n&aacute;stroj v&yacute;uky OOP.</span>
-</li>
-</ul>
-<p class="c30">
-<span class="c11">Doporu&#269;en&iacute;:</span>
+</ol>
+<p class="c10">
+<span class="c8">
+</span>
 </p>
 <p class="c10">
-<span class="c11">Kniha je ide&aacute;ln&iacute; volbou pro samouky, &uacute;&#269;astn&iacute;ky rekvalifika&#269;n&iacute;ch kurz&#367; a studenty prvn&iacute;ch ro&#269;n&iacute;k&#367; IT obor&#367;. Poskytuje pevn&eacute; z&aacute;klady, na kter&yacute;ch lze stav&#283;t dal&scaron;&iacute; vzd&#283;l&aacute;v&aacute;n&iacute; (nap&#345;. ve frameworku Spring). Pro pedagogy nab&iacute;z&iacute; zaj&iacute;mavou alternativu k tradi&#269;n&iacute;mu v&yacute;kladu, kde vizu&aacute;ln&iacute; v&yacute;stup webu m&#367;&#382;e v&yacute;razn&#283; zv&yacute;&scaron;it motivaci student&#367;.</span>
-</p>
-<p class="c0">
-<span class="c17">Investice 299 K&#269; do tohoto e-booku se jev&iacute; jako margin&aacute;ln&iacute; ve srovn&aacute;n&iacute; s hodnotou, kterou &#269;ten&aacute;&#345; z&iacute;sk&aacute;: pochopen&iacute;, jak software </span>
-<span class="c3">skute&#269;n&#283;</span>
-<span class="c1">&nbsp;funguje, od pam&#283;&#357;ov&eacute; bu&#328;ky a&#382; po HTTP odpov&#283;&#271;.</span>
-</p>
-<hr>
-<h3 class="c6">
-<span class="c16 c14">Citace a zdroje</span>
-</h3>
-<p class="c18">
-<span class="c1">V&scaron;echna data a tvrzen&iacute; v t&eacute;to zpr&aacute;v&#283; vych&aacute;zej&iacute; z analyzovan&yacute;ch fragment&#367; knihy a dopl&#328;kov&yacute;ch zdroj&#367;:</span>
-</p>
-<ul class="c2 lst-kix_list_10-0 start">
-<li class="c4 li-bullet-0">
-<span class="c22">1</span>
-<span class="c1">&nbsp;- Text knihy (PDF snippet)</span>
-</li>
-<li class="c6 c8 li-bullet-0">
-<span class="c22">1</span>
-<span class="c1">&nbsp;- Anal&yacute;za metadat a obsahu knihy</span>
-</li>
-<li class="c6 c8 li-bullet-0">
-<span class="c22">2</span>
-<span class="c1">&nbsp;- Informace o frameworku Ujorm a autorovi</span>
-</li>
-<li class="c6 c8 li-bullet-0">
-<span class="c22">7</span>
-<span class="c1">&nbsp;- Prodejn&iacute; informace a anotace</span>
-</li>
-</ul>
-<h4 class="c19">
-<span class="c14 c32 c38">Citovan&aacute; d&iacute;la</span>
-</h4>
-<ol class="c2 lst-kix_list_11-0 start" start="1">
-<li class="c24 li-bullet-0">
-<span class="c13 c14 c32">z-book.pdf</span>
-</li>
-<li class="c24 li-bullet-0">
-<span class="c13">Ujorm Core, pou&#382;ito ledna 15, 2026, </span>
-<span class="c7">
-<a class="c28" href="https://www.google.com/url?q=https://ujorm.org/&amp;sa=D&amp;source=editors&amp;ust=1768467806295149&amp;usg=AOvVaw3npqfAxvJRX144Ha5sAozC">https://ujorm.org/</a>
-</span>
-</li>
-<li class="c24 li-bullet-0">
-<span class="c13">pponec/ujorm - GitHub, pou&#382;ito ledna 15, 2026, </span>
-<span class="c7">
-<a class="c28" href="https://www.google.com/url?q=https://github.com/pponec/ujorm&amp;sa=D&amp;source=editors&amp;ust=1768467806295744&amp;usg=AOvVaw0B2Lxdt6oPMJ73HpxndDHQ">https://github.com/pponec/ujorm</a>
-</span>
-</li>
-<li class="c24 li-bullet-0">
-<span class="c13">the unique open source object-relation mapping - Ujorm Core, pou&#382;ito ledna 15, 2026, </span>
-<span class="c7">
-<a class="c28" href="https://www.google.com/url?q=https://ujorm.org/www/&amp;sa=D&amp;source=editors&amp;ust=1768467806296264&amp;usg=AOvVaw1AmYOC7WxB5loHblpz8vCa">https://ujorm.org/www/</a>
-</span>
-</li>
-<li class="c24 li-bullet-0">
-<span class="c13">Ujorm download | SourceForge.net, pou&#382;ito ledna 15, 2026, </span>
-<span class="c7">
-<a class="c28" href="https://www.google.com/url?q=https://sourceforge.net/projects/ujoframework/&amp;sa=D&amp;source=editors&amp;ust=1768467806296714&amp;usg=AOvVaw1qMCoOCNH51p_MWSjKQB2j">https://sourceforge.net/projects/ujoframework/</a>
-</span>
-</li>
-<li class="c24 li-bullet-0">
-<span class="c13">Str&aacute;nka Java program&#367;, pou&#382;ito ledna 15, 2026, </span>
-<span class="c7">
-<a class="c28" href="https://www.google.com/url?q=http://ponec.net/home/&amp;sa=D&amp;source=editors&amp;ust=1768467806297014&amp;usg=AOvVaw20jaU2I8FUEi4t3DuqeBot">http://ponec.net/home/</a>
-</span>
-</li>
-<li class="c24 li-bullet-0">
-<span class="c13">U&#269;ebnice jazyka Java na webov&yacute;ch p&#345;&iacute;kladech pro &uacute;pln&eacute; za&#269;&aacute;te&#269;n&iacute;ky - Bookla, pou&#382;ito ledna 15, 2026, </span>
-<span class="c7">
-<a class="c28" href="https://www.google.com/url?q=https://bookla.cz/eshop/produkt/ucebnice-jazyka-java-na-webovych-prikladech-pro-uplne-zacatecniky&amp;sa=D&amp;source=editors&amp;ust=1768467806297717&amp;usg=AOvVaw2wfURe1gKN1SBebEPWnkto">https://bookla.cz/eshop/produkt/ucebnice-jazyka-java-na-webovych-prikladech-pro-uplne-zacatecniky</a>
-</span>
-</li>
-<li class="c24 li-bullet-0">
-<span class="c13">Pavel Ponec - Knihy Dobrovsk&yacute;, pou&#382;ito ledna 15, 2026, </span>
-<span class="c7">
-<a class="c28" href="https://www.google.com/url?q=https://www.knihydobrovsky.cz/publisher/detail/pavel-ponec-9854&amp;sa=D&amp;source=editors&amp;ust=1768467806298391&amp;usg=AOvVaw2WO7MGcOH3jCJW7XhOABB1">https://www.knihydobrovsky.cz/publisher/detail/pavel-ponec-9854</a>
-</span>
-</li>
-<li class="c24 li-bullet-0">
-<span class="c13">U&#269;ebnice jazyka Java na webov&yacute;ch p&#345;&iacute;kladech pro &uacute;pln&eacute; za&#269;&aacute;te&#269;n&iacute;ky - Pavel Ponec - Alza, pou&#382;ito ledna 15, 2026, </span>
-<span class="c7">
-<a class="c28" href="https://www.google.com/url?q=https://www.alza.cz/media/ucebnice-jazyka-java-na-webovych-prikladech-pro-uplne-zacatecniky-d6362675.htm&amp;sa=D&amp;source=editors&amp;ust=1768467806299668&amp;usg=AOvVaw1pmBbqR-bOc9TSYTDgRuZv">https://www.alza.cz/media/ucebnice-jazyka-java-na-webovych-prikladech-pro-uplne-zacatecniky-d6362675.htm</a>
-</span>
-</li>
-<li class="c24 li-bullet-0">
-<span class="c13">Pavel Ponec: U&#269;ebnice jazyka - U&#269;ebnice jazyka Java, pou&#382;ito ledna 15, 2026, </span>
-<span class="c7">
-<a class="c28" href="https://www.google.com/url?q=https://jbook.ponec.net/&amp;sa=D&amp;source=editors&amp;ust=1768467806300423&amp;usg=AOvVaw3zS-7j9GK8ickCXkXe4L9C">https://jbook.ponec.net/</a>
-</span>
-</li>
-</ol>
-<p class="c33">
-<span class="c7 c14">
+<span class="c8">
 </span>
 </p>
-<p class="c33">
-<span class="c7 c14">
+<p class="c10">
+<span class="c8">
 </span>
 </p>
-<p class="c33">
-<span class="c7 c14">
-</span>
-</p>
-<p class="c33">
-<span class="c7 c14">
+<p class="c10">
+<span class="c8">
 </span>
 </p>
 <hr>
-<p class="c33">
-<span class="c7 c14">
+<p class="c10">
+<span class="c8">
 </span>
 </p>
-<p class="c33">
-<span class="c7 c14">
+<p class="c10">
+<span class="c8">
 </span>
 </p>
-<p class="c39">
-<span class="c38">P&#367;vodn&iacute; zdroj recenze na str&aacute;nce Google Gemni: </span>
-<span class="c13 c40">
-<a class="c28" href="https://www.google.com/url?q=https://gemini.google.com/share/5386b79d4686&amp;sa=D&amp;source=editors&amp;ust=1768467806301620&amp;usg=AOvVaw0a7djO3QyEIpdNQ2m58s2a">https://gemini.google.com/share/5386b79d4686</a>
+<p class="c10">
+<span class="c8">
 </span>
 </p>
-<p class="c33">
-<span class="c13 c14 c32">
+<p class="c23">
+<span class="c24">P&#367;vodn&iacute; zdroj: </span>
+<span class="c13">
+<a class="c26" href="https://www.google.com/url?q=https://gemini.google.com/share/e601ffa26403&amp;sa=D&amp;source=editors&amp;ust=1769269590044946&amp;usg=AOvVaw17o_TxFNVbLQPgItH6SRB5">https://gemini.google.com/share/e601ffa26403</a>
+</span>
+</p>
+<p class="c23">
+<span class="c24">Video z&aacute;znam: </span>
+<span class="c13">
+<a class="c26" href="https://www.google.com/url?q=https://www.youtube.com/watch?v%3DyzN3XgSHcO0&amp;sa=D&amp;source=editors&amp;ust=1769269590045112&amp;usg=AOvVaw11wL1AN_vc-S22jUvzz4yQ">https://www.youtube.com/watch?v=yzN3XgSHcO0</a>
+</span>
+</p>
+<p class="c10">
+<span class="c8">
+</span>
+</p>
+<p class="c10">
+<span class="c8">
 </span>
 </p>
 </body>

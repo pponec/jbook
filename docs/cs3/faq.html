@@ -12,165 +12,175 @@ Released   : 20080129
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>Učebnice jazyka Java</title>
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
-    <meta name="keywords" content="Java, XML, učebnice, kniha, průvodce, příklady, web" />
-    <meta name="description" content="Učebnice jazyka Java" />
     <link href="../css/main.css" rel="stylesheet" type="text/css" media="screen" />
+
+    <title>Učebnice Java pro samouky – Otázky a odpovědi</title>
+    <meta name="description" content="Váháte s koupí? Přečtěte si odpovědi na nejčastější dotazy: Jaké znalosti potřebujete předem, požadavky na počítač, operační systém a proč učíme Javu bez frameworků.">
+    <meta name="keywords" content="časté dotazy programování, hardwarové nároky Java, prerekvizity kurzu, Java pro&nbsp;samouky diskuze, instalace Java, podpora ke knize, Pavel Ponec kontakt">
+
     <style>
-i.method {color: Navy;}
+        /* Zvyrazneni metod pro lepsi citelnost */
+        i.method {
+            color: #003366; /* Tmavsi modra pro lepsi kontrast */
+            font-family: Consolas, "Courier New", monospace;
+            font-style: normal;
+            font-weight: bold;
+            background-color: #f4f4f4;
+            padding: 0 4px;
+            border-radius: 3px;
+        }
+        /* Pridani vzdusnosti seznamu */
+        .entry ul li {
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
     </style>
 </head>
 <body>
-    <div id="wrapper">
-        <div id="menu">
-            <ul>
-                <li><a href="http://jbook.ponec.net/cs.html">Domovská stránka</a></li>
-                <li class="current_page_item"><a href="http://jbook.ponec.net/cs.html#download">Stahuj</a></li>
-                <li><a href="http://jbook.ponec.net/cs.html#author">O autorovi</a></li>
-            </ul>
-        </div>
-        <div id="logo">
-            <h2>Pavel Ponec:<br/>Učebnice jazyka</h2>
-            <h1><a href="#">Java</a></h1>
-            <h2>a tvorba webových aplikací<br/>pro&nbsp;samouky III</h2>
+<div id="wrapper">
+    <div id="menu">
+        <ul>
+            <li><a href="http://jbook.ponec.net/cs.html">Domovská stránka</a></li>
+            <li class="current_page_item"><a href="http://jbook.ponec.net/cs.html#download">Stahuj</a></li>
+            <li><a href="http://jbook.ponec.net/cs.html#author">O&nbsp;autorovi</a></li>
+        </ul>
+    </div>
+    <div id="logo">
+        <h2>Pavel Ponec:<br/>Učebnice jazyka</h2>
+        <h1><a href="#">Java</a></h1>
+        <h2>a&nbsp;tvorba webových aplikací<br/>pro&nbsp;samouky III</h2>
 
-            <h2><img src="../images/logo.png" alt="Logo" style="margin-left:50px;" /></h2>
-        </div>
-        <hr />
-        <div id="page">
-            <div id="content">
+        <h2><img src="../images/logo.png" alt="Logo" style="margin-left:50px;" /></h2>
+    </div>
+    <hr />
+    <div id="page">
+        <div id="content">
 
-                <div class="post">
-                    <img src="../images/milky-44.png" width="48" height="48" alt="architecture" style="float:left; margin: 0 15px 0 0; vertical-align:text-top; border:0" />
-                    <h2 class="title" id="download"><a href="#">Časté dotazy</a></h2>
-                    <div class="entry">
-                        <ul>
-                            <li id="book3"><strong>Čím se třetí vydání liší?</strong><br/>
-                                Třetí vydání obsahuje několik nových kapitol, zejména úvod do relačních databází.
-                                Nově zmiňuje také používání paměti a třídu typu <i>record<i>, verzovací systém Git a použití
-                                <a href="https://cs.wikipedia.org/wiki/Um%C4%9Bl%C3%A1_inteligence">umělé inteligence (AI)</a>
-                                na příkladu generování herní strategie.
-                                Servlety používají API verze 6.1.0 z balíku <code>jakarta</code>.
-                                Příklady vyžadují pro&nbsp;spuštění <strong>Javu</strong> verze&nbsp;<strong>25 LTS</strong>,
-                                což je nejnovější stabilní verze s&nbsp;dlouhodobou podporou (v&nbsp;době vydání knihy).
-                            </li>
-                            <li id="tech"><strong>Jaké technologie se v knize používají?</strong><br/>
-                                Všechny ukázkové stránky jsou Java servlety Maven projektu,
-                                který se pouští jako webová aplikace na kontejneru
-                                <a href="https://en.wikipedia.org/wiki/Jetty_(web_server)">Jetty</a>,
-                                webový archiv <a href="https://en.wikipedia.org/wiki/WAR_(file_format)">WAR</a>
-                                však lze spustit i na konteneru
-                                <a href="https://cs.wikipedia.org/wiki/Apache_Tomcat">Tomcat</a> a dalších.
-                                Pro eliminaci textových řetězců s HTML kódem se využívá třída
-                                Element z volně šiřitelné knihovny.
-                                Zdrojový kód příkladů je k nahlédnutí v&nbsp;angličtině
-                                <a href="https://jbook3-samples-free.ponec.net/sample?src=net.ponec.jbook.s01_hello.HelloWorldElement">tady</a>.
-                            </li>
-                            <li id="servlet"><strong>Není používání servletů přežité?</strong><br/>
-                                Servlety se stále používají, pouze jejich API bývá zabalené do&nbsp;různých sofistikovaných knihoven.
-                                Navíc, od&nbsp;specifikace&nbsp;<i>Servlet&nbsp;3.0</i> se jejich registrace podstatně zjednodušila (zavedením anotace
-                                <a href="https://www.baeldung.com/register-servlet#2-via-annotations">WebServlet</a>),
-                                což z&nbsp;nich dělalá dnes skvělý prostředek právě pro&nbsp;začátečníky.
-                            </li>
-                            <li id="element"><strong>Je objektový model webové stránky pro začátečníky vhodný? </strong><br/>
-                                Domnívám se, že kdo se chce naučit objektový jazyk, měl by zažít i&nbsp;práci s objektovým modelem
-                                a sestavování HTML modelu se mi zdá být k tomu dobrá příležitost.
-                            </li>
-                            <li id="element2"><strong>Není použití třídy <i>Element</i> složité?</strong><br/>
+            <div class="post">
+                <img src="../images/milky-44.png" width="48" height="48" alt="architecture" style="float:left; margin: 0 15px 0 0; vertical-align:text-top; border:0" />
+                <h2 class="title" id="download"><a href="#">Časté dotazy (FAQ)</a></h2>
+                <div class="entry">
+                    <ul>
+                        <li id="level"><strong>Potřebujeme nějaké předchozí znalosti IT?</strong><br/>
+                            Vůbec ne. Kniha je napsaná pro&nbsp;úplné nováčky.
+                            Začneme od&nbsp;nuly: vysvětlíme si, co je to paměť, jak fungují bity a&nbsp;postupně přejdeme k&nbsp;programování.
+                            Pokud umíte nainstalovat běžnou počítačovou hru, zvládnete nainstalovat i&nbsp;Javu.
+                        </li>
 
-Jakmile získáme <i>kořenový element</i>, pro sestavení libovolné webové stránky stačí znát (v principu) pouze <strong>tři</strong> metody z té třídy:
+                        <li id="install"><strong>Co si musíme nainstalovat?</strong><br/>
+                            Budeme potřebovat pouze <strong>Java&nbsp;25 LTS</strong>.
+                            Zkratka LTS (Long Term Support) znamená, že jde o&nbsp;stabilní verzi s&nbsp;dlouhodobou podporou, na&nbsp;kterou se můžete spolehnout.
+                        </li>
 
-<br/>1) <i class="method">setAttribute()</i> –&nbsp;metoda přiřadí aktuálnímu elementu atribut s&nbsp;hodnotou,
-<br/>2) <i class="method">addElement()</i> –&nbsp;metoda přidá do&nbsp;objektu nový element s&nbsp;názvem prvního argumentu a&nbsp;jeho instanci vrátí zpět,
-<br/>3) <i class="method">addText()</i> –&nbsp;metoda přidá do&nbsp;těla elementu text a&nbsp;ošetří zápis speciálních znaků; k&nbsp;dispozici je ještě alternativní metoda <i class="method">addRawText()</i>.
-                            </li>
-                            <li id="memory"><strong>Není datový model webové stránky náročný na&nbsp;paměť?</strong><br/>
-                                Třída <i>Element</i> je ve skutečnosti jen obálka nad objektem typu <i>PrintWriter</i>,
-                                a&nbsp;tak všechny texty zapsané do&nbsp;elementu se posílají rovnou do&nbsp;toho <i>writeru</i>.
-                                S tímto přístupem lze sestavit efektivně i&nbsp;stránky značného rozsahu.
-                                V&nbsp;případě potřeby však lze plnohodnotný paměťový model aktivovat v&nbsp;konfiguraci.
-                            </li>
-                            <li id="jsf"><strong>Proč nejsou příklady postaveny na JSP nebo JSF?</strong><br/>
-                                Cílem knihy není učit šablonovací systém, ale práci s objekty.
-                                Kromě toho názory na přínos technologií JSP a jeho nástupce JSF bývají značně kontroverzní.
-                            </li>
-                            <li id="kargoklutic"><strong>Nemůže pojetí knihy vést
-                                    ke <a href="https://cs.wikipedia.org/wiki/Kargokultick%C3%A9_programov%C3%A1n%C3%AD">kargoklutickému
-                                    programování</a> (kódování bez porozumění)?</strong><br/>
-                                Cílem výkladu je demonstrovat význam, principy a souvislosti použitých programových konstrukcí.
-                                Domnívám se však, že&nbsp;začátečník nemusí znát všechny detaily hned.
-                                Extrémní důraz na&nbsp;detail některé začátečníky zbytečně odradí, a&nbsp;neplatí to jen o&nbsp;programování.
-                                Vybraná témata obsahují odkazy na&nbsp;internetový zdroj pro&nbsp;další studium.
-                            </li>
-                            <li id="tech2"><strong>Není zvládnutí všech použitých technologií nad&nbsp;síly začátečníka?</strong><br/>
-                                Je pravda, že webové stránky jsou popsány jazykem <i>HTML</i> s <i>CSS</i>
-                                a&nbsp;ke&nbsp;spuštění aplikace (ve webovém kontejneru) je třeba použít <i>Maven</i>.
-                                Nástroje projektu <i>Maven</i> zde však slouží především jako <strong>prostředek</strong>
-                                a&nbsp;to  samé platí také o&nbsp;webovém kontejneru.
-                                Výklad jazyka <i>HTML</i> s&nbsp;<i>CSS</i> (včetně použitých techologií) jsem se
-                                pokusil omezit na&nbsp;nezbytné minimum.
-                                Stažený projekt obsahuje skript pro&nbsp;spuštění celého projektu a&nbsp;obsahuje i&nbsp;<i>Maven</i> samotný.
-                                Kromě <i>Java</i> prostředí není nutné nic dalšího instalovat.
-                            </li>
-                        </ul>
-                    </div>
-                    <p class="meta">&nbsp;</p>
-                </div><!-- post -->
+                        <li id="system"><strong>Poběží nám to na&nbsp;našem počítači?</strong><br/>
+                            Ano. Java je univerzální, takže příklady fungují na&nbsp;<strong>Windows</strong>, <strong>macOS</strong> i&nbsp;<strong>Linuxu</strong>.
+                            Nepotřebujete ani supervýkonný stroj – pokud používáte Linux (např. Xubuntu), stačí vám 2&nbsp;GB paměti RAM.
+                        </li>
 
-                <div class="post">
-                    <img src="../images/milky-06.png" width="48" height="48" alt="Kontakt" style="float:left; margin: 0 15px 0 0; vertical-align:text-top; border:0" />
-                    <h2 class="title"  id="contact"><a href="#">Kontakt</a></h2>
-                    <div class="entry">
-                        <ul>
-                            <li>Facebook: <a href="https://www.facebook.com/jBookPonec/">https://www.facebook.com/...</a></li>
-                            <li>Domovská stránka: <a href="https://jbook.ponec.net/">https://jbook.ponec.net/</a></li>
-                            <!--
-                            <li>Nakladatelství: <a href="https://pointa.cz/">Pointa Publishing s.r.o.</a></li>
-                            -->
-                            <li>Email: <img src="../images/email.png" style="vertical-align: text-bottom"></li>
-                        </ul>
-                    </div>
-                    <p>&nbsp;</p>
-                </div><!-- post -->
+                        <li id="book3"><strong>V&nbsp;čem je 3.&nbsp;vydání nové?</strong><br/>
+                            Třetí vydání jde více do&nbsp;hloubky i&nbsp;šířky. Přidal jsem:
+                            <br/>• Úvod do&nbsp;<strong>relačních databází</strong> (SQL).
+                            <br/>• Práci s&nbsp;pamětí.
+                            <br/>• Ukázku využití <strong>umělé inteligence (AI)</strong> při návrhu herní strategie.
+                            <br/>• Základy verzování v&nbsp;systému <strong>Git</strong> (nezbytnost pro každého programátora).
+                            <br/>• Všechny původní kapitoly prošly novou důkladnou revizí s&nbsp;cílem zlepšit čtivost a&nbsp;porozumění výkladu.
+                        </li>
 
+                        <li id="tech"><strong>Jaké technologie nás kniha naučí?</strong><br/>
+                            Budeme tvořit skutečné webové aplikace.
+                            Všechny ukázky jsou součástí jednoho <strong>Maven</strong> projektu, které běží na&nbsp;lehkém webovém serveru <a href="https://en.wikipedia.org/wiki/Jetty_(web_server)">Jetty</a>.
+                            Naučíme se vytvářet HTML kód čistě pomocí Java objektů (využijeme k&nbsp;tomu třídu <code>Element</code>), což vám pomůže pochopit principy OOP lépe než pouhé psaní textových šablon.
+                            Zvědavci mohou nahlédnout do&nbsp;zdrojového kódu už <a href="https://jbook3-samples-free.ponec.net/sample?src=net.ponec.jbook.s01_hello.HelloWorldServlet">teď</a>.
+                        </li>
 
-            </div><!-- end #content -->
+                        <li id="servlet"><strong>Proč se učíme Servlety místo Spring frameworku?</strong><br/>
+                            Protože Servlety jsou abeceda webu.
+                            Moderní frameworky (jako Spring Boot) jsou jen obálkou, která leccos schová.
+                            Kdo se naučí Servlety, ten pochopí, jak web <em>skutečně</em> funguje "pod kapotou".
+                            Přechod na&nbsp;složité frameworky bude pro&nbsp;vás pak snadnější.
+                        </li>
 
-            <div id="sidebar">
+                        <li id="element"><strong>HTML jako objekty? Není lepší psát rovnou HTML kód?</strong><br/>
+                            Pro výuku programování je objektový přístup lepší.
+                            Když sestavujeme stránku pomocí objektů (Java tříd), učíme se myslet jako programátor, ne jako kodér webu.
+                            Donutí vás to chápat strukturu stránky (strom) a&nbsp;vztahy mezi elementy.
+                        </li>
+
+                        <li id="element2"><strong>Nebude práce s&nbsp;třídou <code>Element</code> složitá?</strong><br/>
+                            Naopak, je to jako stavebnice. Vystačíme si se <strong>třemi metodami</strong>:
+                            <br/>1) <i class="method">addElement(...)</i> – přidá novou kostičku (element),
+                            <br/>2) <i class="method">setAttribute(...)</i> – nastaví jí vlastnosti,
+                            <br/>3) <i class="method">addText(...)</i> – vepíše dovnitř text.
+                            <br/>Víc pro&nbsp;začátek nepotřebujete.
+                        </li>
+
+                        <li id="memory"><strong>Je tento způsob šetrný k&nbsp;paměti počítače?</strong><br/>
+                            Ano, velmi. Třída <code>Element</code> funguje jen jako průtokový ohřívač – data se v&nbsp;ní nehromadí, ale rovnou se posílají na&nbsp;výstup (do prohlížeče).
+                            Díky tomu můžeme generovat i&nbsp;obrovské stránky bez rizika, že by vám došla paměť.
+                        </li>
+
+                        <li id="jsf"><strong>Proč nepoužíváme JSP nebo JSF?</strong><br/>
+                            Protože cílem je naučit vás <strong>Javu a&nbsp;objektové myšlení</strong>, ne vás zahltit syntaxí šablonovacích jazyků, které navíc v&nbsp;komunitě vzbuzují rozporuplné reakce.
+                            Zůstaneme u&nbsp;čistého kódu.
+                        </li>
+
+                        <li id="kargoklutic"><strong>Budeme tomu opravdu rozumět, nebo jen "opisovat kód"?</strong><br/>
+                            Kniha je psaná proti principům tzv. <a href="https://cs.wikipedia.org/wiki/Kargokultick%C3%A9_programov%C3%A1n%C3%AD">kargo-kultického programování</a>.
+                            Nechci, abyste slepě kopírovali příkazy. Kniha vysvětluje <strong>proč</strong> se věci dějí a&nbsp;jaké jsou souvislosti.
+                            Zároveň vás však nechci zahltit detaily, které v&nbsp;začátcích nepotřebujete, abyste neztratili motivaci.
+                        </li>
+
+                        <li id="tech2"><strong>Není těch technologií na&nbsp;začátečníka moc?</strong><br/>
+                            Může se to tak zdát (HTML, CSS, Maven, Java), ale není důvod k&nbsp;obavám.
+                            Nástroje jako <em>Maven</em> používáme jen jako "pomocníky na&nbsp;pozadí", nebudeme se je učit do&nbsp;hloubky.
+                            Soustředíme se na&nbsp;Javu. HTML a&nbsp;CSS omezíme na&nbsp;nutné minimum.
+                            Vše je připraveno tak, abychom po instalaci Javy mohli začít společně tvořit.
+                        </li>
+
+                        <li id="ujorm"><strong>Co je to <i>Ujorm</i>?</strong><br/>
+                            <a href="https://ujorm.org/www/index.html">Ujorm</a> byl ve své době unikátní <a href="https://cs.wikipedia.org/wiki/Objektov%C4%9B_rela%C4%8Dn%C3%AD_mapov%C3%A1n%C3%AD">ORM</a>
+                            framework pro modelování typově bezpečných databázových dotazů.
+                            Dnes se aktivně udržují už jen některé moduly pro obecné využití.
+                            Například podpora generování HTML stránek pomocí objektového modelu.
+                        </li>
+                    </ul>
+
+                    Nenašli jste odpověď na svoji otázku?
+                    Zkuste <a href="gemini-ai/deep-review-link.html">podrobnou recenzi</a> od Google Gemini Pro (Deep Research).
+                </div>
+                <p class="meta">&nbsp;</p>
+            </div><div class="post">
+            <img src="../images/milky-06.png" width="48" height="48" alt="Kontakt" style="float:left; margin: 0 15px 0 0; vertical-align:text-top; border:0" />
+            <h2 class="title"  id="contact"><a href="#">Kontakt na autora</a></h2>
+            <div class="entry">
                 <ul>
-                    <li>
-                        <a href="jbook-sub.pdf"><img src="images/Cover-3d.png" alt="Cover-3d.png" /></a>
-                        <!--
-                        <p><a class="btn-buy" href="#">Koupit</a></p>
-                        -->
-                    </li>
-
-                    <li>
-                        <h2>Rozcestník</h2>
-                        <ul>
-                            <li><a href="https://www.facebook.com/U%C4%8Debnice-jazyka-Java-na-webov%C3%BDch-p%C5%99%C3%ADkladech-101102961631269">Facebook</a></li>
-                            <!--
-                            <li><a href="#">Nakladatelství</a></li>
-                            -->
-                            <li><a href="https://jbook.ponec.net/cs2">Oficiální stránka knihy</a></li>
-                            <!--
-                            <li><a href="index.html">Anglická veze stránek</a></li>
-                            -->
-                        </ul>
-                    </li>
+                    <li>Facebook: <a href="https://www.facebook.com/jBookPonec/">Stránka knihy na Facebooku</a></li>
+                    <li>Web: <a href="https://jbook.ponec.net/">jbook.ponec.net</a></li>
+                    <li>Email: <img src="../images/email.png" alt="email" style="vertical-align: text-bottom" /></li>
                 </ul>
             </div>
-            <!-- end #sidebar -->
-        </div>
-        <!-- end #page -->
-        <div id="footer">
-            <p>(c) 2020-2026 <a href="http://jbook.ponec.net/">jBook</a> from Pavel Ponec. Designed by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>. Icons by <a href="http://min.frexy.com">Min Tran</a>. <a href="/policy/policy-cs.html" style="text-decoration: none;">Ochrana osobních údajů</a></p>
-        </div>
+            <p>&nbsp;</p>
+        </div></div><div id="sidebar">
+        <ul>
+            <li>
+                <a href="jbook-sub.pdf"><img src="images/Cover-3d.png" alt="Obálka knihy" /></a>
+            </li>
+
+            <li>
+                <h2>Kam dál?</h2>
+                <ul>
+                    <li><a href="https://www.facebook.com/U%C4%8Debnice-jazyka-Java-na-webov%C3%BDch-p%C5%99%C3%ADkladech-101102961631269">Diskuse na Facebooku</a></li>
+                    <li><a href="https://jbook.ponec.net/cs2">Oficiální stránka knihy</a></li>
+                </ul>
+            </li>
+        </ul>
     </div>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- google analytics end -->
-
+    </div>
+    <div id="footer">
+        <p>(c) 2020-2026 <a href="http://jbook.ponec.net/">jBook</a> – Pavel Ponec. <br/>
+            Design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>. Icons by <a href="http://min.frexy.com">Min Tran</a>. <a href="/policy/policy-cs.html">Ochrana osobních údajů</a></p>
+    </div>
+</div>
 </body>
 </html>

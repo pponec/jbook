@@ -113,3 +113,26 @@ iframe {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+
+/* Small adjustment for the benefits list in the sidebar: List reset - removing default bullets and padding */
+#sidebar ul.benefits {
+    list-style-type: none;
+    //padding-left: 0px;
+    //margin-left: 10px;
+}
+
+/* Style for individual rows */
+#sidebar ul.benefits li {
+    margin-bottom: 8px; /* Increased spacing for better readability */
+    display: flex;      /* Ensures checkmark stays at the top if text wraps */
+    align-items: flex-start;
+}
+
+/* Inserting the checkmark via CSS pseudo-element */
+#sidebar ul.benefits li::before {
+    content: "✅";        /* The icon itself */
+    margin-right: 10px;    /* Gap between icon and text */
+    font-size: 1.1em;      /* Slight icon enlargement */
+    line-height: 1.2;      /* Align height with text */
+}

@@ -12,11 +12,53 @@ Released   : 20080129
 <html lang="cs" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
-    <title>Učebnice jazyka Java</title>
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>
-    <meta name="keywords" content="Java, XML, učebnice, kniha, průvodce, příklady, web"/>
-    <meta name="description" content="Učebnice jazyka Java"/>
     <link href="../css/main.css" rel="stylesheet" type="text/css" media="screen"/>
+
+    <title>Učebnice jazyka Java pro&nbsp;samouky</title>
+    <meta name="author" content="Pavel Ponec">
+    <meta name="keywords" content="Java pro začátečníky,
+          učebnice Java,
+          Java pro samouky,
+          výuka programování,
+          webové aplikace v Javě,
+          Pavel Ponec,
+          základy OOP,
+          Java 25,
+          SQL a databáze,
+          rekvalifikace IT,
+          e-book,
+          Java servlety,
+          programování her,
+          čistý kód">
+    <meta name="description" content="3. vydání učebnice Javy pro rok 2026.
+          Naučte se programovat tvorbou webových her a aplikací.
+          Ideální pro samouky a rekvalifikaci."/>
+
+    <style>
+/* Small adjustment for the benefits list in the sidebar: List reset - removing default bullets and padding */
+#sidebar ul.benefits {
+    list-style-type: none;
+    //padding-left: 0px;
+    //margin-left: 10px;
+}
+
+/* Style for individual rows */
+#sidebar ul.benefits li {
+    margin-bottom: 8px; /* Increased spacing for better readability */
+    display: flex;      /* Ensures checkmark stays at the top if text wraps */
+    align-items: flex-start;
+}
+
+/* Inserting the checkmark via CSS pseudo-element */
+#sidebar ul.benefits li::before {
+    content: "✅";        /* The icon itself */
+    margin-right: 10px;    /* Gap between icon and text */
+    font-size: 1.1em;      /* Slight icon enlargement */
+    line-height: 1.2;      /* Align height with text */
+}
+
+    </style>
 </head>
 <body>
 <div id="wrapper">
@@ -24,13 +66,13 @@ Released   : 20080129
         <ul>
             <li class="current_page_item"><a href="http://jbook.ponec.net/cs.html">Domovská stránka</a></li>
             <li><a href="#download">Stahuj</a></li>
-            <li><a href="#author">O autorovi</a></li>
+            <li><a href="#author">O&nbsp;autorovi</a></li>
         </ul>
     </div>
     <div id="logo">
         <h2>Pavel Ponec:<br/>Učebnice jazyka</h2>
         <h1><a href="#">Java</a></h1>
-        <h2>a tvorba webových aplikací<br/>pro&nbsp;samouky III</h2>
+        <h2>a&nbsp;tvorba webových aplikací<br/>pro&nbsp;samouky III</h2>
 
         <h2><img src="../images/logo.png" alt="Logo" style="margin-left:50px;"/></h2>
     </div>
@@ -39,41 +81,49 @@ Released   : 20080129
         <div id="sidebar">
             <ul>
                 <li>
-                    <a href="jbook-sub.pdf"><img src="images/Cover-3d.png" alt="Cover3d of book"/></a>
+                    <a href="jbook-sub.pdf"><img src="images/Cover-3d.png" alt="Obálka knihy"/></a>
+
+                    <ul class="benefits">
+                        <li>Žádné předchozí znalosti</li>
+                        <li>Nová Java 25 (LTS)</li>
+                        <li>Tvorba her a&nbsp;webů</li>
+                        <li>SQL a&nbsp;databáze</li>
+                        <li>OOP a&nbsp;čistý kód</li>
+                    </ul>
+
                     <p><a title="PDF" class="btn-buy"
                           href="TODO"
                           href-DISABLED="https://www.palmknihy.cz/ekniha/ucebnice-jazyka-java-na-webovych-prikladech-pro-uplne-zacatecniky-353119"
                     >Koupit PDF knihu</a>
-                        <br/>
-                        <a href="https://bookla.cz/eshop/produkt/ucebnice-jazyka-java-na-webovych-prikladech-pro-uplne-zacatecniky"
-                           class="">Koupit první vydání tištěné knihy.</a>
+
+<!--                        <br/>-->
+<!--                        <a href="https://bookla.cz/eshop/produkt/ucebnice-jazyka-java-na-webovych-prikladech-pro-uplne-zacatecniky"-->
+<!--                           class="">Koupit první vydání tištěné knihy</a>-->
                     </p>
                 </li>
 
                 <li>
                     <h2>Recenze knihy</h2>
                     <ul id="reviews">
-                        <li><a href="gemini-ai/deep-review-link.html">Podrobná recenze</a> od Gemini AI (leden,&nbsp;2026).</li>
+                        <li><a href="gemini-ai/deep-review-link.html">Podrobná recenze</a> od&nbsp;Gemini AI (leden&nbsp;2026).</li>
                         <li><a href="gemini-ai/short-review.html">Stručná propagace</a> založená na&nbsp;výše uvedené recenzi.</li>
                     </ul>
                 </li>
                 <li>
-                    <h2>Řekli o knize</h2>
+                    <h2>Řekli o&nbsp;knize</h2>
                     <ul id="quotes">
-                        <li>"Líbí se mi obrázky s UML diagramy tříd. Účelem první poloviny knihy je spíš představit
-                            prostředky, které se v tomto příkladu budou používat. Druhá polovina je bezva, protože je
-                            tam hezky popsán příklad a základy XML, HTML, regulární výrazy, hezky se to propojí. Její
-                            obrovský přínos je právě v tomto příkladu."
-                            -- Lenka, učitelka informatiky na Střední průmyslové škole
+                        <li>"Líbí se mi obrázky s&nbsp;UML diagramy tříd.
+                            Účelem první poloviny knihy je spíš představit prostředky, které se v&nbsp;tomto příkladu budou používat.
+                            Druhá polovina je bezva, protože je tam hezky popsán příklad a&nbsp;základy XML, HTML, regulární výrazy, hezky se to propojí.
+                            Její obrovský přínos je právě v&nbsp;tomto příkladu."
+                            <br/>-- Lenka, učitelka informatiky na&nbsp;SPŠ
                         </li>
-                        <li>"Kniha předkládá čtenáři dostatek informací k tomu,
-                            aby dokázal porozumět uvedeným příkladům a s jejich pomocí napsat vlastní jednoduchou
-                            aplikaci."
-                            -- Vendy, zaměstnanec v oboru IT
+                        <li>"Kniha předkládá čtenáři dostatek informací k&nbsp;tomu,
+                            aby dokázal porozumět uvedeným příkladům a&nbsp;s&nbsp;jejich pomocí napsat vlastní jednoduchou aplikaci."
+                            <br/>-- Vendy, zaměstnanec v&nbsp;oboru IT
                         </li>
-                        <li>"Podle této knížky bych mohl dobře cvičení z programování v Javě vést a žákům bych ji
-                            doporučil."
-                            -- Petr, učitel na Střední průmyslové škole
+                        <li>"Podle této knížky bych mohl dobře cvičení z&nbsp;programování v&nbsp;Javě vést a&nbsp;žákům bych ji doporučil."
+                            <br/>-- Petr, učitel na&nbsp;SPŠ
                         </li>
                     </ul>
                 </li>
@@ -87,29 +137,25 @@ Released   : 20080129
                         -->
                         <li><a href="https://jbook.ponec.net/cs2">Oficiální stránka knihy</a></li>
                         <li><a href="faq.html">Časté dotazy</a></li>
-                        <li><a href="missing.html">Co v knize nenajdete</a></li>
+                        <li><a href="missing.html">Co v&nbsp;knize nenajdete</a></li>
                         <li><a href="bug.html">Známé chyby</a></li>
                         <li><a href="https://ujorm.org/javadoc/2.28/ujo-web/">JavaDoc</a> tříd
-                            <a href="https://pponec.github.io/ujorm/javadoc/2.28/ujo-web/org/ujorm/tools/web/Element.html">Element</a> a
+                            <a href="https://pponec.github.io/ujorm/javadoc/2.28/ujo-web/org/ujorm/tools/web/Element.html">Element</a> a&nbsp;
                             <a href="https://pponec.github.io/ujorm/javadoc/2.28/ujo-web/org/ujorm/tools/sql/SqlParamBuilder.html">SqlParamBuilder</a>
                         </li>
                         <li><a href="../cs3/index.html">Druhé vydání knihy</a></li>                        </ul>
                 </li>
             </ul>
-        </div>  <!-- end #sidebar -->
-        <div id="content">
+        </div>  <div id="content">
 
         <div class="post">
             <div class="entry">
-                Většina kurzů vás naučí psát kód, ale málokterý vás naučí myslet jako programátor.
-                Tato kniha vyplňuje prázdná místa mezi základní teorií a profesionální praxí.
-                Projděte cestu od úplných základů IT až po stavbu aplikací s relační databází.
-                Přestaňte kód opisovat, začněte mu rozumět.
+                <strong>Tato kniha vyplňuje mezeru mezi suchou teorií a&nbsp;profesionální praxí.</strong>
+                Projděte cestu od&nbsp;úplných základů IT až po&nbsp;stavbu aplikací s&nbsp;relační databází.
+                Přestaňte kód jen opisovat – začněte mu rozumět.
             </div>
             <p class="meta">&nbsp;</p>
-        </div><!-- post -->
-
-        <div class="post">
+        </div><div class="post">
         <div class="entry">
             <table class="top">
                 <tr>
@@ -118,8 +164,7 @@ Released   : 20080129
                     </td>
                     <td>
                         <a href="#annotation" class="subTitle">Anotace</a>
-                        stručná charakteristika knihy
-
+                        Stručná charakteristika knihy
                     </td>
 
                     <td><a href="#why"><img src="../images/milky-44.png" alt="why" width="48" height="48"/></a>
@@ -136,7 +181,7 @@ Released   : 20080129
                     </td>
                     <td style="width: 40%;">
                         <a href="#download" class="subTitle">Příklady</a>
-                        Ukázkové příklady ke&nbsp;stažení.
+                        Zdrojové kódy ke&nbsp;stažení
                     </td>
 
                     <td><a href="#contact"><img src="../images/milky-54.png" alt="contact" width="48"
@@ -144,186 +189,145 @@ Released   : 20080129
                     </td>
                     <td style="width: 40%;">
                         <a href="#contact" class="subTitle">Kontakt</a>
-                        Facebook, kontakt na&nbsp;vydavatele a&nbsp;autora
+                        Facebook, vydavatel a&nbsp;autor
                     </td>
                 </tr>
             </table>
         </div>
         <p class="meta">&nbsp;</p>
-    </div><!-- post -->
-    <div class="post">
+    </div><div class="post">
         <img src="../images/milky-02.png" alt="annotation" width="48" height="48"
              style="float:left; margin: 0 15px 0 0; vertical-align:text-top; border:0"/>
         <h2 class="title" id="annotation"><a href="#">Anotace</a></h2>
         <div class="entry">
-            Učebnice je založena na výuce v prostředí webového prohlížeče, kde čtenář vidí výsledky své práce
-            v grafické a interaktivní podobě.
-            Unikátní je metodika výuky objektově orientovaného programování (OOP).
-            Autor využívá specifický objektový model, díky kterému se naučíte stavět webové aplikace
-            z logických komponent.
+            Výuka v&nbsp;této knize probíhá přímo ve&nbsp;webovém prohlížeči, kde okamžitě vidíte výsledky své práce v&nbsp;grafické a&nbsp;interaktivní podobě.
+            Unikátní je metodika výuky <strong>objektově orientovaného programování (OOP)</strong>.
+            Využíváme specifický objektový model, díky kterému se naučíte stavět webové aplikace z&nbsp;logických komponent – podobně jako stavebnici.
 
-            Propojením Javy s technologiemi HTML, CSS, JSON a AJAX získáte ucelený přehled o tom, jak
-            funguje moderní internetový software.
-            Tento přístup efektivně propojuje abstraktní logiku s vizuálními prvky, které denně používáte,
-            čímž se učení stává přirozenějším a názornějším.
-            Na rozdíl od běžných internetových tutoriálů autor provede čtenáře celým procesem – od kreslení diagramů
-            až po spuštění databázové aplikace v kontejneru Docker.
-            Při výuce dojde také na interaktivní hru Piškvorky, která implementuje herní strategii umělé inteligence.
+            Propojením Javy s&nbsp;technologiemi HTML, CSS, JSON a&nbsp;AJAX získáte ucelený přehled o&nbsp;tom, jak funguje moderní internetový software.
+            Tento přístup efektivně propojuje abstraktní logiku s&nbsp;vizuálními prvky, které denně používáte.
+            Učení se tak stává přirozenějším a&nbsp;názornějším.
+
+            Na rozdíl od&nbsp;běžných internetových tutoriálů vás provedu celým procesem – od&nbsp;kreslení diagramů až po&nbsp;spuštění databázové aplikace v&nbsp;kontejneru Docker.
+            Zlatým hřebem výuky je interaktivní hra Piškvorky, do&nbsp;které naprogramujeme i&nbsp;vlastní umělou inteligenci.
         </div>
         <div class="entry">
-            Kniha tedy není jen o syntaxi jazyka.
-            Nabízí ucelený výklad celého spektra souvisejících technologií.
-            Čtenář si osvojí moderní standardy, jako je správa projektů nebo kultura psaní čistého kódu.
-            Takové dovednosti jsou běžnou součástí profesionálního programování.
+            Kniha tedy není jen o&nbsp;syntaxi jazyka.
+            Nabízí ucelený výklad širokého spektra souvisejících technologií.
+            Osvojíte si moderní standardy, jako je správa projektů nebo kultura psaní <strong>čistého kódu</strong>.
+            Právě tyto dovednosti jsou dnes v&nbsp;profesionálním programování nezbytností.
         </div>
         <p class="meta">&nbsp;</p>
-    </div><!-- post -->
-    <div class="post">
+    </div><div class="post">
         <img src="../images/milky-10.png" width="48" height="48" alt="target"
              style="float:left; margin: 0 15px 0 0; vertical-align:text-top; border:0"/>
         <h2 class="title" id="target"><a href="#">Komu je kniha určena</a></h2>
         <div class="entry">
-            Díky širokému záběru témat s nízkým nástupním prahem znalostí je kniha určena prakticky každému, kdo zvažuje vstup do světa informačních technologií.
-            Cílí na čtenáře, kteří hledají jistotu, strukturu a jasný plán a nechtějí ztrácet čas přebíráním nesourodých internetových zdrojů.
-            Je ideální pro samouky, kteří potřebují vidět rychlé výsledky (funkční webová stránka), aby neztratili motivaci.
-            Všem těmto čtenářům kniha nabízí řešení "vše v jednom" za příznivou cenu.
+            Díky širokému záběru témat a&nbsp;nízkému prahu vstupních znalostí je kniha určena prakticky každému, kdo zvažuje vstup do&nbsp;světa IT.
+            Cílí na&nbsp;čtenáře, kteří hledají jistotu, strukturu a&nbsp;jasný plán a&nbsp;nechtějí ztrácet čas přebíráním nesourodých internetových zdrojů.
+            Je ideální pro&nbsp;<strong>samouky</strong>, kteří potřebují vidět rychlé výsledky (funkční webová stránka), aby neztratili motivaci.
+            Všem těmto čtenářům kniha nabízí řešení "vše v&nbsp;jednom" za&nbsp;příznivou cenu.
         </div>
         <div class="entry">
-            Primárně byla však kniha zaměřena na studenty technických oborů (kterým nevyhovuje suchý akademický výklad),
-            nebo také na studenty ostatních oborů, kteří chtějí získat cenné dovednosti v informačních technologiích.
-            Těm všem kniha nabízí dobrý teoretický základ (paměť, algoritmy) zábavnou formou (hry, web).
-            Webový přístup navíc dodá pocit, že tvoří něco reálného a hmatatelného.
-        </div>
-        <div class="entry">
-            V neposlední řadě poslouží pedagogům a učitelům informatiky na středních školách, kteří
-            hledají atraktivní osnovu výuky pro své studenty.
-        </div>
+            Věřím, že knihu ocení nejen studenti technických oborů, ale i studenti jiných oborů, kteří chtějí získat cenné technické dovednosti.
+            Všem takovým studentům kniha nabízí teoretický základ (paměť, algoritmy) podaný zábavnou formou (hry, web).
+            Webový přístup navíc dodá pocit, že tvoříte něco reálného a&nbsp;hmatatelného.
+            Zároveň může posloužit jako inspirace pedagogům a učitelům informatiky, kteří hledají hotovou osnovu pro atraktivní výuku.        </div>
         <p class="meta">&nbsp;</p>
     </div><div class="post">
         <img src="../images/milky-44.png" width="48" height="48" alt="why"
              style="float:left; margin: 0 15px 0 0; vertical-align:text-top; border:0"/>
         <h2 class="title" id="why"><a href="#">Proč jsem knihu napsal</a></h2>
         <div class="entry">
-            Když jsem začínal s&nbsp;jazykem Java, kladl jsem si otázku, zdali není
-            možné napsat učebnici atraktivnějším způsobem.
-            Po&nbsp;letech praxe jsem zveřejnil
-            krátký článek o sestavování webových stránek v jazyce Java, postavených
-            na&nbsp;objektovém modelu HTML elementů. Přitom mě napadlo, že by to mohl být
-            skvělý prostředek pro tvorbu interaktivních učebnicových příkladů.
-            V&nbsp;nejbližším knihkupectví jsem otevřel jednu z&nbsp;nových učebnic tohoto
-            jazyka a spatřil opět formální popis s&nbsp;černobílými obrázky, akademickými příklady
-            a&nbsp;několika málo grafickými ukázkami postavenými na dnes už zastaralé knihovně
-            Swing. Tehdy jsem se rozhodl vykročit na&nbsp;nejistou dráhu autora inovativní
-            učebnice programování.
+            Když jsem s&nbsp;jazykem __Java__ začínal, měl jsem pocit, že&nbsp;by se učebnice dala napsat i&nbsp;atraktivnějším způsobem.
+            Po&nbsp;letech praxe jsem zveřejnil článek o&nbsp;tvorbě webových stránek v&nbsp;Javě pomocí objektového modelu HTML elementů.
+            Napadlo mě, že&nbsp;právě to by mohl být skvělý základ pro interaktivní příklady při výuce.
+            Když jsem pak v&nbsp;knihkupectví otevřel jednu z&nbsp;nových učebnic, opět jsem narazil na&nbsp;formální popis, černobílé obrázky a&nbsp;ukázky postavené na&nbsp;zastaralé knihovně Swing.
+            Proto jsem se rozhodl vykročit na&nbsp;nejistou dráhu autora inovativní učebnice programování.
         </div>
         <p class="meta">&nbsp;</p>
     </div><div class="post">
         <img src="../images/milky-60.png" width="48" height="48" alt="download"
              style="float:left; margin: 0 15px 0 0; vertical-align:text-top; border:0"/>
-        <h2 class="title" id="download"><a href="#">Příklady</a></h2>
+        <h2 class="title" id="download"><a href="#">Příklady ke stažení</a></h2>
         <div class="entry">
-            Po zakoupení knihy si prosím uschovejte doklad o nákupu, protože vás opravňuje používat ukázkové
-            příklady k soukromým i komerčním účelům.
-            Distribuce zdrojového kódu k této knize je možná pouze vlastníkem knihy při zachování původního
-            komentáře v hlavičce.
-            Třetí strana je oprávněna použít zdrojový kód pouze pro své vlastní studium, jinak je třeba získat
-            vlastní licenci zakoupením knihy nebo e-booku.
-            Licence tak umožňuje pedagogům použití příkladů ve výuce.
-            V případě nejasností se obracejte na&nbsp;autora knihy, kontakt je <a href="index.html#contact">zde</a>.
-            Zvažte prosím, že výroba knihy není jedinou nákladovou položkou, další výdaje souvisí s propagací a
-            distribucí.
-            Děkuji tímto za podporu i&nbsp;pochopení.
+            Po zakoupení knihy si prosím uschovejte doklad o&nbsp;nákupu.
+            Slouží jako licence, která vás opravňuje používat ukázkové příklady k&nbsp;soukromým i&nbsp;komerčním účelům.
+            Distribuce zdrojového kódu je možná pouze pro&nbsp;vlastníka knihy a&nbsp;při zachování původního komentáře v&nbsp;hlavičce.
+            Třetí strana smí použít kód pouze pro&nbsp;vlastní studium – v&nbsp;opačném případě je nutné zakoupit vlastní licenci (knihu nebo e-book).
+            Tato licence výslovně umožňuje pedagogům využití příkladů ve&nbsp;výuce.
+
+        </div><div class="entry">
+
+            V&nbsp;případě nejasností se neváhejte obrátit na&nbsp;autora knihy (kontakt <a href="index.html#contact">zde</a>).
+            Zvažte prosím, že výroba knihy není jedinou nákladovou položkou – další výdaje souvisí s&nbsp;propagací a&nbsp;distribucí.
+            Děkuji vám za&nbsp;podporu i&nbsp;férovost.
             Stažením souboru vyjadřujete souhlas s&nbsp;těmito podmínkami.
 
             <h3>Odkazy</h3>
-            Doporučená Java k příkladům je <a href="http://jdk.java.net/java-se-ri/25">zde</a>.
-            Příklady jsou k nahlédnutí v&nbsp;angličtině <a
-                href="https://jbook3-samples-free.ponec.net/">tady</a>,
-            a odkaz ke stažení aktuálních kódů najdete v knize.
+            Doporučenou verzi Java JDK pro&nbsp;spuštění příkladů stáhnete <a href="http://jdk.java.net/java-se-ri/25">zde</a>.
+            Zdrojové kódy jsou k&nbsp;nahlédnutí (v angličtině) <a href="https://jbook3-samples-free.ponec.net/">zde</a>.
+            Odkaz pro&nbsp;stažení kompletního balíku kódů najdete přímo v&nbsp;knize.
 
+            <br/><br/>
             <iframe width="450" height="257" src="https://www.youtube.com/embed/eGAORdUh7gE"
                     title="E-book: Učebnice jazyka Java na webových příkladech pro úplné začátečníky III." frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
             </iframe>
 
-            <br/>Upozorňuji, že instruktážní video popisuje instalaci prostředí pro&nbsp;<strong>starší</strong>
-            vydání knihy.
-            Postup pro&nbsp;<strong>třetí</strong> vydání se v&nbsp;zásadě neliší, je však třeba použít Javu
-            <strong>verze&nbsp;25</strong>.
+            <br/><em>Poznámka: Instruktážní video popisuje instalaci prostředí pro&nbsp;<strong>starší</strong> vydání knihy.
+            Postup pro&nbsp;<strong>třetí</strong> vydání je principálně stejný, jen je třeba použít <strong>Javu verze&nbsp;25</strong>.</em>
             <div id="player"></div>
 
         </div>
         <p class="meta">&nbsp;</p>
-    </div><!-- post -->
-    <div class="post">
+    </div><div class="post">
         <img src="../images/milky-54.png" width="48" height="48" alt="author"
              style="float:left; margin: 0 15px 0 0; vertical-align:text-top; border:0"/>
         <h2 class="title" id="author"><a href="#">O autorovi</a></h2>
         <div class="entry">
-            Pavel Ponec (nar. 1965) vystudoval v Brně automatizaci na&nbsp;fakultě VUT a od té doby pracuje jako
-            SW vývojář a analytik,
-            od roku 2000 pracuje převážně v&nbsp;jazyce Java s webovými technologiemi.
-            V roce 2008 získal certifikát <i>Certified Programmer for the Java 2 Platform, Standard Edition
-            5.0</i>
-            od společnosti <a href="https://cs.wikipedia.org/wiki/Sun_Microsystems">Sun&nbsp;Microsystems</a>.
+            <strong>Pavel Ponec</strong> (nar. 1965) vystudoval automatizaci na&nbsp;VUT v&nbsp;Brně.
+            Od té doby působí jako softwarový vývojář a&nbsp;analytik.
+            Od roku 2000 se specializuje převážně na&nbsp;jazyk <strong>Java</strong> a&nbsp;webové technologie.
+            Je držitelem certifikátu <i>Certified Programmer for the Java 2 Platform</i> od&nbsp;společnosti <a href="https://cs.wikipedia.org/wiki/Sun_Microsystems">Sun&nbsp;Microsystems</a>.
 
             <h3>Veřejně dostupné referenční projekty</h3>
             <ul>
-                <li><a href="https://ujorm.org/www/web/index.html">Ujorm</a> (open-source) - knihovna zaměřená
-                    původně na ORM služby s deklarativním zápisem dotazů.
-                    V současné době jsou podporovány spíše moduly pro stavbu HTML stránek a nízkoúrovňové nástroje nad JDBC.
+                <li><a href="https://ujorm.org/www/web/index.html">Ujorm</a> (open-source) – Knihovna původně zaměřená na&nbsp;ORM služby.
+                    Dnes nabízí především moduly pro&nbsp;stavbu HTML stránek a&nbsp;nízkoúrovňové nástroje nad&nbsp;JDBC.
                 </li>
-                <!-- <li><a href="https://hotels.ujorm.org/">DemoHotels</a> (open-source) - webová aplikace pro fiktivní rezervaci hotelů
-                     s frameworkem Apache Wicket pro demonstraci doménových objektů s architekturou key-value.</li>-->
-                <!--
-                <li><a href="https://sourceforge.net/projects/inspectime/">Inspectime</a> (open-source) - webová aplikace pro měření času stráveného na projektech
-                    postavená na frameworku GWT/Sencha, autor knihy byl hlavním vývojářem projektu.</li>
-                -->
-                <li><a href="http://jworksheet.ponec.net/">jWorkSheet</a> (open-source) - Swingová aplikace z
-                    roku 2007 pro měření času stráveného na projektech,
-                    jeho grafické rozhraní bylo inspirované tabulkovým editorem typu Excel.
+                <li><a href="http://jworksheet.ponec.net/">jWorkSheet</a> (open-source) – Swingová aplikace z&nbsp;roku 2007 pro&nbsp;měření času stráveného na&nbsp;projektech.
+                    Její grafické rozhraní bylo inspirováno tabulkovým editorem Excel.
                 </li>
-                <li><a href="https://ponec.net/ppsee/index_cs.htm">PPSee</a> (freeware) - Swingová aplikace z
-                    roku 2003 pro prezentaci a správu obrázků
-                    s generováním <a href="jbook-sub.pdf">fotoalba</a> podle editovatelných textových šablon.
+                <li><a href="https://ponec.net/ppsee/index_cs.htm">PPSee</a> (freeware) – Swingová aplikace z&nbsp;roku 2003 pro&nbsp;správu obrázků
+                    a generování <a href="jbook-sub.pdf">fotoalb</a> dle editovatelných šablon.
                 </li>
-                <!--
-                <li><a href="https://ponec.net/peki/index_cs.htm">PEK slovník</a> (freeware) - desktopová aplikace z roku 2001
-                    pro vyhledání hesel z překladových slovníků postavená na grafické knihovně Swing, zajímavostí je implementace vlastní read-only databáze.</li>
-                -->
             </ul>
         </div>
         <p class="meta">&nbsp;</p>
-    </div><!-- post -->
-    <div class="post">
+    </div><div class="post">
         <img src="../images/milky-06.png" width="48" height="48" alt="contact"
              style="float:left; margin: 0 15px 0 0; vertical-align:text-top; border:0"/>
-        <h2 class="title" id="contact"><a href="#">Kontakt</a></h2>
+        <h2 class="title" id="contact"><a href="#">Kontakt na autora</a></h2>
         <div class="entry">
             <ul>
-                <li>Facebook: <a href="https://www.facebook.com/jBookPonec/">https://www.facebook.com/...</a>
+                <li>Facebook: <a href="https://www.facebook.com/jBookPonec/">Stránka knihy na Facebooku</a>
                 </li>
-                <li>Domovská stránka: <a href="https://jbook.ponec.net/">https://jbook.ponec.net/</a></li>
+                <li>Web: <a href="https://jbook.ponec.net/">jbook.ponec.net</a></li>
                 <li>Email: <img src="../images/email.png" alt="email" style="vertical-align: text-bottom"></li>
             </ul>
         </div>
         <p>&nbsp;</p>
-        </div><!-- post -->
-        </div><!-- end #content -->
-    </div>
+    </div></div></div>
 
-    <!-- end #page -->
     <div id="footer">
-        <p>(c) 2020-2026 <a href="http://jbook.ponec.net/">jBook</a> from Pavel Ponec. Designed by <a
+        <p>(c) 2020-2026 <a href="http://jbook.ponec.net/">jBook</a> – Pavel Ponec. Designed by <a
                 href="http://www.freecsstemplates.org/">Free CSS Templates</a>. Icons by <a href="http://min.frexy.com">Min
             Tran</a>. <a href="/policy/policy-cs.html" style="text-decoration: none;">Ochrana osobních údajů</a>.
         </p>
     </div>
 </div>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<!-- google analytics end -->
 
 </body>
 </html>
