@@ -25,6 +25,11 @@
         .step-inactive { @apply bg-white text-slate-500 border-2 border-slate-200 hover:border-teal-300; }
         .fade-in { animation: fadeIn 0.5s ease-in-out; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        .footer-link {
+                @apply text-slate-400 hover:text-teal-600 transition-colors duration-200 border-b border-transparent hover:border-teal-200;
+                text-decoration: none;
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
@@ -276,16 +281,23 @@
 
 <footer class="bg-slate-50 border-t border-slate-200 py-12">
     <div class="max-w-6xl mx-auto px-4 text-center">
-        <p class="text-slate-900 font-bold text-lg mb-2">Učebnice jazyka Java na webových příkladech</p>
-        <p class="text-slate-500 text-sm mb-6">Pavel Ponec, 3. vydání, ISBN todo</p>
-        <div class="inline-block bg-white border border-slate-200 rounded px-4 py-2 text-xs text-slate-400">
-            Recenze a interaktivní přehled vygenerován AI modelem • <span id="gen-date">15. ledna 2026</span>
+        <p class="text-slate-900 font-bold text-lg mb-2">Učebnice jazyka Java a tvorba webových aplikací pro samouky</p>
+
+        <div class="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4 text-slate-500 text-sm mb-6">
+            <span>Pavel Ponec, 3. vydání</span>
+            <span class="hidden md:inline text-slate-300">|</span>
+            <span class="font-mono">ISBN 978-80-909828-0-2</span>
+            <span class="hidden md:inline text-slate-300">|</span>
+            <a href="/policy/policy-cs.html" class="footer-link">Ochrana osobních údajů</a>
         </div>
 
-        <div class="mt-6">
-            <a href="deep-review-link.html" target="_blank" class="inline-flex items-center text-sm font-medium text-teal-600 hover:text-teal-800 transition-colors">
-                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                Zobrazit původní Deep Review
+        <div class="pt-6 border-t border-slate-100 inline-block">
+            <a href="https://gemini.google.com/share/e601ffa26403"
+               target="_blank" class="inline-flex items-center text-sm font-medium text-teal-600 hover:text-teal-800 transition-all hover:translate-y-[-1px]">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                </svg>
+                Podrobná recenze knihy od Gemini AI (leden 2026)
             </a>
         </div>
     </div>
