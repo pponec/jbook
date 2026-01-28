@@ -1,130 +1,175 @@
 <!DOCTYPE html>
-<!--
-Design by Free CSS Templates
-http://www.freecsstemplates.org
-Released for free under a Creative Commons Attribution 2.5 License
-
-Name       : Firming
-Description: A two-column, fixed-width design suitable for small websites and blogs.
-Version    : 1.0
-Released   : 20080129
--->
-<html lang="cs" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-    <title>Učebnice jazyka Java</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
-    <meta name="keywords" content="Java, XML, tutorial, textbook, guide, examples, web" />
-    <meta name="description" content="Learning Java Language Beginners" />
     <link href="../css/main.css" rel="stylesheet" type="text/css" media="screen" />
+
+    <title>Teach Yourself Java – FAQ</title>
+    <meta name="description" content="Hesitating to buy? Read the answers to frequently asked questions: prior knowledge required, computer specs, operating system, and why we teach Java without frameworks.">
+    <meta name="keywords" content="programming FAQ, Java hardware requirements, course prerequisites, self-taught Java discussion, Java installation, book support, Pavel Ponec contact">
+
+    <style>
+        /* Highlight methods for better readability */
+        i.method {
+            color: #003366; /* Darker blue for better contrast */
+            font-family: Consolas, "Courier New", monospace;
+            font-style: normal;
+            font-weight: bold;
+            background-color: #f4f4f4;
+            padding: 0 4px;
+            border-radius: 3px;
+        }
+        /* Adding air to the list */
+        .entry ul li {
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
-    <div id="wrapper">
-        <div id="menu">
-            <ul>
-                <li class="current_page_item"><a href="http://jbook.ponec.net/cs.html">Home page</a></li>
-                <li><a href="#download">Download</a></li>
-                <li><a href="#author">About author</a></li>
-            </ul>
-        </div>
-        <div id="logo" style="text-align: center;">
-            <h2>Pavel Ponec:<br/>Learning</h2>
-            <h1><a href="#">Java</a></h1>
-            <h2>on Web Examples<br/>for Beginners</h2>
-            <h2><img src="../images/logo.png" alt="Logo" style="margin-left:50px;" /></h2>
-        </div>
-        <hr />
-        <div id="page">
-            <div id="content">
+<div id="wrapper">
+    <div id="menu">
+        <ul>
+            <li><a href="http://jbook.ponec.net/en.html">Home</a></li>
+            <li class="current_page_item"><a href="http://jbook.ponec.net/en.html#download">Download</a></li>
+            <li><a href="http://jbook.ponec.net/en.html#author">About the Author</a></li>
+        </ul>
+    </div>
+    <div id="logo">
+        <h2>Pavel Ponec:<br/>Teach Yourself</h2>
+        <h1><a href="#">Java</a></h1>
+        <h2>From Bits<br/>to Databases</h2>
 
-                <div class="post">
-                    <img src="../images/milky-44.png" width="48" height="48" alt="architecture" style="float:left; margin: 0 15px 0 0; vertical-align:text-top; border:0" />
-                    <h2 class="title" id="download"><a href="#">Časté dotazy</a></h2>
-                    <div class="entry">
-                        <ul>
-                            <li id="tech"><strong>What technologies are used in the book?</strong><br/>
-                                All the sample pages are Java servlets of a Maven project that runs as a web application on a Jetty container, but the WAR web archive can also run on Tomcat and other containers. The Element class from the free library is used to eliminate text strings with HTML code. The source code for the examples can be viewed here.
-Examples require Java version 17 LTS to run, which is the latest stable version of Java with long-term support (at the time the book was published).
-                            </li>
-                            <li id="element"><strong>Isn't using the object model of a web page complicated?</strong><br/>
-                                I believe that anyone who wants to learn an object language should also experience working with an object model, and building an HTML model seems like a good opportunity to do so.
-                            </li>
-                            <li id="element"><strong>Isn't using the Element class complicated?</strong><br/>
-Once you get the root element, you only need to know (in principle) three methods from that class to build any web page:
-<br/>1) <i>setAttribute()</i> - this method assigns an attribute with a value to the current element,
-<br/>2) <i>addElement()</i> - the method adds a new element to the object with the name of the first argument and returns its instance,
-<br/>3) <i>addText()</i> - the method adds text to the element body and handles the writing of special characters; there is an alternative method <i>addRawText()</i>.
-                            </li>
-                            <li id="memory"><strong>Isn't the web page data model memory intensive?</strong><br/>
-The Element class is really just an envelope over an object of type PrintWriter, so any text written to the element is sent directly to the writer. With this approach, even pages of significant size can be built efficiently. However, the full memory model can be activated in the configuration if needed.
-                            </li>
-                            <li id="jsf"><strong>Why aren't the examples built on JSP or JSF?</strong><br/>
-                                The goal of the book is not to teach the templating system, but to work with objects. In addition, opinions on the merits of JSP technology and its successor JSF tend to be highly controversial.
-                            </li>
-                            <li id="tech"><strong>Could the book's concept lead to cargoclutic programming (coding without understanding)?</strong><br/>
-                                The aim of the book is to demonstrate the meaning, principles and context of the programming constructs used. However, I believe that a beginner does not need to know all the details right away. Extreme attention to detail will unnecessarily discourage some beginners, and this is not just true of programming. Selected topics include links to Internet resources for further study.
-                            </li>
-                            <li id="tech"><strong>Isn't mastering all of the technologies used beyond the capabilities of a beginner?</strong><br/>
-                                It's true that web pages are described in HTML with CSS, and you need to use Maven to run the application (in a web container). However, the tools of the Maven project are primarily used as a resource here, and the same is true of the web container. I have tried to keep the explanation of HTML with CSS (including the techniques used) to the minimum necessary. The downloaded project contains a script to run the entire project and includes Maven itself. Apart from the Java environment, nothing else needs to be installed.
-                            </li>
-                        </ul>
-                    </div>
-                    <p class="meta">&nbsp;</p>
-                </div><!-- post -->
+        <h2><img src="../images/logo.png" alt="Logo" style="margin-left:50px;" /></h2>
+    </div>
+    <hr />
+    <div id="page">
+        <div id="content">
 
-                <div class="post">
-                    <img src="../images/milky-06.png" width="48" height="48" alt="Kontakt" style="float:left; margin: 0 15px 0 0; vertical-align:text-top; border:0" />
-                    <h2 class="title"  id="contact"><a href="#">Kontakt</a></h2>
-                    <div class="entry">
-                        <ul>
-                            <li>Facebook: <a href="https://www.facebook.com/jBookPonec/">https://www.facebook.com/...</a></li>
-                            <li>Domovská stránka: <a href="https://jbook.ponec.net/">https://jbook.ponec.net/</a></li>
-                            <!--
-                            <li>Nakladatelství: <a href="https://pointa.cz/">Pointa Publishing s.r.o.</a></li>
-                            -->
-                            <li>Email: <img src="../images/email.png" style="vertical-align: text-bottom"></li>
-                        </ul>
-                    </div>
-                    <p>&nbsp;</p>
-                </div><!-- post -->
+            <div class="post">
+                <img src="../images/milky-44.png" width="48" height="48" alt="architecture" style="float:left; margin: 0 15px 0 0; vertical-align:text-top; border:0" />
+                <h2 class="title" id="download"><a href="#">Frequently Asked Questions (FAQ)</a></h2>
+                <div class="entry">
+                    <ul>
+                        <li id="level"><strong>Do I need any prior IT knowledge?</strong><br/>
+                            Not at all. The book is written for complete beginners.
+                            We start from scratch: we'll explain what memory is, how bits work, and gradually move on to programming.
+                            If you can install a standard computer game, you can install Java.
+                        </li>
 
+                        <li id="install"><strong>What do I need to install?</strong><br/>
+                            You will only need <strong>Java 25 LTS</strong>.
+                            The acronym LTS (Long Term Support) means it is a stable version with long-term support that you can rely on.
+                        </li>
 
-            </div><!-- end #content -->
+                        <li id="system"><strong>Will it run on my computer?</strong><br/>
+                            Yes. Java is universal, so the examples work on <strong>Windows</strong>, <strong>macOS</strong>, and <strong>Linux</strong>.
+                            You don't even need a high-performance machine – if you use Linux (e.g., Xubuntu), 2 GB of RAM is enough.
+                        </li>
 
-            <div id="sidebar">
+                        <li id="book3"><strong>What's new in the 3rd edition?</strong><br/>
+                            The third edition goes deeper and broader. I have added:
+                            <br/>• An introduction to <strong>relational databases</strong> (SQL).
+                            <br/>• Working with memory.
+                            <br/>• A demonstration of using <strong>Artificial Intelligence (AI)</strong> in game strategy design.
+                            <br/>• Basics of versioning in <strong>Git</strong> (a must for every programmer).
+                            <br/>• All original chapters have undergone a thorough new revision to improve readability and understanding.
+                        </li>
+
+                        <li id="tech"><strong>What technologies will the book teach me?</strong><br/>
+                            We will create real web applications.
+                            All examples are part of a single <strong>Maven</strong> project running on the lightweight <a href="https://en.wikipedia.org/wiki/Jetty_(web_server)">Jetty</a> web server.
+                            We will learn to create HTML code purely using Java objects (using the <code>Element</code> class), which helps you understand OOP principles better than just writing text templates.
+                            Curious readers can look at the source code <a href="https://jbook3-samples-free.ponec.net/sample?src=net.ponec.jbook.s01_hello.HelloWorldServlet">now</a>.
+                        </li>
+
+                        <li id="servlet"><strong>Why teach Servlets instead of the Spring framework?</strong><br/>
+                            Because Servlets are the alphabet of the web.
+                            Modern frameworks (like Spring Boot) are just wrappers that hide a lot.
+                            Whoever learns Servlets will understand how the web <em>actually</em> works "under the hood."
+                            The transition to complex frameworks will then be much easier for you.
+                        </li>
+
+                        <li id="element"><strong>HTML as objects? Isn't it better to write HTML code directly?</strong><br/>
+                            For teaching programming, the object-oriented approach is better.
+                            When we build a page using objects (Java classes), we learn to think like a programmer, not just a web coder.
+                            It forces you to understand the page structure (tree) and the relationships between elements.
+                        </li>
+
+                        <li id="element2"><strong>Won't working with the <code>Element</code> class be complicated?</strong><br/>
+                            On the contrary, it's like a building set. We only need <strong>three methods</strong>:
+                            <br/>1) <i class="method">addElement(...)</i> – adds a new block (element),
+                            <br/>2) <i class="method">setAttribute(...)</i> – sets its properties,
+                            <br/>3) <i class="method">addText(...)</i> – writes text inside.
+                            <br/>You don't need more to start with.
+                        </li>
+
+                        <li id="memory"><strong>Is this method memory-efficient?</strong><br/>
+                            Yes, very much so. The <code>Element</code> class works like a flow heater – data doesn't accumulate in it but is sent directly to the output (the browser).
+                            Thanks to this, we can generate even huge pages without the risk of running out of memory.
+                        </li>
+
+                        <li id="jsf"><strong>Why don't we use JSP or JSF?</strong><br/>
+                            Because the goal is to teach you <strong>Java and object-oriented thinking</strong>, not to overwhelm you with the syntax of templating languages, which often provoke mixed reactions in the community.
+                            We will stick to clean code.
+                        </li>
+
+                        <li id="kargoklutic"><strong>Will I really understand it, or just "copy the code"?</strong><br/>
+                            The book is written against the principles of <a href="https://en.wikipedia.org/wiki/Cargo_cult_programming">cargo cult programming</a>.
+                            I don't want you to blindly copy commands. The book explains <strong>why</strong> things happen and what the connections are.
+                            At the same time, I don't want to overwhelm you with details that you don't need at the beginning, so you don't lose motivation.
+                        </li>
+
+                        <li id="tech2"><strong>Isn't it too many technologies for a beginner?</strong><br/>
+                            It might seem so (HTML, CSS, Maven, Java), but there's no reason to worry.
+                            Tools like <em>Maven</em> are used only as "background assistants"; we won't learn them in depth.
+                            We focus on Java. HTML and CSS are kept to a necessary minimum.
+                            Everything is prepared so that we can start creating together right after installing Java.
+                        </li>
+
+                        <li id="ujorm"><strong>What is <i>Ujorm</i>?</strong><br/>
+                            <a href="https://ujorm.org/www/index.html">Ujorm</a> was, in its time, a unique <a href="https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping">ORM</a>
+                            framework for modeling type-safe database queries.
+                            Today, only certain modules for general use are actively maintained, such as the support for generating HTML pages using an object model.
+                        </li>
+                    </ul>
+
+                    Didn't find the answer to your question?
+                    Try the <a href="gemini-ai/deep-review-link.html">in-depth review</a> by Google Gemini Pro (Deep Research).
+                </div>
+                <p class="meta">&nbsp;</p>
+            </div><div class="post">
+            <img src="../images/milky-06.png" width="48" height="48" alt="Contact" style="float:left; margin: 0 15px 0 0; vertical-align:text-top; border:0" />
+            <h2 class="title"  id="contact"><a href="#">Contact the Author</a></h2>
+            <div class="entry">
                 <ul>
-                    <li>
-                        <a href="jbook-sub.pdf"><img src="images/Cover-3d.png" alt="Cover-3d.png" /></a>
-                        <!--
-                        <p><a class="btn-buy" href="#">Koupit</a></p>
-                        -->
-                    </li>
-
-                    <li>
-                        <h2>Rozcestník</h2>
-                        <ul>
-                            <li><a href="https://www.facebook.com/U%C4%8Debnice-jazyka-Java-na-webov%C3%BDch-p%C5%99%C3%ADkladech-101102961631269">Facebook</a></li>
-                            <!--
-                            <li><a href="#">Nakladatelství</a></li>
-                            -->
-                            <li><a href="https://jbook.ponec.net/en/">Oficiální stránka knihy</a></li>
-                            <!--
-                            <li><a href="index.html">Anglická veze stránek</a></li>
-                            -->
-                        </ul>
-                    </li>
+                    <li>Facebook: <a href="https://www.facebook.com/jBookPonec/">Book page on Facebook</a></li>
+                    <li>Web: <a href="https://jbook.ponec.net/">jbook.ponec.net</a></li>
+                    <li>Email: <img src="../images/email.png" alt="email" style="vertical-align: text-bottom" /></li>
                 </ul>
             </div>
-            <!-- end #sidebar -->
-        </div>
-        <!-- end #page -->
-        <div id="footer">
-            <p>(c) 2020-2026 <a href="http://jbook.ponec.net/">jBook</a> from Pavel Ponec. Designed by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>. Icons by <a href="http://min.frexy.com">Min Tran</a>. <a href="/policy/policy-cs.html" style="text-decoration: none;">Ochrana osobních údajů</a></p>
-        </div>
+            <p>&nbsp;</p>
+        </div></div><div id="sidebar">
+        <ul>
+            <li>
+                <a href="jbook-sub.pdf"><img src="images/Cover-3d.png" alt="Book Cover" /></a>
+            </li>
+
+            <li>
+                <h2>Where Next?</h2>
+                <ul>
+                    <li><a href="https://www.facebook.com/jBookPonec/">Facebook Discussion</a></li>
+                    <li><a href="https://jbook.ponec.net/cs3">Official Book Page</a></li>
+                </ul>
+            </li>
+        </ul>
     </div>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- google analytics end -->
-
+    </div>
+    <div id="footer">
+        <p>(c) 2020-2026 <a href="http://jbook.ponec.net/">jBook</a> – Pavel Ponec. <br/>
+            Design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>. Icons by <a href="http://min.frexy.com">Min Tran</a>. <a href="/policy/policy-en.html">Privacy Policy</a></p>
+    </div>
+</div>
 </body>
 </html>

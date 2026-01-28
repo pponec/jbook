@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recenze: Učebnice jazyka Java (3. vydání) - Interaktivní přehled</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container { height: 350px; }
+        }
+        .step-active { @apply bg-teal-500 text-white ring-4 ring-teal-200; }
+        .step-inactive { @apply bg-white text-slate-500 border-2 border-slate-200 hover:border-teal-300; }
+        .fade-in { animation: fadeIn 0.5s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        .footer-link {
+                @apply text-slate-400 hover:text-teal-600 transition-colors duration-200 border-b border-transparent hover:border-teal-200;
+                text-decoration: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+<nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl text-teal-600 font-bold">Java</span>
+                <span class="text-lg font-semibold text-slate-600">krok za krokem</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <button onclick="scrollToSection('prehled')" class="text-slate-500 hover:text-teal-600 transition">Přehled</button>
+                <button onclick="scrollToSection('cesta')" class="text-slate-500 hover:text-teal-600 transition">Obsah</button>
+                <button onclick="scrollToSection('metodika')" class="text-slate-500 hover:text-teal-600 transition">Metodika</button>
+                <button onclick="scrollToSection('cilovka')" class="text-slate-500 hover:text-teal-600 transition">Pro koho</button>
+            </div>
+            <div class="text-sm font-medium text-teal-600 bg-teal-50 px-3 py-1 rounded-full">
+                3. Vydání
+            </div>
+        </div>
+    </div>
+</nav>
+
+<header id="prehled" class="bg-white border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-4 py-12 sm:px-6 lg:py-16 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-amber-600 uppercase bg-amber-100 rounded-full">
+                Přichází v lednu 2026
+            </div>
+            <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl mb-4">
+                Učebnice jazyka Java <span class="text-teal-600">a tvorba webových aplikací pro samouky</span>
+            </h1>
+            <p class="text-xl text-slate-500 mb-6">
+                Od bitů až po databáze.
+                Prakticky, hravě a bez zbytečné složitosti.
+            </p>
+
+            <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 mb-8">
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <p class="text-sm text-slate-400 uppercase font-bold">Autor</p>
+                        <p class="font-semibold text-slate-800">Pavel Ponec</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-slate-400 uppercase font-bold">Cena (zaváděcí)</p>
+                        <p class="font-semibold text-teal-600">299 Kč</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-slate-400 uppercase font-bold">ISBN</p>
+                        <p class="font-mono text-slate-600 text-sm">978-80-909828-0-2</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-slate-400 uppercase font-bold">Verze</p>
+                        <p class="text-slate-600">3. přepracované vydání</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-4">
+                <button onclick="scrollToSection('cesta')" class="px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-teal-600 hover:bg-teal-700 md:py-4 md:text-lg shadow-lg hover:shadow-xl transition-all">
+                    Prozkoumat obsah
+                </button>
+                <button onclick="scrollToSection('cilovka')" class="px-6 py-3 border border-slate-300 text-base font-medium rounded-md text-slate-700 bg-white hover:bg-slate-50 md:py-4 md:text-lg transition-all">
+                    Je kniha pro mě?
+                </button>
+            </div>
+        </div>
+
+        <div class="relative h-full flex items-center justify-center bg-slate-100 rounded-2xl p-8 border border-slate-200 shadow-inner">
+            <div class="absolute inset-0 bg-grid-slate-200/[0.5] [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] rounded-2xl"></div>
+            <div class="relative w-full z-10 bg-white p-6 rounded-xl shadow-lg">
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Rozložení témat v knize</h3>
+                <p class="text-sm text-slate-500 mb-4">Vyvážený mix teorie a praxe</p>
+                <div class="chart-container h-64">
+                    <canvas id="topicDistributionChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="cesta" class="py-16 bg-slate-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-slate-900">Vaše cesta od nuly k aplikaci</h2>
+            <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
+                Kniha není jen suchým výčtem syntaxe. Je to řízená cesta. Klikněte na body níže a prozkoumejte, co se v každé fázi naučíte.
+            </p>
+        </div>
+
+        <div class="mb-8">
+            <div class="flex flex-col md:flex-row justify-between items-center relative space-y-4 md:space-y-0">
+                <div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-slate-200 -z-10 transform -translate-y-1/2"></div>
+
+                <button onclick="updateJourney(0)" id="step-btn-0" class="step-active w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg transition-all shadow-md z-10">1</button>
+                <button onclick="updateJourney(1)" id="step-btn-1" class="step-inactive w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg transition-all shadow-md z-10 bg-white">2</button>
+                <button onclick="updateJourney(2)" id="step-btn-2" class="step-inactive w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg transition-all shadow-md z-10 bg-white">3</button>
+                <button onclick="updateJourney(3)" id="step-btn-3" class="step-inactive w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg transition-all shadow-md z-10 bg-white">4</button>
+            </div>
+            <div class="flex justify-between text-xs font-semibold text-slate-500 mt-2 px-2 hidden md:flex">
+                <span>Základy & Data</span>
+                <span>OOP & Logika</span>
+                <span>Web & Servlety</span>
+                <span>Databáze & AJAX</span>
+            </div>
+        </div>
+
+        <div id="journey-content" class="bg-white rounded-2xl shadow-xl p-8 border border-slate-100 fade-in min-h-[300px]">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="md:col-span-2">
+                    <h3 id="journey-title" class="text-2xl font-bold text-teal-700 mb-4">Start: Bity a Primitivní Typy</h3>
+                    <p id="journey-desc" class="text-slate-600 leading-relaxed mb-6">
+                        Začínáme od úplné podlahy. Než napíšete první složitý program, pochopíte, jak počítač ukládá data. Vysvětlíme si bity, reprezentaci dat a základní datové typy. Žádná "magie", jen čistá logika.
+                    </p>
+                    <ul id="journey-list" class="space-y-3">
+                        <li class="flex items-center text-slate-700">
+                            <span class="w-2 h-2 bg-teal-500 rounded-full mr-3"></span>
+                            Reprezentace dat v paměti
+                        </li>
+                        <li class="flex items-center text-slate-700">
+                            <span class="w-2 h-2 bg-teal-500 rounded-full mr-3"></span>
+                            Primitivní datové typy
+                        </li>
+                        <li class="flex items-center text-slate-700">
+                            <span class="w-2 h-2 bg-teal-500 rounded-full mr-3"></span>
+                            Základní algoritmizace
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-slate-50 rounded-xl p-6 flex items-center justify-center border border-slate-100">
+                    <div class="text-center">
+                        <p class="text-sm text-slate-400 font-bold uppercase mb-2">Výstup fáze</p>
+                        <div id="journey-output" class="text-4xl">💾</div>
+                        <p id="journey-output-text" class="text-sm font-medium text-slate-600 mt-2">Konzolové aplikace</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="metodika" class="py-16 bg-white border-t border-slate-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-slate-900 mb-6">Proč tato kniha funguje?</h2>
+                <p class="text-lg text-slate-600 mb-6">
+                    Autor Pavel Ponec zvolil inovativní didaktický přístup. Místo abyste se topili v konfiguraci složitých frameworků (jako je Spring), učíte se principy, na kterých tyto frameworky stojí.
+                </p>
+
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 h-10 w-10 rounded-lg bg-teal-100 flex items-center justify-center text-teal-600 font-bold text-xl">1</div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-bold text-slate-800">Čisté Servlety místo Magie</h4>
+                            <p class="text-slate-600 text-sm mt-1">
+                                Pochopení principu Request/Response je klíčové. Kniha využívá čisté Servlet API, které je základem všeho v Java webu.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 h-10 w-10 rounded-lg bg-amber-100 flex items-center justify-center text-amber-600 font-bold text-xl">2</div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-bold text-slate-800">HTML Objektový Model</h4>
+                            <p class="text-slate-600 text-sm mt-1">
+                                Místo zastaralého JSP se učíte generovat HTML pomocí jednoduchého Java API. Kód připomíná strukturu XML a učí přemýšlet objektově.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 h-10 w-10 rounded-lg bg-blue-100 flex items-center justify-center text-blue-600 font-bold text-xl">3</div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-bold text-slate-800">JDBC Fasáda</h4>
+                            <p class="text-slate-600 text-sm mt-1">
+                                Databázové příklady využívají zjednodušující obálku (fasádu). Odpadá složité ošetřování výjimek, zůstává podstata SQL dotazů.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                <h3 class="text-lg font-bold text-slate-800 mb-2 text-center">Srovnání složitosti kódu pro začátečníka</h3>
+                <p class="text-xs text-center text-slate-400 mb-6">Konceptuální srovnání objemu "boilerplate" kódu nutného k pochopení</p>
+                <div class="chart-container">
+                    <canvas id="complexityChart"></canvas>
+                </div>
+                <div class="mt-4 text-xs text-slate-500 text-center italic">
+                    * Méně balastu = Rychlejší pochopení principů
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="cilovka" class="py-16 bg-slate-900 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold mb-4">Najděte se v knize</h2>
+        <p class="text-slate-300 mb-8 text-lg">Vyberte profil, který vám nejvíce odpovídá, a zjistěte, co vám kniha přinese.</p>
+
+        <div class="flex flex-wrap justify-center gap-4 mb-10">
+            <button onclick="setAudience('student')" id="btn-student" class="px-6 py-2 rounded-full border-2 border-teal-500 bg-teal-600 text-white font-semibold hover:bg-teal-500 transition">Student SŠ/VŠ</button>
+            <button onclick="setAudience('rekvalifikace')" id="btn-rekvalifikace" class="px-6 py-2 rounded-full border-2 border-slate-600 text-slate-300 hover:border-teal-500 hover:text-white transition">Rekvalifikace do IT</button>
+            <button onclick="setAudience('pokrocily')" id="btn-pokrocily" class="px-6 py-2 rounded-full border-2 border-slate-600 text-slate-300 hover:border-teal-500 hover:text-white transition">Zvědavý pokročilý</button>
+        </div>
+
+        <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700 shadow-2xl relative overflow-hidden transition-all duration-300" id="audience-card">
+            <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-teal-500 rounded-full opacity-20 blur-xl"></div>
+
+            <h3 id="audience-title" class="text-2xl font-bold text-teal-400 mb-4">Pro Studenty</h3>
+            <p id="audience-text" class="text-lg text-slate-300 leading-relaxed">
+                Kniha je ideálním společníkem k formálnímu studiu. Díky postupnému zvyšování náročnosti vás nezahltí. Oceníte kapitoly o <strong>Unit testech (JUnit)</strong> a <strong>UML diagramování</strong>, které se ve škole často probírají jen teoreticky, ale zde je uvidíte v praxi.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-green-50 rounded-xl p-6 border border-green-100">
+                <h3 class="text-xl font-bold text-green-800 mb-4 flex items-center">
+                    <span class="mr-2 text-2xl">✅</span> Co se naučíte
+                </h3>
+                <ul class="space-y-2 text-green-900">
+                    <li class="flex items-start"><span class="mr-2">•</span> Objektově orientované programování (OOP)</li>
+                    <li class="flex items-start"><span class="mr-2">•</span> Regulární výrazy a práce s textem</li>
+                    <li class="flex items-start"><span class="mr-2">•</span> Tvorba dynamických webových stránek (AJAX)</li>
+                    <li class="flex items-start"><span class="mr-2">•</span> Propojení aplikace s databází (JDBC)</li>
+                    <li class="flex items-start"><span class="mr-2">•</span> Význam automatizovaných testů</li>
+                </ul>
+            </div>
+
+            <div class="bg-amber-50 rounded-xl p-6 border border-amber-100">
+                <h3 class="text-xl font-bold text-amber-800 mb-4 flex items-center">
+                    <span class="mr-2 text-2xl">⚠️</span> Co je záměrně vynecháno
+                </h3>
+                <p class="text-sm text-amber-700 mb-3 italic">Pro zachování jednoduchosti a srozumitelnosti:</p>
+                <ul class="space-y-2 text-amber-900">
+                    <li class="flex items-start"><span class="mr-2">•</span> Paralelní zpracování a vlákna (Multithreading)</li>
+                    <li class="flex items-start"><span class="mr-2">•</span> Java Moduly (komplexní modularizace)</li>
+                    <li class="flex items-start"><span class="mr-2">•</span> Velké frameworky (Spring, Hibernate, JSF) - kniha učí to, co jim předchází.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-slate-50 border-t border-slate-200 py-12">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+        <p class="text-slate-900 font-bold text-lg mb-2">Učebnice jazyka Java a tvorba webových aplikací pro samouky</p>
+
+        <div class="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4 text-slate-500 text-sm mb-6">
+            <span>Pavel Ponec, 3. vydání</span>
+            <span class="hidden md:inline text-slate-300">|</span>
+            <span class="font-mono">ISBN 978-80-909828-0-2</span>
+            <span class="hidden md:inline text-slate-300">|</span>
+            <a href="/policy/policy-cs.html" class="footer-link">Ochrana osobních údajů</a>
+        </div>
+
+        <div class="pt-6 border-t border-slate-100 inline-block">
+            <a href="https://gemini.google.com/share/e601ffa26403"
+               target="_blank" class="inline-flex items-center text-sm font-medium text-teal-600 hover:text-teal-800 transition-all hover:translate-y-[-1px]">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                </svg>
+                Podrobná recenze knihy od Gemini AI (leden 2026)
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Data Stores
+    const journeyData = [
+        {
+            title: "1. Start: Bity a Základy",
+            desc: "Začínáme od úplné podlahy. Pochopíte, jak počítač ukládá data, co je to binární soustava, primitivní datové typy a základní řídicí struktury. Žádná magie, jen čistá logika.",
+            list: ["Reprezentace dat v paměti", "Primitivní datové typy", "Základní algoritmizace"],
+            icon: "💾",
+            output: "Konzolové aplikace"
+        },
+        {
+            title: "2. Objektový Svět (OOP)",
+            desc: "Přechod na vyšší úroveň abstrakce. Naučíte se myslet v objektech, používat třídy, dědičnost a rozhraní. Zde se rodí architektura skutečných aplikací.",
+            list: ["Třídy a Objekty", "UML Diagramy", "Jednotkové testy (JUnit)"],
+            icon: "🧩",
+            output: "Strukturovaný kód"
+        },
+        {
+            title: "3. Webové Technologie",
+            desc: "Vstupujeme do světa internetu. Zjistíte, jak funguje HTTP protokol a jak Java Servlety zpracovávají požadavky prohlížeče. Žádné JSP, ale čistý objektový přístup k HTML.",
+            list: ["HTTP Request/Response", "Java Servlety", "Vlastní HTML objektový model"],
+            icon: "🌐",
+            output: "Dynamické stránky"
+        },
+        {
+            title: "4. Finále: Databáze & AJAX",
+            desc: "Propojíme vše dohromady. Aplikace získá paměť díky databázi a interaktivitu díky AJAXu. Výsledkem je plnohodnotná webová aplikace.",
+            list: ["JDBC a SQL (přes Fasádu)", "AJAX pro dynamiku", "Komplexní Web App"],
+            icon: "🚀",
+            output: "Full-stack Aplikace"
+        }
+    ];
+
+    const audienceData = {
+        student: {
+            title: "Pro Studenty",
+            text: "Kniha je ideálním společníkem k formálnímu studiu. Díky postupnému zvyšování náročnosti vás nezahltí. Oceníte kapitoly o <strong>Unit testech (JUnit)</strong> a <strong>UML diagramování</strong>, které se ve škole často probírají jen teoreticky, ale zde je uvidíte v praxi."
+        },
+        rekvalifikace: {
+            title: "Pro Rekvalifikaci",
+            text: "Pokud přecházíte do IT z jiného oboru, oceníte praktický přístup 'škola hrou'. Kniha vás nezatěžuje akademickými definicemi tam, kde to není nutné. Místo toho rychle vidíte výsledky v prohlížeči, což je pro motivaci klíčové."
+        },
+        pokrocily: {
+            title: "Pro Zvědavé Pokročilé",
+            text: "Možná už umíte použít Spring, ale víte, jak to funguje uvnitř? Tato kniha vám ukáže 'pod kapotu'. Pochopení čistých Servletů a manuální práce s HTTP požadavky z vás udělá lepšího vývojáře i při používání moderních frameworků."
+        }
+    };
+
+    // Navigation Function
+    function scrollToSection(id) {
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Journey Interaction
+    function updateJourney(index) {
+        // Update Buttons
+        for(let i=0; i<4; i++) {
+            const btn = document.getElementById(`step-btn-${i}`);
+            if (i === index) {
+                btn.className = "step-active w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg transition-all shadow-md z-10 cursor-default";
+            } else {
+                btn.className = "step-inactive w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg transition-all shadow-md z-10 bg-white cursor-pointer";
+            }
+        }
+
+        // Update Content with Fade Effect
+        const contentDiv = document.getElementById('journey-content');
+        contentDiv.classList.remove('fade-in');
+        void contentDiv.offsetWidth; // Trigger reflow
+        contentDiv.classList.add('fade-in');
+
+        const data = journeyData[index];
+        document.getElementById('journey-title').innerText = data.title;
+        document.getElementById('journey-desc').innerText = data.desc;
+        document.getElementById('journey-output').innerText = data.icon;
+        document.getElementById('journey-output-text').innerText = data.output;
+
+        const listEl = document.getElementById('journey-list');
+        listEl.innerHTML = '';
+        data.list.forEach(item => {
+            listEl.innerHTML += `<li class="flex items-center text-slate-700"><span class="w-2 h-2 bg-teal-500 rounded-full mr-3"></span>${item}</li>`;
+        });
+    }
+
+    // Audience Interaction
+    function setAudience(type) {
+        const buttons = ['student', 'rekvalifikace', 'pokrocily'];
+        buttons.forEach(btn => {
+            const el = document.getElementById(`btn-${btn}`);
+            if(btn === type) {
+                el.className = "px-6 py-2 rounded-full border-2 border-teal-500 bg-teal-600 text-white font-semibold shadow-lg transition transform scale-105";
+            } else {
+                el.className = "px-6 py-2 rounded-full border-2 border-slate-600 text-slate-300 hover:border-teal-500 hover:text-white transition cursor-pointer";
+            }
+        });
+
+        const card = document.getElementById('audience-card');
+        // Simple animation reset
+        card.style.opacity = '0.5';
+        setTimeout(() => {
+            document.getElementById('audience-title').innerHTML = audienceData[type].title;
+            document.getElementById('audience-text').innerHTML = audienceData[type].text;
+            card.style.opacity = '1';
+        }, 200);
+    }
+
+    // Chart Initialization
+    window.onload = function() {
+        // 1. Topic Distribution Chart (Doughnut)
+        const ctxTopic = document.getElementById('topicDistributionChart').getContext('2d');
+        new Chart(ctxTopic, {
+            type: 'doughnut',
+            data: {
+                labels: ['Java Základy & OOP', 'Web Technologies', 'Databáze & Testy', 'HTML/UI'],
+                datasets: [{
+                    data: [40, 30, 20, 10],
+                    backgroundColor: ['#2dd4bf', '#fbbf24', '#334155', '#94a3b8'],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom', labels: { usePointStyle: true, font: {family: 'Inter'} } }
+                }
+            }
+        });
+
+        // 2. Complexity Chart (Bar)
+        const ctxComp = document.getElementById('complexityChart').getContext('2d');
+        new Chart(ctxComp, {
+            type: 'bar',
+            data: {
+                labels: ['Standardní JDBC', 'Ponecova Fasáda', 'Standardní JSP', 'Ponecův HTML Model'],
+                datasets: [{
+                    label: 'Řádky "Boilerplate" kódu (odhad)',
+                    data: [85, 20, 60, 25],
+                    backgroundColor: ['#cbd5e1', '#2dd4bf', '#cbd5e1', '#fbbf24'],
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: { beginAtZero: true, display: false },
+                    x: { grid: { display: false } }
+                },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.raw < 40 ? "Jednoduché & Čitelné" : "Složité & Ukecané";
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Set default date
+        const now = new Date();
+        // document.getElementById('gen-date').innerText = now.toLocaleDateString('cs-CZ');
+    };
+
+</script>
+</body>
+</html>
