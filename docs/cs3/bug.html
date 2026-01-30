@@ -49,7 +49,11 @@ Released   : 20080129
                     <h2 class="title" id="download"><a href="#">Známé chyby a opravy</a></h2>
                     <div class="entry">
                         <ul>
-                            <li id="">Ve&nbsp;třídě <i>AbstractDao</i> jsem dodatečně přejmenoval původní metodu <i>getLastInsertedId()</i> na výstižnější <i>getFirstInsertedId()</i>.
+                            <li id="ujorm229">Některé JDBC drivery nedodržují specifikaci, podle které se má při uzavření objektu <i>PreparedStatement</i> automaticky uzavřít i související <i>ResultSet</i>.
+                                Toto riziko eliminuje novější verze knihovny Ujorm (2.29), na kterou jsem příklady dnes aktualizoval (2026-01-30).
+                                Na výuku ani na samotný Java kód nemá oprava vliv.
+                            </li>
+                            <li id="lastInsertedId">Ve&nbsp;třídě <i>AbstractDao</i> jsem dodatečně přejmenoval původní metodu <i>getLastInsertedId()</i> na výstižnější <i>getFirstInsertedId()</i>.
                                 Na&nbsp;správné fungování příkladů ani na&nbsp;výuku nemá oprava vliv.
                                 Příklady stažené po&nbsp;datu 2026-01-29 tuto opravu už obsahují.
                             </li>
