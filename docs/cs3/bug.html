@@ -49,15 +49,21 @@ Released   : 20080129
                     <h2 class="title" id="download"><a href="#">Známé chyby a opravy</a></h2>
                     <div class="entry">
                         <ul>
+                            <li id="addBodyx">
+                            Vysvětlení: V ukázkách použití třídy <i>HtmlElement</i> se objevuje metoda <i>html.getBody()</i>, která vrací objekt elementu <i>&lt;body&gt;</i>.
+                            Pokud metoda takový objekt nemá, vytvoří ho, jinak vrátí existující.
+                            Z&nbsp;pohledu logiky je takové chování korektní, protože HTML5 povoluje pouze jediný <i>&lt;body&gt;</i> element na&nbsp;stránce.
+                            Chování metody <i>html.addBody()</i> je identické a tak lze obě metody zaměnit.
+                            Pro&nbsp;prvotní získání instance <i>&lt;body&gt;</i> elementu se přikláním k&nbsp;použití metody <strong><i>addBody()</i></strong>, protože vystihuje přesněji záměr akce.
+                            V&nbsp;příkladech knihy se však používá metoda <i>getBody()</i>. Doplněno dne: 2026-02-09.
+                        </li>
                             <li id="ujorm229">Některé JDBC drivery nedodržují specifikaci, podle které se má při uzavření objektu <i>PreparedStatement</i> automaticky uzavřít i související <i>ResultSet</i>.
-                                Toto riziko eliminuje novější verze knihovny Ujorm (2.29), na kterou jsem příklady dnes aktualizoval (2026-01-30).
-                                Na výuku ani na samotný Java kód nemá oprava vliv.
-                            </li>
+                            Toto riziko eliminuje novější verze knihovny Ujorm (2.29), na kterou jsem příklady dnes aktualizoval (2026-01-30).
+                            Na výuku ani na samotný Java kód nemá oprava vliv.
+                        </li>
                             <li id="lastInsertedId">Ve&nbsp;třídě <i>AbstractDao</i> jsem dodatečně přejmenoval původní metodu <i>getLastInsertedId()</i> na výstižnější <i>getFirstInsertedId()</i>.
                                 Na&nbsp;správné fungování příkladů ani na&nbsp;výuku nemá oprava vliv.
                                 Příklady stažené po&nbsp;datu 2026-01-29 tuto opravu už obsahují.
-                            </li>
-                            <li id="tech">V e-booku knihy nebyly dosud nalezeny žádné chyby.
                             </li>
                         </ul>
                     </div>
