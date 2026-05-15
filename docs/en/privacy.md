@@ -22,9 +22,8 @@ Log data is managed by GitHub, and the operator of this website does not have di
 ## 3. Cookies and Local Storage
 This website **does not use** any marketing, tracking, or analytical third-party cookies (such as Google Analytics or Facebook Pixel).
 
-The web template may use *browser local storage* solely for technical purposes, such as:
-* Remembering dark/light mode display settings.
-* Full-text search functionality on the page.
+The static pages of this site may use *browser local storage* solely for technical purposes, such as:
+* Remembering display preferences offered by your browser (if any).
 
 This data remains in your browser, is not sent anywhere, and is not used to identify you personally.
 

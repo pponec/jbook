@@ -15,9 +15,23 @@ menu a {
     padding-bottom: 5px;
 }
 
-ul#quotes {
+/* Sidebar lists: same disc bullets and spacing (#quotes, #reviews, .sidebar-nav) */
+#sidebar ul#quotes,
+#sidebar ul#reviews,
+#sidebar ul.sidebar-nav {
     list-style-type: disc;
+    list-style-position: outside;
+}
+
+#sidebar ul#quotes {
     font-style: italic;
+}
+
+#sidebar ul#quotes > li,
+#sidebar ul#reviews > li,
+#sidebar ul.sidebar-nav > li {
+    margin-bottom: 0.5em;
+    line-height: 1.35;
 }
 
 a.btn-buy {

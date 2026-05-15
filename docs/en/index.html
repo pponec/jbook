@@ -9,7 +9,7 @@ Description: A two-column, fixed-width design suitable for small websites and bl
 Version    : 1.0
 Released   : 20080129
 -->
-<html lang="cs" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>
@@ -101,7 +101,9 @@ Released   : 20080129
                 <li>
                     <h2>Book Reviews</h2>
                     <ul id="reviews">
-                        <li><a href="gemini-ai/deep-review-link.html">In-depth review</a> by Gemini AI (January 2026).</li>
+                        <li><a href="gemini-ai/deep-review.html">In-depth review</a> by Gemini AI (January 2026).
+                            <!-- (<a href="gemini-ai/deep-review-link.html">original</a>). -->
+                        </li>
                     </ul>
                 </li>
                 <li>
@@ -120,17 +122,17 @@ Released   : 20080129
                 </li>
                 <li>
                     <h2>Navigation</h2>
-                    <ul>
+                    <ul class="sidebar-nav">
                         <li><a href="https://www.facebook.com/jBookPonec/">Facebook</a></li>
                         <li><a href="#download">Download Examples</a></li>
-                        <li><a href="https://jbook.ponec.net/cs2">Official Book Page</a></li>
+                        <li><a href="https://jbook.ponec.net/en.html">Official Book Page</a></li>
                         <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="missing.html">What's not in the book</a></li>
+                        <li><a href="missing.html">What's Not in the Book</a></li>
                         <li><a href="gemini-ai/short-review.html">Interactive Overview</a></li>
-                        <li><a href="bug.html">Known Errors</a></li>
-                        <li><a href="https://ujorm.org/javadoc/2.28/ujo-web/">JavaDoc</a> for classes
-                            <a href="https://pponec.github.io/ujorm/javadoc/2.28/ujo-web/org/ujorm/tools/web/Element.html">Element</a> and
-                            <a href="https://pponec.github.io/ujorm/javadoc/2.28/ujo-web/org/ujorm/tools/sql/SqlParamBuilder.html">SqlParamBuilder</a>
+                        <li><a href="bug.html">Known Issues</a></li>
+                        <li>JavaDoc for
+                            <a href="https://www.javadoc.io/doc/org.ujorm/ujo-web/latest/org/ujorm/tools/web/Element.html">Element</a> and
+                            <a href="https://www.javadoc.io/doc/org.ujorm/ujo-tools/latest/org/ujorm/tools/sql/SqlParamBuilder.html">SqlParamBuilder</a>
                         </li>
                         <li><a href="../cs2/index-backup.html">Previous Edition</a></li>
                     </ul>
@@ -247,13 +249,13 @@ Released   : 20080129
                     This license also explicitly grants educators the right to use the examples in their teaching.
                 </div>
                 <div class="entry">
-                    In case of any questions, do not hesitate to contact the author (contact <a href="index.html#contact">here</a>).
+                    In case of any questions, do not hesitate to contact the author (contact <a href="#contact">here</a>).
                     Please consider that book production is not the only cost—further expenses are related to promotion and distribution.
                     Thank you for your support and fairness.
                     By downloading the file, you agree to these terms.
                 </div>
                 <div class="entry">
-                    Download the recommended Java JDK version to run the examples <a href="http://jdk.java.net/java-se-ri/25">here</a>.
+                    Download the recommended JDK, <strong>Amazon Corretto&nbsp;25</strong>, to run the examples <a href="https://docs.aws.amazon.com/corretto/latest/corretto-25-ug/downloads-list.html">here</a>.
                     Source codes are available for preview (in English) <a href="https://jbook3-samples-free.ponec.net/">here</a>.
                     The link to download the complete code package can be found directly inside the book.
                 </div>
@@ -264,7 +266,6 @@ Released   : 20080129
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                     </iframe>
-                    <div id="player"> </div>
                 </div>
                 <p class="meta">&nbsp;</p>
             </div>
@@ -281,7 +282,9 @@ Released   : 20080129
 
                     <h3>Public Reference Projects</h3>
                     <ul>
-                        <li><a href="https://ujorm.org/www/web/index.html">Ujorm</a> (open-source) – A library originally focused on ORM services. Today, it primarily offers modules for building HTML pages and low-level tools for JDBC.
+                        <li><a href="https://github.com/pponec/ujorm/tree/ujorm3?tab=readme-ov-file#-ujorm3-library">Ujorm</a> (open-source) – A library focused on ORM services.
+                            It offers modules for building HTML pages and low-level JDBC tools.
+                            In 2026, a brand-new lightweight <a href="https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping">ORM</a> implementation was created in pure Java for plain <code>JavaBeans</code> and <code>Records</code>. The goal was a reliable, minimalist solution without magic.
                         </li>
                         <li><a href="http://jworksheet.ponec.net/">jWorkSheet</a> (open-source) – A Swing application from 2007 for tracking time spent on projects. Its GUI was inspired by Excel.
                         </li>

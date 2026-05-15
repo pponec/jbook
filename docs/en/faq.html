@@ -31,9 +31,9 @@
 <div id="wrapper">
     <div id="menu">
         <ul>
-            <li><a href="http://jbook.ponec.net/en.html">Home</a></li>
-            <li class="current_page_item"><a href="http://jbook.ponec.net/en.html#download">Download</a></li>
-            <li><a href="http://jbook.ponec.net/en.html#author">About the Author</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#download">Download</a></li>
+            <li><a href="index.html#author">About the Author</a></li>
         </ul>
     </div>
     <div id="logo">
@@ -59,7 +59,7 @@
                         </li>
 
                         <li id="install"><strong>What do I need to install?</strong><br/>
-                            You will only need <strong>Java 25 LTS</strong>.
+                            You will only need <strong>Java&nbsp;25 LTS</strong> (we recommend <a href="https://docs.aws.amazon.com/corretto/latest/corretto-25-ug/downloads-list.html">Amazon Corretto&nbsp;25</a>).
                             The acronym LTS (Long Term Support) means it is a stable version with long-term support that you can rely on.
                         </li>
 
@@ -106,7 +106,7 @@
                         </li>
 
                         <li id="memory"><strong>Is this method memory-efficient?</strong><br/>
-                            Yes, very much so. The <code>Element</code> class works like a flow heater – data doesn't accumulate in it but is sent directly to the output (the browser).
+                            Yes, very much so. The <code>Element</code> class uses flow-style output processing—data does not accumulate in memory but is sent straight to the browser.
                             Thanks to this, we can generate even huge pages without the risk of running out of memory.
                         </li>
 
@@ -129,9 +129,10 @@
                         </li>
 
                         <li id="ujorm"><strong>What is <i>Ujorm</i>?</strong><br/>
-                            <a href="https://ujorm.org/www/index.html">Ujorm</a> was, in its time, a unique <a href="https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping">ORM</a>
+                            <a href="https://github.com/pponec/ujorm/tree/ujorm3?tab=readme-ov-file#-ujorm3-library">Ujorm</a> was, in its time, a unique <a href="https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping">ORM</a>
                             framework for modeling type-safe database queries.
-                            Today, only certain modules for general use are actively maintained, such as the support for generating HTML pages using an object model.
+                            In 2026, a brand-new lightweight ORM implementation was created in pure Java for plain <code>JavaBeans</code> and <code>Records</code>. The goal was a reliable, minimalist solution without magic.
+                            The library also provides a standalone module for efficient HTML page generation using an object model built on the <code>Element</code> class.
                         </li>
                     </ul>
 
@@ -157,10 +158,10 @@
             </li>
 
             <li>
-                <h2>Where Next?</h2>
-                <ul>
-                    <li><a href="https://www.facebook.com/jBookPonec/">Facebook Discussion</a></li>
-                    <li><a href="https://jbook.ponec.net/cs3">Official Book Page</a></li>
+                <h2>Navigation</h2>
+                <ul class="sidebar-nav">
+                    <li><a href="https://www.facebook.com/jBookPonec/">Facebook</a></li>
+                    <li><a href="https://jbook.ponec.net/en">Official book page</a></li>
                 </ul>
             </li>
         </ul>

@@ -22,9 +22,8 @@ Data z logů jsou spravována společností GitHub a provozovatel tohoto webu k 
 ## 3. Cookies a lokální úložiště
 Tento web **nevyužívá** žádné marketingové, sledovací ani analytické cookies třetích stran (jako např. Google Analytics či Facebook Pixel).
 
-Webová šablona (Jupyter Book) může využívat tzv. *lokální úložiště prohlížeče* (Local Storage) výhradně pro technické účely, jako je:
-* Zapamatování nastavení tmavého/světlého režimu zobrazení.
-* Funkčnost fulltextového vyhledávání na stránce.
+Statické stránky tohoto webu mohou využívat tzv. *lokální úložiště prohlížeče* (Local Storage) výhradně pro technické účely, jako je:
+* Zapamatování technických preferencí zobrazení (pokud je prohlížeč nabízí).
 
 Tyto údaje zůstávají ve vašem prohlížeči, nikam se neodesílají a neslouží k identifikaci vaší osoby.
 

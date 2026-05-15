@@ -102,8 +102,9 @@ Released   : 20080129
                 <li>
                     <h2>Recenze knihy</h2>
                     <ul id="reviews">
-                        <li><a href="gemini-ai/deep-review-link.html">Podrobná recenze</a> od&nbsp;Gemini AI z&nbsp;ledna&nbsp;2026
-                            (<a href="gemini-ai/deep-review.html">záloha</a>).</li>
+                        <li><a href="gemini-ai/deep-review.html">Podrobná recenze</a> od&nbsp;Gemini AI z&nbsp;ledna&nbsp;2026.
+                            <!-- (<a href="gemini-ai/deep-review-link.html">originál</a>). -->
+                        </li>
                     </ul>
                 </li>
                 <li>
@@ -126,20 +127,20 @@ Released   : 20080129
                 </li>
                 <li>
                     <h2>Rozcestník</h2>
-                    <ul>
+                    <ul class="sidebar-nav">
                         <li><a href="https://www.facebook.com/jBookPonec/">Facebook</a></li>
                         <li><a href="#download">Stažení příkladů</a></li>
                         <!--
                         <li><a href="#">Nakladatelství</a></li>
                         -->
-                        <li><a href="https://jbook.ponec.net/cs2">Oficiální stránka knihy</a></li>
+                        <li><a href="https://jbook.ponec.net/cs3/">Oficiální stránka knihy</a></li>
                         <li><a href="faq.html">Časté dotazy</a></li>
                         <li><a href="missing.html">Co v&nbsp;knize nenajdete</a></li>
                         <li><a href="gemini-ai/short-review.html">Interaktivní přehled</a></li>
                         <li><a href="bug.html">Známé chyby</a></li>
-                        <li><a href="https://ujorm.org/javadoc/2.28/ujo-web/">JavaDoc</a> tříd
-                            <a href="https://pponec.github.io/ujorm/javadoc/2.28/ujo-web/org/ujorm/tools/web/Element.html">Element</a> a&nbsp;
-                            <a href="https://pponec.github.io/ujorm/javadoc/2.28/ujo-web/org/ujorm/tools/sql/SqlParamBuilder.html">SqlParamBuilder</a>
+                        <li>JavaDoc tříd
+                            <a href="https://www.javadoc.io/doc/org.ujorm/ujo-web/latest/org/ujorm/tools/web/Element.html">Element</a> a&nbsp;
+                            <a href="https://www.javadoc.io/doc/org.ujorm/ujo-tools/latest/org/ujorm/tools/sql/SqlParamBuilder.html">SqlParamBuilder</a>
                         </li>
                         <li><a href="../cs2/index-backup.html">Starší vydání knihy</a></li>
                     </ul>
@@ -258,13 +259,13 @@ Released   : 20080129
                     Tato licence dále výslovně uděluje pedagogům právo využívat příklady v&nbsp;rámci výuky.
                 </div>
                 <div class="entry">
-                    V&nbsp;případě nejasností se neváhejte obrátit na&nbsp;autora knihy (kontakt <a href="index.html#contact">zde</a>).
+                    V&nbsp;případě nejasností se neváhejte obrátit na&nbsp;autora knihy (kontakt <a href="#contact">zde</a>).
                     Zvažte prosím, že výroba knihy není jedinou nákladovou položkou – další výdaje souvisí s&nbsp;propagací a&nbsp;distribucí.
                     Děkuji vám za&nbsp;podporu i&nbsp;férovost.
                     Stažením souboru vyjadřujete souhlas s&nbsp;těmito podmínkami.
                 </div>
                 <div class="entry">
-                    Doporučenou verzi Java JDK pro&nbsp;spuštění příkladů stáhnete <a href="http://jdk.java.net/java-se-ri/25">zde</a>.
+                    Doporučenou verzi JDK Amazon Corretto&nbsp;25 pro&nbsp;spuštění příkladů stáhnete <a href="https://docs.aws.amazon.com/corretto/latest/corretto-25-ug/downloads-list.html">zde</a>.
                     Zdrojové kódy jsou k&nbsp;nahlédnutí (v angličtině) <a href="https://jbook3-samples-free.ponec.net/">zde</a>.
                     Odkaz pro&nbsp;stažení kompletního balíku kódů najdete přímo v&nbsp;knize.
                 </div>
@@ -275,7 +276,6 @@ Released   : 20080129
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                     </iframe>
-                    <div id="player"> </div>
                 </div>
                 <p class="meta">&nbsp;</p>
             </div>
@@ -292,8 +292,9 @@ Released   : 20080129
 
                     <h3>Veřejně dostupné referenční projekty</h3>
                     <ul>
-                        <li><a href="https://ujorm.org/www/web/index.html">Ujorm</a> (open-source) – Knihovna původně zaměřená na&nbsp;ORM služby.
-                            Dnes nabízí především moduly pro&nbsp;stavbu HTML stránek a&nbsp;nízkoúrovňové nástroje nad&nbsp;JDBC.
+                        <li><a href="https://github.com/pponec/ujorm/tree/ujorm3?tab=readme-ov-file#-ujorm3-library">Ujorm</a> (open-source) – Knihovna zaměřená na&nbsp;ORM služby.
+                            Dnes nabízí moduly pro&nbsp;stavbu HTML stránek a&nbsp;nízkoúrovňové nástroje nad&nbsp;JDBC.
+                            V roce 2026 byla vytvořena zcela nová implementace lehké <a href="https://cs.wikipedia.org/wiki/Objektov%C4%9B_rela%C4%8Dn%C3%AD_mapov%C3%A1n%C3%AD">ORM</a> (objektově relační mapování) knihovny v čisté Javě pro práci s prostými objekty typu <code>JavaBeans</code> a <code>Records</code>. Cílem bylo spolehlivé a minimalistické řešení bez magie.
                         </li>
                         <li><a href="http://jworksheet.ponec.net/">jWorkSheet</a> (open-source) – Swingová aplikace z&nbsp;roku 2007 pro&nbsp;měření času stráveného na&nbsp;projektech.
                             Její grafické rozhraní bylo inspirováno tabulkovým editorem Excel.
